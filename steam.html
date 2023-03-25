@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Steam API Example</title>
+  </head>
+  <body>
+    <h1>Steam API Example</h1>
+    <div>
+      <label for="steamid">Steam ID:</label>
+      <input type="text" id="steamid" name="steamid" />
+      <button onclick="getSteamInfo()">Load Steam Info</button>
+    </div>
+    <div id="steam-info">
+      <img id="avatar" />
+      <h2 id="username"></h2>
+      <p id="status"></p>
+    </div>
+    <script src="steam.js"></script>
+  </body>
+</html>
