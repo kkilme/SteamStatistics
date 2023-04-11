@@ -1,6 +1,5 @@
-// const express = require('express');
 import express from "express";
-import fetch from "node-fetch";
+import fetch from "node-fetch"; // node-fetch는 require로 할 수 없음, import 사용
 import path from 'path';
 import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
@@ -16,9 +15,15 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
+app.get("/steam", (req, res) => {
   // res.sendFile(__dirname + '/steam.html');
   res.sendFile(path.join(__dirname, 'steam.html'));
+  // res.send("Hello world");
+});
+
+app.get("/", (req, res) => {
+  // res.sendFile(__dirname + '/steam.html');
+  res.send("Hello world!");
   // res.send("Hello world");
 });
 
@@ -27,35 +32,30 @@ app.get("/steaminfo", async (req, res) => {
   const steamId = req.query.steamid;
   console.log(steamId);
   const apiKey = "CDB6562AD13D438878CDCF95AECC2879";
-  const url = `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamId}`;
   try {
-    // const response = await fetch(url);
-    // const data = await response.json();
-    // const player = data.response.players[0];
-    // const steamInfo = {
-    //   avatar: player.avatarfull,
-    //   username: player.personaname,
-    //   status: player.personastate === 0 ? "Offline" : "Online",
-    // };
-    // res.json(steamInfo);
-    const steamInfoResponse = await fetch(`http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamId}`);
-    const steamInfoData = await steamInfoResponse.json();
+    const steamUserResponse = await fetch(`http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamId}`);
+    const steamUserData = await steamUserResponse.json();
 
     const steamGamesResponse = await fetch(`http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=${apiKey}&steamid=${steamId}&format=json`);
     const steamGamesData = await steamGamesResponse.json();
-
-    const playtime = steamGamesData.response.games.reduce((total, game) => total + game.playtime_forever, 0);
-    const { avatarfull, personaname, personastate } = steamInfoData.response.players[0];
-    console.log(playtime);
+    
     res.json({
-      playtime,
-      avatar: avatarfull,
-      username: personaname,
-      status: personastate
+      UserData: steamUserData,
+      GameData: steamGamesData
     });
+
+    // const playtime = steamGamesData.response.games.reduce((total, game) => total + game.playtime_forever, 0);
+    // const { avatarfull, personaname, personastate } = steamUserData.response.players[0];
+    // console.log(playtime);
+    // res.json({
+    //   playtime,
+    //   avatar: avatarfull,
+    //   username: personaname,
+    //   status: personastate
+    // });
   } catch (error) {
     console.error(error);
-    res.status(500).send("Internal Server Error");
+    res.status(500).send("Server Error");
   }
 });
 
