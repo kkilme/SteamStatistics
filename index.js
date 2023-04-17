@@ -15,22 +15,23 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/steam", (req, res) => {
+app.get("/home", (req, res) => {
   // res.sendFile(__dirname + '/steam.html');
   res.sendFile(path.join(__dirname, 'steam.html'));
   // res.send("Hello world");
 });
 
 app.get("/", (req, res) => {
-  // res.sendFile(__dirname + '/steam.html');
-  res.send("Hello world!");
-  // res.send("Hello world");
+  res.redirect('/home')
+  // // res.sendFile(__dirname + '/steam.html');
+  // res.send("Hello world!");
+  // // res.send("Hello world");
 });
 
 // 스팀 API 호출
 app.get("/steaminfo", async (req, res) => {
   const steamId = req.query.steamid;
-  console.log(steamId);
+  console.log('SteamId:'+steamId);
   const apiKey = "CDB6562AD13D438878CDCF95AECC2879";
   try {
     const steamUserResponse = await fetch(`http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamId}`);
@@ -59,6 +60,34 @@ app.get("/steaminfo", async (req, res) => {
   }
 });
 
+
+app.get("/appinfo", async(req,res) => {
+  const appid = req.query.appid;
+  try{
+    const appdata = await fetch(`http://store.steampowered.com/api/appdetails?appids=${appid}`);
+    const appjsondata = await appdata.json();
+    console.log(appjsondata);
+    res.json(appjsondata);
+  } catch(error){
+    console.log(error);
+    res.status(500).send("Server Error");
+  }
+})
+
+app.get("/achivementinfo", async(req,res) => {
+  const appid = req.query.appid;
+  const steamid = req.query.steamid;
+  const apiKey = "CDB6562AD13D438878CDCF95AECC2879";
+  try{
+    const achievedata = await fetch(`http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=${appid}&key=${apiKey}&steamid=${steamid}`);
+    const achievejsondata = await achievedata.json();
+    console.log(achievejsondata);
+    res.json(achievejsondata);
+  } catch(error){
+    console.log(error);
+    res.status(500).send("Server Error");
+  }
+})
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

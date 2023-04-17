@@ -1,4 +1,4 @@
-async function getSteamInfo() {
+async function getSteamData() {
   // steamId = document.getElementById("steamid").value;
   steamId = '76561198818238819';
   try {
@@ -19,13 +19,23 @@ async function getSteamInfo() {
   }
 }
 
-async function main(){
-  const data = await getSteamInfo();
+async function loadPage(){
+  const data = await getSteamData();
   const GameData = data.GameData.response;
   const UserData = data.UserData.response.players[0];
 
   const playtimeData = getPlayTimeData(GameData, UserData);
+  const gameData = getGameData(GameData);
 
+  const appId = 374320;
+  const testappdata = await fetch(`http://localhost:3000/appinfo?appid=${appId}`)
+  const testappdatajson = await testappdata.json();
+  console.log(testappdatajson);
+
+  const steamId = '76561198818238819';
+  const testachievedata = await fetch(`http://localhost:3000/achivementinfo?appid=${appId}&steamid=${steamId}`)
+  const testachievedatajson = await testachievedata.json();
+  console.log(testachievedatajson);
 }
 
 function getPlayTimeData(GameData, UserData){
@@ -34,6 +44,17 @@ function getPlayTimeData(GameData, UserData){
   playtimeDict['totalMinute']= GameData.games.reduce((total, game) => total + game.playtime_forever, 0);
   playtimeDict['hour'] = (playtimeDict['totalMinute'] / 60).toFixed(1);
   playtimeDict['oneDayAvg'] = Math.floor(playtimeDict['totalMinute'] / daysSinceCreated);
-  console.log(playtimeDict);
-  
+  console.log("PlaytimeDict"+playtimeDict);
+  return playtimeDict;
+}
+
+function getGameData(GameData){
+  var gameDataDict = {}
+  gameDataDict['OwnedGameCount'] = GameData.games.length;
+  gameDataDict['neverPlayedGamesCount'] = 0
+  for (const game in GameData.games){
+    if(game.playtime_forever == 0) playtimeDict['neverPlayedGamesCount']++;
+  }
+  gameDataDict['PlayedGamesCount'] = gameDataDict['OwnedGameCount'] - gameDataDict['neverPlayedGamesCount'];
+  console.log("GameDataDict" + gameDataDict);
 }
