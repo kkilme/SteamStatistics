@@ -17,7 +17,7 @@ app.use((req, res, next) => {
 
 app.get("/home", (req, res) => {
   // res.sendFile(__dirname + '/steam.html');
-  res.sendFile(path.join(__dirname, 'steam.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
   // res.send("Hello world");
 });
 
@@ -64,7 +64,7 @@ app.get("/steaminfo", async (req, res) => {
 app.get("/appinfo", async(req,res) => {
   const appid = req.query.appid;
   try{
-    const appdata = await fetch(`http://store.steampowered.com/api/appdetails?appids=${appid}`);
+    const appdata = await fetch(`http://store.steampowered.com/api/appdetails?appids=${appid}&filters=price_overview&format=json`);
     const appjsondata = await appdata.json();
     console.log(appjsondata);
     res.json(appjsondata);

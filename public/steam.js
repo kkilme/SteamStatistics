@@ -1,10 +1,7 @@
-async function getSteamData() {
+async function getSteamData(steamId){
   // steamId = document.getElementById("steamid").value;
-  steamId = '76561198818238819';
   try {
-    const response = await fetch(
-      `http://localhost:3000/steaminfo?steamid=${steamId}`
-    );
+    const response = await fetch(`http://localhost:3000/steaminfo?steamid=${steamId}`);
     const data = await response.json();
     console.log(data);
     return data;
@@ -20,22 +17,21 @@ async function getSteamData() {
 }
 
 async function loadPage(){
-  const data = await getSteamData();
+  var steamId = '76561198818238819';
+  const data = await getSteamData(steamId);
   const GameData = data.GameData.response;
   const UserData = data.UserData.response.players[0];
 
   const playtimeData = getPlayTimeData(GameData, UserData);
   const gameData = getGameData(GameData);
 
-  const appId = 374320;
-  const testappdata = await fetch(`http://localhost:3000/appinfo?appid=${appId}`)
-  const testappdatajson = await testappdata.json();
-  console.log(testappdatajson);
+  const appId = '374320';
+  const testappdata = await (await fetch(`http://localhost:3000/appinfo?appid=${appId}`)).json();
+  console.log(testappdata[appId]);
+  // console.log(testappdata);
 
-  const steamId = '76561198818238819';
-  const testachievedata = await fetch(`http://localhost:3000/achivementinfo?appid=${appId}&steamid=${steamId}`)
-  const testachievedatajson = await testachievedata.json();
-  console.log(testachievedatajson);
+  const testachievedata = await (await fetch(`http://localhost:3000/achivementinfo?appid=${appId}&steamid=${steamId}`)).json();
+  // console.log(testachievedata);
 }
 
 function getPlayTimeData(GameData, UserData){
@@ -50,11 +46,17 @@ function getPlayTimeData(GameData, UserData){
 
 function getGameData(GameData){
   var gameDataDict = {}
-  gameDataDict['OwnedGameCount'] = GameData.games.length;
-  gameDataDict['neverPlayedGamesCount'] = 0
+  gameDataDict['OwnedGamesCount'] = GameData.games.length;
+  gameDataDict['neverPlayedGamesCount'] = 0;
+  gameDataDict['TotalPrice'] = 0;
   for (const game in GameData.games){
     if(game.playtime_forever == 0) playtimeDict['neverPlayedGamesCount']++;
   }
-  gameDataDict['PlayedGamesCount'] = gameDataDict['OwnedGameCount'] - gameDataDict['neverPlayedGamesCount'];
+  gameDataDict['PlayedGamesCount'] = gameDataDict['OwnedGamesCount'] - gameDataDict['neverPlayedGamesCount'];
   console.log("GameDataDict" + gameDataDict);
+}
+
+async function getAppPrice(appId){
+  const appjson = await (await fetch(`http://localhost:3000/appinfo?appid=${appId}`)).json();
+  const price = appjson.appId;
 }

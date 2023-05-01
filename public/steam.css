@@ -1,51 +1,52 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
+    background-color: rgb(27, 40, 56);
   }
   
-  label {
-    font-weight: bold;
-    margin-right: 10px;
-  }
-  
-  input[type="text"] {
-    width: 200px;
-    margin-right: 10px;
-  }
-  
-  button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    margin: 10px 0px;
-    cursor: pointer;
-  }
-  
-  #steam-info {
-    margin-top: 20px;
-  }
-  
-  #avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-right: 20px;
-    float: left;
-  }
-  
-  #username {
-    margin-top: 0px;
-  }
-  
-  #status {
-    margin-top: 0px;
-  }
-  
-  #total-playtime {
-    margin-top: 0px;
-  }
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  width: 200px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 10px 0px;
+  cursor: pointer;
+}
+
+#steam-info {
+  margin-top: 20px;
+}
+
+#avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  float: left;
+}
+
+#username {
+  margin-top: 0px;
+}
+
+#status {
+  margin-top: 0px;
+}
+
+#total-playtime {
+  margin-top: 0px;
+}
