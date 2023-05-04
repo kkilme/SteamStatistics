@@ -60,13 +60,31 @@ app.get("/steaminfo", async (req, res) => {
   }
 });
 
+// const texts = await Promise.all(urls.map(async url => {
+//   const resp = await fetch(url);
+//   return resp.text();
+// }));
+
+// Promise.all(urls.map(url =>
+//   fetch(url).then(resp => resp.text())
+// )).then(texts => {
+
+// })
 
 app.get("/appinfo", async(req,res) => {
   const appid = req.query.appid;
   try{
-    const appdata = await fetch(`http://store.steampowered.com/api/appdetails?appids=${appid}&filters=price_overview&format=json`);
+    //`http://store.steampowered.com/api/appdetails?appids=${appid}&filters=price_overview&format=json`
+    const appdata = await fetch(`http://store.steampowered.com/api/appdetails?appids=${appid}&filters=price_overview`);
+    if(appdata == null){
+      console.log(`Null response: ${appid}`);
+    }
     const appjsondata = await appdata.json();
+    if(appjsondata == null){
+      console.log(`Null response: ${appid}`);
+    }
     console.log(appjsondata);
+    // console.log(appdata);
     res.json(appjsondata);
   } catch(error){
     console.log(error);
