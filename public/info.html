@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Steam Stastics</title>
-        <link rel="stylesheet" type="text/css" href="steam.css">
-    </head>
-    <body>
-        <nav class="mainnav">
-            <li class="mainnav-item"></li>
-        </nav>
-        <div class="main-container">
-            <div class="user-basic-info-column">
-                <div class="user-basic-info-container">
-                    <img id="avatar" />
-                    <h2 id="username"></h2>
-                    <p id="status"></p>
-                </div>
-            </div>
-            <div class="user-info-column">
-                <div class="user-info-container">
-                    
-                </div>
-            </div>
-          </div>
-    </body>
+  <head>
+    <title>Steam Stastics</title>
+    <link rel="stylesheet" type="text/css" href="steam.css" />
+  </head>
+  <body>
+    <div class="nav-container">
+      <div class="main-logo">
+        <a class="logo"> Steam<span>Statistics</span> </a>
+      </div>
+      <nav class="mainnav">
+        <div class="mainnav-box">
+          <a class="mainnav-item"> Home </a>
+        </div>
+        <div class="mainnav-box">
+          <a class="mainnav-item"> Help </a>
+        </div>
+      </nav>
+    </div>
+    <div class="main-container">
+      <div class="user-basic-info-column">
+        <div class="user-basic-info-container">
+          <img id="avatar" />
+          <h2 id="username"></h2>
+          <p id="status"></p>
+        </div>
+      </div>
+      <div class="user-info-column">
+        <div class="user-info-container"></div>
+      </div>
+    </div>
+    <script src="steam.js"></script>
+  </body>
 </html>

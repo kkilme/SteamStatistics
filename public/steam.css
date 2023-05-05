@@ -1,52 +1,155 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    background-color: rgb(27, 40, 56);
-  }
-  
-label {
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-input[type="text"] {
-  width: 200px;
-  margin-right: 10px;
-}
-
-button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  font-family: Arial, Roboto, sans-serif;
   font-size: 14px;
-  margin: 10px 0px;
+  background-color: rgba(23, 26, 33, 0.9);
+  margin: 0;
+}
+
+.nav-container {
+  height: 50px;
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: rgba(27, 40, 56, 0.5);
+  justify-content: center;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.nav-container .main-logo {
+  justify-self: left;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
-#steam-info {
-  margin-top: 20px;
+.nav-container .main-logo .logo {
+  color: rgba(255, 255, 255, 0.884);
+  font-size: 25px;
+  font-weight: 600;
 }
 
-#avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-right: 20px;
-  float: left;
+.nav-container .main-logo span {
+  color: rgb(102, 192, 244);
 }
 
-#username {
-  margin-top: 0px;
+.nav-container .mainnav {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#status {
-  margin-top: 0px;
+.nav-container .mainnav-box {
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-#total-playtime {
-  margin-top: 0px;
+.nav-container .mainnav-box-selected {
+  height: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-bottom: solid 2px white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.nav-container .mainnav-item {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  color: aliceblue;
+}
+
+.main-container {
+  height: calc(100vh - 50px);
+  display: block;
+  align-content: center;
+}
+
+.main-container .main-center {
+  height: calc(100vh - 50px);
+  display: flex;
+  padding-left: 20%;
+  padding-right: 20%;
+  flex-direction: column;
+}
+
+.main-container .main-logo-box {
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 35%;
+  align-items: flex-end;
+  padding-bottom: 10%;
+}
+
+.main-container .main-logo {
+  font-size: 100px;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.main-container .main-logo span {
+  color: rgb(102, 192, 244);
+}
+
+.main-container .searchbox-container {
+  height: 10%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-container .searchbox {
+  background-color: rgb(194, 194, 194);
+  height: 30px;
+  width: 500px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container .search-txt {
+  padding-left: 10px;
+  background: none;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 15px;
+  line-height: 30px;
+  width: 450px;
+}
+
+.main-container .search-btn {
+  color: rgb(194, 194, 194);
+  padding: 1.5px;
+  padding-bottom: 3.5px;
+  float: right;
+  width: 25px;
+  height: 25px;
+  background: rgb(194, 194, 194);
+  border: none;
+}
+
+.main-container .search-icon {
+  width: inherit;
+  height: inherit;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.main-container .tip-container {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container .tip {
+  color: rgba(240, 248, 255, 0.378);
 }
