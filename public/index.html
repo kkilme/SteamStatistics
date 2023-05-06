@@ -3,6 +3,9 @@
   <head>
     <title>Steam Statistics</title>
     <link rel="stylesheet" type="text/css" href="steam.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="nav-container">
@@ -30,9 +33,9 @@
               type="text"
               id="steamid"
               placeholder="SteamID를 입력하세요..."
-              onkeypress="if(event.keyCode == 13){clicktest();}"
+              onkeypress="if(event.keyCode == 13){search();}"
             />
-            <button class="search-btn" onclick="clicktest()">
+            <button class="search-btn" onclick="search()">
               <img class="search-icon" src="search.png" />
             </button>
           </div>
@@ -46,6 +49,12 @@
         </div>
       </div>
     </div>
-    <script src="steam.js"></script>
+    <script>
+      function search(){
+        let steamid = document.getElementById('steamid').value;
+        console.log(steamid);
+        window.location.href = "http://localhost:3000/profile?steamid="+steamid;
+      }
+    </script>
   </body>
 </html>

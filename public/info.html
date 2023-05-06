@@ -3,6 +3,12 @@
   <head>
     <title>Steam Stastics</title>
     <link rel="stylesheet" type="text/css" href="steam.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="nav-container">
@@ -19,15 +25,160 @@
       </nav>
     </div>
     <div class="main-container">
-      <div class="user-basic-info-column">
-        <div class="user-basic-info-container">
-          <img id="avatar" />
-          <h2 id="username"></h2>
-          <p id="status"></p>
+      <div class="main-center-info">
+        <div class="info-head">
+          <a id="username">kkirmi1</a>&nbsp님의 스팀 프로필
         </div>
-      </div>
-      <div class="user-info-column">
-        <div class="user-info-container"></div>
+        <div class="user-profilecard-container">
+          <div class="user-profile-container">
+            <img
+              id="avatar"
+              src="https://avatars.akamai.steamstatic.com/763421bd6ac58ee67ebd87b34526d3bf35b555d6_full.jpg"
+            />
+            <a id="username">kkirmi1</a>
+            <a id="country">국가: KR</a>
+            <a id="status">상태: Online</a>
+          </div>
+          <div class="user-info-container">
+            <div class="grid-item">
+              <a class="color1">계정 생성일</a>
+              <p class="grid-data" id="acc-created-date">2018-05-23</p>
+            </div>
+            <div class="grid-item">
+              <a class="color1">보유한 게임 수</a>
+              <p class="grid-data" id="owned-games">240</p>
+            </div>
+            <div class="grid-item">
+              <a class="color1">게임 가격 총합</a>
+              <p class="grid-data" id="total-price">775,353</p>
+            </div>
+            <div class="grid-item">
+              <a class="color1">총 플레이 시간</a>
+              <p class="grid-data" id="total-playtime">3,210h</p>
+            </div>
+            <div class="grid-item">
+              <a class="color1">임시</a>
+              <p class="grid-data" id="owned-games">2018-05-23</p>
+            </div>
+            <div class="grid-item">
+              <a class="color1">임시</a>
+              <p class="grid-data" id="owned-games">2018-05-23</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-select-container">
+          <div>통계 유형</div>
+          <div class="button-container">
+            <button type="button" class="button-view-selected" id="button-view-game" onclick="selectView(this)">
+              게임
+            </button>
+            <button type="button" class="button-view" id="button-view-achievement" onclick="selectView(this)">
+              도전과제
+            </button>
+          </div>
+        </div>
+
+        <div class="statistics-body-selected">
+          <div class="info-middle">
+            <a class="color2">플레이 시간</a> &nbsp관련 통계
+          </div>
+          <div class="statistics-container">
+            <div class="playtime-statistics-grid">
+              <div class="grid-item">
+                <a class="color2">총 플레이 시간</a>
+                <p class="grid-data" id="total-playtime">3,210h</p>
+              </div>
+              <div class="grid-item">
+                <a class="color2">하루 평균</a>
+                <p class="grid-data" id="one-day-avg-playtime">3,210h</p>
+              </div>
+              <div class="grid-item">
+                <a class="color2">플레이한 게임 당 평균</a>
+                <p class="grid-data" id="one-game-avg-playtime">3,210h</p>
+              </div>
+              <div class="grid-item">
+                <a class="color2">100시간 이상</a>
+                <p class="grid-data" id="playtime-over-100h">3,210h</p>
+              </div>
+              <div class="grid-item">
+                <a class="color2">50시간 이상</a>
+                <p class="grid-data" id="playtime-over-50h">3,210h</p>
+              </div>
+              <div class="grid-item">
+                <a class="color2">10시간 이상</a>
+                <p class="grid-data" id="playtime-over-10h">3,210h</p>
+              </div>
+            </div>
+          </div>
+          <div class="info-middle">
+            <a class="color3">보유 게임</a> &nbsp관련 통계
+          </div>
+          <div class="statistics-container">
+            <div class="ownedgames-statistics-grid">
+              <div class="grid-item">
+                <a class="color3">보유 게임 수</a>
+                <p class="grid-data" id="owned-games">계산 중...</p>
+              </div>
+              <div class="grid-item">
+                <a class="color3">플레이한 게임 수</a>
+                <p class="grid-data" id="played-games">계산 중...</p>
+              </div>
+              <div class="grid-item">
+                <a class="color3">무료 게임 수</a>
+                <p class="grid-data" id="free-games">계산 중...</p>
+              </div>
+              <div class="grid-item">
+                <a class="color3">보유 게임 총 가격</a>
+                <p class="grid-data" id="total-initial-price-owned">
+                  계산 중...
+                </p>
+              </div>
+              <div class="grid-item">
+                <a class="color3">보유 게임 총 가격(할인 적용)</a>
+                <p class="grid-data" id="total-final-price-owned">계산 중...</p>
+              </div>
+              <div class="grid-item">
+                <a class="color3">플레이한 게임 총 가격</a>
+                <p class="grid-data" id="total-initial-price-played">
+                  계산 중...
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="info-middle"><a class="color4">게임 장르</a> 별 통계</div>
+
+          <table class="genre-table">
+            <thead class="color4">
+              <tr>
+                <th id="genre-name">장르</th>
+                <th id="genre-owned">게임 보유 수</th>
+                <th id="genre-playtime">총 플레이 시간</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Action</td>
+                <td>300</td>
+                <td>1,505h</td>
+              </tr>
+              <tr>
+                <td>Action</td>
+                <td>300</td>
+                <td>1,505h</td>
+              </tr>
+              <tr>
+                <td>Action</td>
+                <td>300</td>
+                <td>1,505h</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="statistics-body">
+
+        </div>
       </div>
     </div>
     <script src="steam.js"></script>

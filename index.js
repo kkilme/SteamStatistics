@@ -28,6 +28,11 @@ app.get("/", (req, res) => {
   // // res.send("Hello world");
 });
 
+app.get("/profile", (req,res)=>{
+  res.sendFile(path.join(__dirname, "public/info.html"));
+})
+
+
 // 스팀 API 호출
 app.get("/steaminfo", async (req, res) => {
   const steamId = req.query.steamid;
@@ -43,21 +48,22 @@ app.get("/steaminfo", async (req, res) => {
       `http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=${apiKey}&steamid=${steamId}&format=json`
     );
     const steamGamesData = await steamGamesResponse.json();
+    
+    const steamLevelResponse = await fetch(
+      `http://api.steampowered.com/IPlayerService/GetSteamLevel/v0001/?key=${apiKey}&steamid=${steamId}&format=json`
+    );
+    const steamLevelData = await steamLevelResponse.json();
 
+    // const recentPlayedResponse = await fetch(
+    //   `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${apiKey}&steamid=${steamId}&count=5`
+    // );
+    // const recentPlayedData = await recentPlayedResponse.json();
     res.json({
       UserData: steamUserData,
       GameData: steamGamesData,
+      LevelData: steamLevelData,
+      // RecentPlayData: recentPlayedData
     });
-
-    // const playtime = steamGamesData.response.games.reduce((total, game) => total + game.playtime_forever, 0);
-    // const { avatarfull, personaname, personastate } = steamUserData.response.players[0];
-    // console.log(playtime);
-    // res.json({
-    //   playtime,
-    //   avatar: avatarfull,
-    //   username: personaname,
-    //   status: personastate
-    // });
   } catch (error) {
     console.error(error);
     res.status(500).send("Server Error");
@@ -85,7 +91,7 @@ function writeJson(filename, data) {
   fs.writeFileSync(path.join(__dirname, filename), obj, "utf-8");
 }
 
-function parseData(js, appid) {
+function parseAppData(js, appid) {
   var parsedjs = {};
   if (js[appid].success) {
     var dt = js[appid].data;
@@ -108,45 +114,17 @@ function parseData(js, appid) {
   }
   return parsedjs;
 }
+
 app.get("/appinfo", async (req, res) => {
-  const appid = req.query.appid;
+  var appid = req.query.appid;
   let appdata = readJson("appdata.json");
   try {
+    var dataUpdated = false;
     if (!Array.isArray(appid)) {
-      // query.length = 1
-      if (appid in appdata && appdata[appid] != null) {
-        // cache hit
-        console.log(`hit ${appid}`);
-        res.json(appdata[appid]);
-        return;
-      }
-      // cache miss
-      console.log(`miss ${appid}`);
-      const resps = await fetch(
-        `http://store.steampowered.com/api/appdetails?appids=${appid}`
-      );
-      var respsjs = {};
-      try {
-        respsjs = await resps.json();
-        appdata[appid] = parseData(respsjs, appid);
-      } catch (err) {
-        appdata[appid] = null;
-      }
-      writeJson("appdata.json", appdata);
-      res.json(appdata[appid]);
-      return;
+      var temp = appid;
+      appid = []
+      appid.push(temp);
     }
-
-    // var querystrings = []
-    // make fetch urls and store
-    // for(let i = 0; i<appid.length; i++){
-    //   querystrings.push(`http://store.steampowered.com/api/appdetails?appids=${appid[i]}`)
-    // }
-
-    // for (const st of querystrings) {
-    //   console.log(st);
-    // }
-    // console.log(appid);
     // fetch appinfo of all games asynchronously
     const resp = await Promise.all(
       appid.map(async (id) => {
@@ -165,18 +143,21 @@ app.get("/appinfo", async (req, res) => {
         } catch (err) {
           console.log(`Null response: ${id}`);
           appdata[id] = null;
+          dataUpdated = true;
           return appdata[id];
         }
         if (respsjs == null) {
           console.log(`js null: ${id}`);
           appdata[id] = null;
+          dataUpdated = true;
           return appdata[id];
         }
-        appdata[id] = parseData(respsjs, id);
+        appdata[id] = parseAppData(respsjs, id);
+        dataUpdated = true;
         return appdata[id];
       })
     );
-    writeJson("appdata.json", appdata);
+    if(dataUpdated) writeJson("appdata.json", appdata);
     res.json(resp);
   } catch (error) {
     console.log(error);
@@ -184,22 +165,126 @@ app.get("/appinfo", async (req, res) => {
   }
 });
 
-app.get("/achivementinfo", async (req, res) => {
-  const appid = req.query.appid;
+app.get("/achievementinfo", async (req, res) => {
+  var appid = req.query.appid;
   const steamid = req.query.steamid;
   const apiKey = "CDB6562AD13D438878CDCF95AECC2879";
+  let AchieveData = readJson("gameAchievementData.json");
+  if (!Array.isArray(appid)){
+    var temp = appid;
+    appid = []
+    appid.push(temp);
+  }
   try {
-    const achievedata = await fetch(
-      `http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=${appid}&key=${apiKey}&steamid=${steamid}`
+    var dataUpdated = false;
+    const resp = await Promise.all(
+      appid.map(async (id) => {
+        var data = {};
+        if (id in AchieveData && AchieveData[id] != null) {
+          // cache hit
+          console.log(`achievedata hit ${id}`);
+          data = AchieveData[id];
+        } else {
+          console.log(`achievedata miss ${id}`);
+          const achieveDetailresps = await fetch(
+            `https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?key=${apiKey}&appid=${id}&l=koreana`
+          );
+          const achievePercentresps = await fetch(
+            `https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v2/?gameid=${id}`
+          );
+          let detailjs = "";
+          let percentjs = "";
+          try {
+            detailjs = await achieveDetailresps.json();
+            percentjs = await achievePercentresps.json();
+          } catch (err) {
+            console.log(`Null achievedata response: ${id}`);
+            AchieveData[id] = null;
+            dataUpdated = true;
+          }
+          if (percentjs  == null || detailjs == null) {
+            console.log(`achievedata js null: ${id}`);
+            AchieveData[id] = null;
+            dataUpdated = true;
+          }
+          else {
+            AchieveData[id] = parseAchieveData(percentjs, detailjs, id);
+          }
+          dataUpdated = true;
+          data = AchieveData[id];
+        }
+        var resp = {}; resp[id] = {};
+        if(data == null) {return resp;}
+        const playerAchieveDataresps = await fetch(
+          `http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=${id}&key=${apiKey}&steamid=${steamid}`
+        );
+        let playerjs = "";
+        try {
+          playerjs = await playerAchieveDataresps.json();
+        } catch (err) {
+          console.log(`Null playerachieve response: ${id}`);
+        }
+        if (playerjs  == null) {
+          console.log(`playerachieve js null: ${id}`);
+          return resp;
+        }
+        if(!playerjs.playerstats.success) {return resp;}
+        resp = makeAchieveResponseData(resp, data, playerjs, id)
+        return resp;
+      })
     );
-    const achievejsondata = await achievedata.json();
-    // console.log(achievejsondata);
-    res.json(achievejsondata);
+    if(dataUpdated) writeJson("gameAchievementData.json", AchieveData);
+    res.json(resp)
+    // res.json({"haha":"hello"});
   } catch (error) {
     console.log(error);
     res.status(500).send("Server Error");
   }
 });
+
+function parseAchieveData(percentjs, detailjs, appid){
+  var parsedjs = {};
+  var achieves = detailjs?.game?.availableGameStats?.achievements;
+  var percents = {}
+  
+  for (const acs of percentjs?.achievementpercentages?.achievements) {
+    percents[acs.name] = acs.percent.toFixed(2);
+  }
+  if(achieves == null || percents == {}){
+    console.log("AchieveData Error occured "+ appid)
+    return null;
+  }
+  parsedjs.achievement = {}
+  for (const a of achieves) {
+    parsedjs.achievement[a.name] = {
+      "name": a.displayName,
+      "description": a.description,
+      "icon": a.icon,
+      "hidden": a.hidden,
+      "percentage": percents[a.name]
+    }
+  }
+  return parsedjs;
+}
+
+function makeAchieveResponseData(resp, data, playerdata, id){
+  var fixeddata = {}
+  resp[id].gamename = playerdata.playerstats.gameName;
+  resp[id].achievements = []
+  for (const dt of playerdata.playerstats.achievements) {
+    fixeddata[dt.apiname] = dt;
+  }
+  
+  for (const ac of Object.keys(fixeddata)) {
+    if(fixeddata[ac].achieved == 1){
+      var temp = data.achievement[ac]
+      temp["unlocktime"] = fixeddata[ac].unlocktime;
+      resp[id].achievements.push(temp);
+    }
+  }
+  return resp;
+}
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
