@@ -13,11 +13,13 @@
   <body>
     <div class="nav-container">
       <div class="main-logo">
-        <a class="logo"> Steam<span>Statistics</span> </a>
+        <a class="logo" href="http://localhost:3000/home">
+          Steam<span>Statistics</span>
+        </a>
       </div>
       <nav class="mainnav">
         <div class="mainnav-box">
-          <a class="mainnav-item"> Home </a>
+          <a class="mainnav-item" href="http://localhost:3000/home"> Home </a>
         </div>
         <div class="mainnav-box">
           <a class="mainnav-item"> Help </a>
@@ -27,42 +29,39 @@
     <div class="main-container">
       <div class="main-center-info">
         <div class="info-head">
-          <a id="username">kkirmi1</a>&nbsp님의 스팀 프로필
+          <a class="username"></a>&nbsp님의 스팀 프로필
         </div>
         <div class="user-profilecard-container">
           <div class="user-profile-container">
-            <img
-              id="avatar"
-              src="https://avatars.akamai.steamstatic.com/763421bd6ac58ee67ebd87b34526d3bf35b555d6_full.jpg"
-            />
-            <a id="username">kkirmi1</a>
-            <a id="country">국가: KR</a>
-            <a id="status">상태: Online</a>
+            <img id="avatar-img" src="unknownavatar.jpg" />
+            <a class="username">불러오는 중...</a>
+            <p id="country">국가: 불러오는 중...</p>
+            <a id="status">상태: 불러오는 중...</a>
           </div>
           <div class="user-info-container">
             <div class="grid-item">
               <a class="color1">계정 생성일</a>
-              <p class="grid-data" id="acc-created-date">2018-05-23</p>
+              <p class="grid-data" id="acc-created-date">불러오는 중...</p>
+            </div>
+            <div class="grid-item">
+              <a class="color1">계정 나이</a>
+              <p class="grid-data" id="acc-age">불러오는 중...</p>
             </div>
             <div class="grid-item">
               <a class="color1">보유한 게임 수</a>
-              <p class="grid-data" id="owned-games">240</p>
+              <p class="grid-data" name="owned-games">불러오는 중...</p>
             </div>
             <div class="grid-item">
               <a class="color1">게임 가격 총합</a>
-              <p class="grid-data" id="total-price">775,353</p>
+              <p class="grid-data" name="total-price">불러오는 중...</p>
             </div>
             <div class="grid-item">
               <a class="color1">총 플레이 시간</a>
-              <p class="grid-data" id="total-playtime">3,210h</p>
+              <p class="grid-data" name="total-playtime">불러오는 중...</p>
             </div>
             <div class="grid-item">
-              <a class="color1">임시</a>
-              <p class="grid-data" id="owned-games">2018-05-23</p>
-            </div>
-            <div class="grid-item">
-              <a class="color1">임시</a>
-              <p class="grid-data" id="owned-games">2018-05-23</p>
+              <a class="color1">달성한 도전과제</a>
+              <p class="grid-data" name="total-achievements">불러오는 중...</p>
             </div>
           </div>
         </div>
@@ -70,16 +69,26 @@
         <div class="view-select-container">
           <div>통계 유형</div>
           <div class="button-container">
-            <button type="button" class="button-view-selected" id="button-view-game" onclick="selectView(this)">
+            <button
+              type="button"
+              class="button-view-selected"
+              id="button-view-game"
+              onclick="selectView(this)"
+            >
               게임
             </button>
-            <button type="button" class="button-view" id="button-view-achievement" onclick="selectView(this)">
+            <button
+              type="button"
+              class="button-view"
+              id="button-view-achievement"
+              onclick="selectView(this)"
+            >
               도전과제
             </button>
           </div>
         </div>
 
-        <div class="statistics-body-selected">
+        <div class="statistics-body">
           <div class="info-middle">
             <a class="color2">플레이 시간</a> &nbsp관련 통계
           </div>
@@ -87,27 +96,27 @@
             <div class="playtime-statistics-grid">
               <div class="grid-item">
                 <a class="color2">총 플레이 시간</a>
-                <p class="grid-data" id="total-playtime">3,210h</p>
+                <p class="grid-data" name="total-playtime">계산 중...</p>
               </div>
               <div class="grid-item">
                 <a class="color2">하루 평균</a>
-                <p class="grid-data" id="one-day-avg-playtime">3,210h</p>
+                <p class="grid-data" id="one-day-avg-playtime">계산 중...</p>
               </div>
               <div class="grid-item">
                 <a class="color2">플레이한 게임 당 평균</a>
-                <p class="grid-data" id="one-game-avg-playtime">3,210h</p>
+                <p class="grid-data" id="one-game-avg-playtime">계산 중...</p>
               </div>
               <div class="grid-item">
-                <a class="color2">100시간 이상</a>
-                <p class="grid-data" id="playtime-over-100h">3,210h</p>
+                <a class="color2">100시간 이상 플레이</a>
+                <p class="grid-data" id="playtime-over-100h">계산 중...</p>
               </div>
               <div class="grid-item">
-                <a class="color2">50시간 이상</a>
-                <p class="grid-data" id="playtime-over-50h">3,210h</p>
+                <a class="color2">50~100시간 플레이</a>
+                <p class="grid-data" id="playtime-over-50h">계산 중...</p>
               </div>
               <div class="grid-item">
-                <a class="color2">10시간 이상</a>
-                <p class="grid-data" id="playtime-over-10h">3,210h</p>
+                <a class="color2">10~50시간 이상 플레이</a>
+                <p class="grid-data" id="playtime-over-10h">계산 중...</p>
               </div>
             </div>
           </div>
@@ -118,7 +127,7 @@
             <div class="ownedgames-statistics-grid">
               <div class="grid-item">
                 <a class="color3">보유 게임 수</a>
-                <p class="grid-data" id="owned-games">계산 중...</p>
+                <p class="grid-data" name="owned-games">계산 중...</p>
               </div>
               <div class="grid-item">
                 <a class="color3">플레이한 게임 수</a>
@@ -130,9 +139,7 @@
               </div>
               <div class="grid-item">
                 <a class="color3">보유 게임 총 가격</a>
-                <p class="grid-data" id="total-initial-price-owned">
-                  계산 중...
-                </p>
+                <p class="grid-data" name="total-price">계산 중...</p>
               </div>
               <div class="grid-item">
                 <a class="color3">보유 게임 총 가격(할인 적용)</a>
@@ -146,38 +153,76 @@
               </div>
             </div>
           </div>
-          <div class="info-middle"><a class="color4">게임 장르</a> 별 통계</div>
+          <div class="info-middle">
+            <a class="color4">게임 장르</a> 별 통계 (Top 10)
+          </div>
 
           <table class="genre-table">
             <thead class="color4">
               <tr>
-                <th id="genre-name">장르</th>
-                <th id="genre-owned">게임 보유 수</th>
-                <th id="genre-playtime">총 플레이 시간</th>
+                <th class="genre-name">장르</th>
+                <th>게임 보유 수</th>
+                <th>총 플레이 시간</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Action</td>
-                <td>300</td>
-                <td>1,505h</td>
-              </tr>
-              <tr>
-                <td>Action</td>
-                <td>300</td>
-                <td>1,505h</td>
-              </tr>
-              <tr>
-                <td>Action</td>
-                <td>300</td>
-                <td>1,505h</td>
+                <td>플레이한 게임이 없어요...</td>
+                <td>0</td>
+                <td>0</td>
               </tr>
             </tbody>
           </table>
         </div>
 
-        <div class="statistics-body">
-
+        <div class="statistics-body-selected">
+          <div class="info-middle"><a class="color5">도전과제</a>&nbsp통계</div>
+          <div class="statistics-container">
+            <div class="achievement-statistics-grid">
+              <div class="grid-item">
+                <a class="color5">달성한 총 도전과제</a>
+                <p class="grid-data" name="total-achievements">계산 중...</p>
+              </div>
+              <div class="grid-item">
+                <a class="color5">희귀 도전과제 (달성률 10% 미만)</a>
+                <p class="grid-data" id="rare-achievements">계산 중...</p>
+              </div>
+              <div class="grid-item">
+                <a class="color5">숨겨진 도전과제</a>
+                <p class="grid-data" id="hidden-achievements">계산 중...</p>
+              </div>
+              <div class="grid-item">
+                <a class="color5">도전과제 100% 달성</a>
+                <p class="grid-data" id="games-achievement-100">계산 중...</p>
+              </div>
+              <div class="grid-item">
+                <a class="color5">도전과제 70% 이상 달성</a>
+                <p class="grid-data" id="games-achievement-70">계산 중...</p>
+              </div>
+              <div class="grid-item">
+                <a class="color5">평균 도전과제 달성률</a>
+                <p class="grid-data" id="avg-achievement-percent">계산 중...</p>
+              </div>
+            </div>
+          </div>
+          <div class="info-middle">
+            <a class="color6">달성률 100%</a>&nbsp게임
+          </div>
+         
+            <div class="achievement-100-games-grid">
+              <div class="achievement-grid-item">
+                <div class="achievement-game-img-container">
+                  <img
+                    class="achievement-game-img"
+                    src="https://cdn.akamai.steamstatic.com/steam/apps/322170/header.jpg?t=1624472273"
+                  ></a>
+                </div>
+                <div class="achievement-game-description-container">
+                  <div class="achievement-game-name">GeometryDash</div>
+                </div>
+              </div>
+            </div>
+          
         </div>
       </div>
     </div>

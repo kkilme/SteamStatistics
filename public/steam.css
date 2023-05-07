@@ -14,6 +14,10 @@ body {
   grid-template-columns: 25% 50% 25%;
 }
 
+.nav-container a{
+  text-decoration-line: none;
+}
+
 .nav-container .main-logo {
   justify-self: left;
   margin-left: 25px;
@@ -171,6 +175,7 @@ body {
   align-items: flex-end;
   color: aliceblue;
   font-weight: 400;
+  text-align: center;
 }
 .user-profilecard-container{
   margin-top: 0;
@@ -192,20 +197,20 @@ body {
   justify-content: center;
 }
 
-.user-profile-container #avatar{
+.user-profile-container #avatar-img{
   width: 190px;
   height: 190px;
   border-radius: 20px;
 }
 
-.user-profile-container #username{
+.user-profile-container .username{
   font-size: 35px;
   color: aliceblue;
   margin-top: 20px;
   font-weight: 600;
 }
 
-.info-head #username{
+.info-head .username{
   color: rgb(102, 192, 244);
   font-weight: 600;
 }
@@ -229,7 +234,7 @@ body {
   width: 70%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr,1fr;
+  grid-template-rows: 1fr,1fr;
   grid-template-columns: 1fr, 1fr 1fr;
   row-gap: 10px;
   column-gap: 10px;
@@ -238,6 +243,15 @@ body {
   "item3 item4"
   "item5 item6";
 }
+
+.user-info-container .grid-item{
+  font-size: 25px;
+}
+
+.user-info-container .grid-data{
+  font-size: 22px;
+}
+
 
 .grid-item{
   display:flex;
@@ -297,13 +311,21 @@ body {
   color: rgb(179, 114, 253);
 }
 
+.color5{
+  color: rgb(227, 253, 114);
+}
+
+.color6{
+  color: rgb(253, 114, 160);
+}
+
 
 .playtime-statistics-grid{
   margin: 30px;
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 10px;
   column-gap: 10px;
@@ -318,7 +340,7 @@ body {
   width: 100%;
   height: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 10px;
   column-gap: 10px;
@@ -343,7 +365,7 @@ body {
   border-spacing: 0;
 }
 
-.genre-table #genre-name{
+.genre-table .genre-name{
   width: 40%;
 }
 
@@ -436,4 +458,73 @@ body {
 
 .statistics-body{
   display: none;
+}
+
+.achievement-statistics-grid{
+  margin: 30px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+.achievement-100-games-grid{
+  margin: 10px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  /* border: 1px solid black; */
+  /* grid-template-areas: 
+  "item1 item2"
+  "item3 item4"
+  "item5 item6"; */
+}
+
+.achievement-100-container{
+  height: auto;
+  width: 130%;
+  align-self: center;
+  justify-content: center;
+  background-color: rgba(23, 26, 33, 0.659);
+  border-radius: 30px;
+  display: flex;
+}
+
+.achievement-100-games-grid .achievement-grid-item{
+  display: flex;
+  height: 100px;
+  background-color: rgba(23, 26, 33, 0.659);
+}
+
+.achievement-100-games-grid .achievement-game-img-container{
+  width: 50%;
+  height: auto;
+  display: block;
+}
+
+.achievement-100-games-grid .achievement-game-img{
+  display: inline;
+  border: 10px;
+  height: 100%;
+  width: 100%;
+} 
+
+
+.achievement-100-container .achievement-game-description-container{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.achievement-100-games-grid .achievement-game-name{
+  position: absolute;
+  font-size: 20px;
+  color: aliceblue;
 }

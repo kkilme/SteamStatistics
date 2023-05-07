@@ -17,9 +17,11 @@ app.use((req, res, next) => {
 
 app.get("/home", (req, res) => {
   // res.sendFile(__dirname + '/steam.html');
-  res.sendFile(path.join(__dirname, "index.html"));
+  res.sendFile(path.join(__dirname, "public/index.html"));
   // res.send("Hello world");
 });
+
+
 
 app.get("/", (req, res) => {
   res.redirect("/home");
@@ -49,11 +51,6 @@ app.get("/steaminfo", async (req, res) => {
     );
     const steamGamesData = await steamGamesResponse.json();
     
-    const steamLevelResponse = await fetch(
-      `http://api.steampowered.com/IPlayerService/GetSteamLevel/v0001/?key=${apiKey}&steamid=${steamId}&format=json`
-    );
-    const steamLevelData = await steamLevelResponse.json();
-
     // const recentPlayedResponse = await fetch(
     //   `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${apiKey}&steamid=${steamId}&count=5`
     // );
@@ -61,7 +58,6 @@ app.get("/steaminfo", async (req, res) => {
     res.json({
       UserData: steamUserData,
       GameData: steamGamesData,
-      LevelData: steamLevelData,
       // RecentPlayData: recentPlayedData
     });
   } catch (error) {
@@ -177,6 +173,7 @@ app.get("/achievementinfo", async (req, res) => {
   }
   try {
     var dataUpdated = false;
+    var profileisprivate = false;
     const resp = await Promise.all(
       appid.map(async (id) => {
         var data = {};
@@ -228,12 +225,17 @@ app.get("/achievementinfo", async (req, res) => {
           console.log(`playerachieve js null: ${id}`);
           return resp;
         }
+        if('error' in playerjs.playerstats){
+          profileisprivate = true;
+          return;
+        }
         if(!playerjs.playerstats.success) {return resp;}
         resp = makeAchieveResponseData(resp, data, playerjs, id)
         return resp;
       })
     );
     if(dataUpdated) writeJson("gameAchievementData.json", AchieveData);
+    if(profileisprivate) res.json({'error': 'not public profile'})
     res.json(resp)
     // res.json({"haha":"hello"});
   } catch (error) {

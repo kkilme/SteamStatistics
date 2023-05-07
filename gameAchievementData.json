@@ -5264,6 +5264,1096 @@
       }
     }
   },
+  "262060": {
+    "achievement": {
+      "welcome_home": {
+        "name": "집에 돌아온 걸 환영한다...",
+        "description": "영지에 도달한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/0c25e64b7ece5086659a49e1cfedac9e6c8bdcb8.jpg",
+        "hidden": 0,
+        "percentage": "93.90"
+      },
+      "first_victory": {
+        "name": "첫 승리...",
+        "description": "폐허에서 하나의 원정을 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/26fed275fcac331b5d3477688742bfc4ea8c9e4d.jpg",
+        "hidden": 0,
+        "percentage": "88.80"
+      },
+      "ten_victories": {
+        "name": "우리의 승리는 쌓여간다...",
+        "description": "원정을 10회 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/ef7e38b429dab65dd9526c459d52a96a9e134ba1.jpg",
+        "hidden": 0,
+        "percentage": "53.10"
+      },
+      "twenty_five_victories": {
+        "name": "우리는 승리하였다, 허나 그 대가는...",
+        "description": "원정을 25회 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/21589f56ccf875312e2c43d7070817802e3366e7.jpg",
+        "hidden": 0,
+        "percentage": "34.00"
+      },
+      "abandon_quest": {
+        "name": "신중하게나, 오랜 친구여...",
+        "description": "원정을 포기한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/bd05e9d1b0010f59564e8bbf6348307bdefbf27b.jpg",
+        "hidden": 0,
+        "percentage": "74.40"
+      },
+      "first_boss": {
+        "name": "첫 번째 악이 쓰러지다...",
+        "description": "첫 번째 우두머리를 격파한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/e830308d75b75618c093750bb1551890f8dc0eac.jpg",
+        "hidden": 0,
+        "percentage": "55.90"
+      },
+      "medium_quest": {
+        "name": "격렬한 모험이 막을 내렸다...",
+        "description": "중간 길이 원정을 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/153153469b48747bd28adad9e1a52d85efa2e536.jpg",
+        "hidden": 0,
+        "percentage": "64.20"
+      },
+      "long_quest": {
+        "name": "힘겨운 모험이 막을 내렸다...",
+        "description": "긴 원정을 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/c844925e06c71cee33867fee118c503766fdaba3.jpg",
+        "hidden": 0,
+        "percentage": "34.30"
+      },
+      "start_quest_heroes_level_6": {
+        "name": "노련한 베테랑 무리...",
+        "description": "의지 레벨 6인 영웅 네 명으로 원정을 시작한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/0b42b80708631ebcf71e7983ea32c0e7477c95be.jpg",
+        "hidden": 0,
+        "percentage": "20.00"
+      },
+      "start_dd_heroes_level_0": {
+        "name": "도살장에 끌려가는 양처럼...",
+        "description": "의지 레벨이 0인 영웅 네 명으로 가장 어두운 던전을 시작한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/d6920d6fe888ae8187faaf810900cf4a3f7ede0d.jpg",
+        "hidden": 0,
+        "percentage": "4.50"
+      },
+      "all_regions": {
+        "name": "이 폐허의 모든 곳을 목도했다...",
+        "description": "모든 네 지역의 원정을 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/df976d7102ec09fc68f46e16c74c7f11075a0d7c.jpg",
+        "hidden": 0,
+        "percentage": "49.20"
+      },
+      "four_afflicted": {
+        "name": "뒤틀리고 부서지기 직전",
+        "description": "4명의 영웅이 모두 붕괴 상태인 채로 원정을 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/6eacb2fa9505f81cd747e95dbfa7f4ca40466ad6.jpg",
+        "hidden": 0,
+        "percentage": "23.00"
+      },
+      "single_combat_skill": {
+        "name": "우리의 훈련은 시작된다...",
+        "description": "전투 기술을 강화한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/616162db8653a7d08d2df90372a8bcc31f5406eb.jpg",
+        "hidden": 0,
+        "percentage": "64.60"
+      },
+      "single_camping_skill": {
+        "name": "무력만으론 해결할 수 없는 법...",
+        "description": "새로운 야영 기술을 배운다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/decefe90aa2872929c34c622f42974baaf7723f0.jpg",
+        "hidden": 0,
+        "percentage": "46.30"
+      },
+      "tavern_treatment": {
+        "name": "주색잡기",
+        "description": "영웅을 여관에 보낸다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/1a2947dc6d70c258a016a1e235b6280633fa7fa8.jpg",
+        "hidden": 0,
+        "percentage": "76.40"
+      },
+      "abbey_treatment": {
+        "name": "성찰, 기도, 고해...",
+        "description": "영웅을 수도원에 보낸다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/48c1a34d0e50a25eb44d0d361ed9a6160ae043df.jpg",
+        "hidden": 0,
+        "percentage": "78.20"
+      },
+      "hero_dismissed": {
+        "name": "허약한 자를 쳐내어라...",
+        "description": "영웅을 처음으로 해고한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/74765099647c453ab9f8c9a9bc16e92d2b635182.jpg",
+        "hidden": 0,
+        "percentage": "60.60"
+      },
+      "one_of_each_hero": {
+        "name": "진정한 무리...",
+        "description": "모든 직업의 영웅을 명단에 고용한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/484047951a1b4d1c586792ea3ed9d5ab8db38fa4.jpg",
+        "hidden": 0,
+        "percentage": "24.50"
+      },
+      "quirk_treatment": {
+        "name": "정신을 유지하기 위한 대가...",
+        "description": "요양원에서 기벽을 제거한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/1d7ecfb2410f861c9f814ddb2fbf4e1cf3acadcd.jpg",
+        "hidden": 0,
+        "percentage": "66.20"
+      },
+      "quirk_lock": {
+        "name": "격려...",
+        "description": "요양원에서 긍정적 기벽을 고정한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/025667c52089c4aef92fa08a72224e0c432c360e.jpg",
+        "hidden": 0,
+        "percentage": "27.40"
+      },
+      "blacksmith_upgraded": {
+        "name": "거울처럼 광 낸 우리의 장비...",
+        "description": "대장간을 완전히 증축한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/01af13fede0fab68252fbf9e7ad58c48dbdbf6a2.jpg",
+        "hidden": 0,
+        "percentage": "20.50"
+      },
+      "guild_upgraded": {
+        "name": "칼날처럼 벼려진 우리의 실력...",
+        "description": "길드를 완전히 증축한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/6ba40fb0fe44e910065096fed9c275b6d833a3f8.jpg",
+        "hidden": 0,
+        "percentage": "21.20"
+      },
+      "tavern_upgraded": {
+        "name": "선조가 보았던 여관...",
+        "description": "여관을 완전히 증축한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/b9b5f8dea942e82d065d01b467bf148820b9e591.jpg",
+        "hidden": 0,
+        "percentage": "12.90"
+      },
+      "abbey_upgraded": {
+        "name": "선조가 알았던 수도원...",
+        "description": "수도원을 완전히 증축한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/b2023d90f71eb09ec08853b84727f0c848aa7b6d.jpg",
+        "hidden": 0,
+        "percentage": "12.20"
+      },
+      "weapon_and_armour_upgraded": {
+        "name": "최고의 장비만이 이 시련을 버틸지니...",
+        "description": "한 영웅의 무기와 갑옷을 완전히 강화한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/b643995f8039d7fbc6fbefb0f0a5b5c1d0876292.jpg",
+        "hidden": 0,
+        "percentage": "22.50"
+      },
+      "hero_4_skill_upgrade": {
+        "name": "전투에선 최고의 기술만이 전부일지니...",
+        "description": "한 영웅의 기술 중 최소 4개를 완전히 강화한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/fb7756981a5d6d921ead9366b88bea006e7e40eb.jpg",
+        "hidden": 0,
+        "percentage": "24.30"
+      },
+      "town_fully_upgraded": {
+        "name": "옛 영광의 모습으로...",
+        "description": "마을을 완전히 증축한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/9ad1a1bbc2d2dd6aee321ba20b0245ebebbdc197.jpg",
+        "hidden": 0,
+        "percentage": "9.50"
+      },
+      "visit_graveyard": {
+        "name": "죽은 이를 추모하는 방문...",
+        "description": "묘지를 방문한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/d1c99c4c0832fa41dc2f1fb5f390fb7960679dec.jpg",
+        "hidden": 0,
+        "percentage": "90.60"
+      },
+      "one_hero_level_6": {
+        "name": "진정한 용사의 탄생...",
+        "description": "영웅 하나의 의지 레벨을 6까지 올린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/cd37ba0e3ef76b1fa47b5ed4ff447d4bcef00130.jpg",
+        "hidden": 0,
+        "percentage": "27.50"
+      },
+      "four_hero_level_6": {
+        "name": "가장 어두운 감시자들...",
+        "description": "영웅 4명의 의지 레벨을 6까지 올린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/6768057a65b209a5df09803ba537c73e95044f91.jpg",
+        "hidden": 0,
+        "percentage": "23.50"
+      },
+      "eldritch_100": {
+        "name": "우리는 도사리는 악을 처단하였다...",
+        "description": "이물 괴물을 100마리 쓰러뜨린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/1a3da4ee4005999a845a014246bd3fb9ac658086.jpg",
+        "hidden": 0,
+        "percentage": "37.30"
+      },
+      "unholy_100": {
+        "name": "우리는 오싹한 흉물들을 처단하였다...",
+        "description": "불경 유형의 적을 100마리 쓰러뜨린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/90ff3d863cd32c3678352991bd46396173187e10.jpg",
+        "hidden": 0,
+        "percentage": "43.50"
+      },
+      "beast_100": {
+        "name": "우리는 기어다니는 짐승들을 처단하였다...",
+        "description": "야수 유형의 적을 100마리 쓰러뜨린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/f39df309f453b3533f7fe3eb0b6bfa96159f8a3a.jpg",
+        "hidden": 0,
+        "percentage": "42.20"
+      },
+      "human_100": {
+        "name": "우리는 사악한 자들을 처단하였다...",
+        "description": "인간 유형의 적을 100명 쓰러뜨린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/0774560d42b7b598e719dda2c635e824684c6c32.jpg",
+        "hidden": 0,
+        "percentage": "47.10"
+      },
+      "total_enemies": {
+        "name": "악마들은 몰아내야 할지니...",
+        "description": "적을 1000마리 처치한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/38a9c1f6dc8eaaf745561fa6944783bce07a05aa.jpg",
+        "hidden": 0,
+        "percentage": "24.90"
+      },
+      "week_52": {
+        "name": "첫 해의 마무리...",
+        "description": "52주째에 도달한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/fee5b040908247dca2488b927983576922d39651.jpg",
+        "hidden": 0,
+        "percentage": "21.50"
+      },
+      "week_104": {
+        "name": "이 짓을 2년 동안이나...",
+        "description": "104주째에 도달한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/cc1266e1dfc6c10869c6b60889828e7d3559b1ed.jpg",
+        "hidden": 0,
+        "percentage": "8.50"
+      },
+      "quest_20k_gold": {
+        "name": "이처럼 대단한 보물은 본 적이 없다...",
+        "description": "한 원정에서 최소 20,000골드를 획득한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/8a99a4a20f402ed9ac005ad931423b7100c3d3ae.jpg",
+        "hidden": 0,
+        "percentage": "38.20"
+      },
+      "quest_30_heirloom": {
+        "name": "귀중한 골동품 컬렉션...",
+        "description": "한 원정에서 최소 30개의 가보를 획득한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/41f7c105cb9f8a7da7eaa84fff97c61296794998.jpg",
+        "hidden": 0,
+        "percentage": "63.20"
+      },
+      "kill_50": {
+        "name": "강력한 힘과 지혜를 지닌 처단자...",
+        "description": "한 영웅으로 적을 50마리 쓰러뜨린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/c0ced88dd0021ba5c821983ca32c2fe0be398862.jpg",
+        "hidden": 0,
+        "percentage": "50.30"
+      },
+      "walk_500": {
+        "name": "몹시 지친 여행자...",
+        "description": "한 영웅으로 500걸음을 걷는다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/f3dbfd23e8a85b25ae3d2e181527ba4147b4a1c1.jpg",
+        "hidden": 0,
+        "percentage": "38.60"
+      },
+      "lost_first_hero": {
+        "name": "첫 희생자...",
+        "description": "영웅을 처음 잃는다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/ef10cff7f0472fb6fa80b351c613fe8c67674acc.jpg",
+        "hidden": 0,
+        "percentage": "76.00"
+      },
+      "first_heart_attack_death": {
+        "name": "견딜 수 없는 스트레스...",
+        "description": "심장마비로 영웅을 처음 잃는다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/153c6d4ed850c0e12ebd3e347a7fb451e9bf1f5a.jpg",
+        "hidden": 0,
+        "percentage": "56.10"
+      },
+      "first_hunger_death": {
+        "name": "갉아 들어오는 굶주림이 찾아왔도다...",
+        "description": "영웅 한 명을 굶주림으로 잃는다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/0a4f8da7de7c965bde3b27a0a86a22b1ec991c6b.jpg",
+        "hidden": 0,
+        "percentage": "7.70"
+      },
+      "death_to_wilbur": {
+        "name": "그 정도면 된다, 돼지야...",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/af1a52630841490d56a13baee3c5acc2175dd8ba.jpg",
+        "hidden": 1,
+        "percentage": "11.20"
+      },
+      "death_to_maggot": {
+        "name": "땅벌레들의 양식이 될지니...",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/8bf8d645711254e0b47ddada35c541e44a28a5a3.jpg",
+        "hidden": 1,
+        "percentage": "3.40"
+      },
+      "first_trap_death": {
+        "name": "걸음을 조심하라...",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/445a080e1952ef3bd0befe4682e32b3388469d05.jpg",
+        "hidden": 1,
+        "percentage": "3.40"
+      },
+      "first_obstacle_death": {
+        "name": "살 길이 막히다...",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/9b36d7c6b3472d9198c000b1bde99c4920a92281.jpg",
+        "hidden": 1,
+        "percentage": "3.90"
+      },
+      "darkest_dungeon_party_wipe": {
+        "name": "용맹한 희생...",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/63ec01e8bb27e8817d463fcaaa839f31f95da2f4.jpg",
+        "hidden": 1,
+        "percentage": "6.40"
+      },
+      "first_party_wipe": {
+        "name": "후퇴도, 자비도 없었다...",
+        "description": "원정대를 전멸시킨다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/fbcf2e2f09c019fdaa1f96c78ce7041db38cc990.jpg",
+        "hidden": 0,
+        "percentage": "42.10"
+      },
+      "lose_level_6_hero": {
+        "name": "모두 먼지로 돌아갈지니...",
+        "description": "전설 (레벨 6) 영웅을 잃는다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/eb858bb4c96fd8d9f92eb35ab436cc6ee50fd04e.jpg",
+        "hidden": 0,
+        "percentage": "17.90"
+      },
+      "deaths_door_survived_5_attacks": {
+        "name": "이미 죽은 자를 죽일 순 없는 법",
+        "description": "한 전투에서 죽음의 문턱 상태의 영웅으로 5번의 공격을 견뎌낸다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/514af5f8f73c8e4663c39ef8b9f415103847bacc.jpg",
+        "hidden": 0,
+        "percentage": "18.60"
+      },
+      "first_boss_party_wipe": {
+        "name": "더 많은 피가 대지를 적시고...",
+        "description": "우두머리와의 전투에서 원정대를 전멸시킨다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/b301fbbed6a9b907a456a28111f1034254b3e7fe.jpg",
+        "hidden": 0,
+        "percentage": "23.40"
+      },
+      "ancestors_trinkets": {
+        "name": "선조들의 감동적인 유품들...",
+        "description": "선조의 장신구를 모두 모은다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/fe121ddc7255002bbb60c995e3c8e6d26e3c7176.jpg",
+        "hidden": 0,
+        "percentage": "2.60"
+      },
+      "slay_a_shambler": {
+        "name": "어둠 속에서 나타난 무시무시한 형상...",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/00afdaa8fbfcbd81016118bad26d1792e96904e6.jpg",
+        "hidden": 1,
+        "percentage": "28.00"
+      },
+      "game_complete_on_default": {
+        "name": "엄격한 방식",
+        "description": "기본 난이도 옵션인 상태로 게임을 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/d99096051f089ab1c1a8afc44d7967adfc467fcb.jpg",
+        "hidden": 0,
+        "percentage": "4.10"
+      },
+      "kill_all_bosses": {
+        "name": "이 땅에서 몰아내다...",
+        "description": "모든 우두머리를 쓰러뜨린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/8a4be5ea86ff28b80fbb6e831f239032de5961cc.jpg",
+        "hidden": 0,
+        "percentage": "4.80"
+      },
+      "caretaker_goals_complete": {
+        "name": "집사",
+        "description": "집사의 목표를 모두 달성한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/a95d6dfdfcab766f3e075a4924e3107355dd24e2.jpg",
+        "hidden": 0,
+        "percentage": "3.70"
+      },
+      "game_complete": {
+        "name": "변변찮은 승리...",
+        "description": "가장 어두움 난이도로 게임 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/17d1c6ad1100325b4a285ecf7752359e54038b7a.jpg",
+        "hidden": 0,
+        "percentage": "4.30"
+      },
+      "game_complete_in_75_weeks": {
+        "name": "그토록 바쁘게...",
+        "description": "99주 이내로 게임을 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/840377ff2ef976b5b3ed75ebff643537c1954219.jpg",
+        "hidden": 0,
+        "percentage": "5.80"
+      },
+      "kill_boss_with_one_hero": {
+        "name": "외로운 생존자",
+        "description": "한 명의 영웅만 남은 상태에서 우두머리를 쓰러뜨린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/88095f61905c9532be92f49150323ed391af5b89.jpg",
+        "hidden": 0,
+        "percentage": "6.20"
+      },
+      "kill_boss_with_four_afflicted": {
+        "name": "망가진 채로",
+        "description": "원정대의 네 영웅이 모두 붕괴 상태인 채로 우두머리를 쓰러뜨린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/14af96e4ac70844db9082f2dc003b76f14acba82.jpg",
+        "hidden": 0,
+        "percentage": "4.80"
+      },
+      "game_complete_ng": {
+        "name": "세상의 끝",
+        "description": "칠흑 모드로 게임을 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/a33758ac793a087023c477a26acae4cd5ef1de60.jpg",
+        "hidden": 0,
+        "percentage": "1.20"
+      },
+      "dismas_and_reynauld_completed": {
+        "name": "옛길에서, 우리는 구원을 찾았노라.",
+        "description": "디스마스와 레이널드를 마지막 가장 어두운 던전 원정에 투입한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/5ecdadc716ba9d5229aa28661d637466a5e17dc6.jpg",
+        "hidden": 0,
+        "percentage": "1.90"
+      },
+      "defeat_the_brigand_vulf": {
+        "name": "양의 탈을 쓰고",
+        "description": "도적 불프를 쓰러뜨린다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/408db08699718cbc1cdc742879895261172d87db.jpg",
+        "hidden": 0,
+        "percentage": "12.10"
+      },
+      "game_complete_radiant": {
+        "name": "입문자",
+        "description": "광명 모드로 게임을 완료한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/269d4416eaf10ea824ddee6cfccc15c5517db2f7.jpg",
+        "hidden": 0,
+        "percentage": "6.20"
+      },
+      "slay_a_crow": {
+        "name": "까마귀 살육",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/8d2473259cb473a06b47355ecc45444cd6fb5117.jpg",
+        "hidden": 1,
+        "percentage": "18.70"
+      },
+      "slay_4_champions": {
+        "name": "네 박자",
+        "description": "술에 절은 망자, 돼지 가죽 사냥꾼, 해골 기수, 그리고 증오에 찬 악녀를 처단한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/d0eff7e505a76b2d54c40d4dfa796a43faf4ba7f.jpg",
+        "hidden": 0,
+        "percentage": "10.00"
+      },
+      "slay_a_squiffy_with_jester": {
+        "name": "내 건 11까지 가지",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/5c1ac6f86e7173f6b12e86a5397ef78924f3a127.jpg",
+        "hidden": 1,
+        "percentage": "2.20"
+      },
+      "slay_the_baron": {
+        "name": "주사위는 던져졌다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/8e46f89adb4c87ce3e92925a107a2d719e374dd7.jpg",
+        "hidden": 1,
+        "percentage": "8.50"
+      },
+      "slay_the_viscount": {
+        "name": "확인 부탁하지",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/aa793eb5929e9a90d8f7bfe3e0ccdfea8b1b42d7.jpg",
+        "hidden": 1,
+        "percentage": "4.90"
+      },
+      "slay_the_countess": {
+        "name": "그녀의 마지막 춤사위",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/ecbb078b8aa931dffe21435a1cc429517abe6963.jpg",
+        "hidden": 1,
+        "percentage": "3.30"
+      },
+      "get_crimson_curse": {
+        "name": "증상",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/5303514580f93f10e5e4e80178fbd5c68f704ea7.jpg",
+        "hidden": 1,
+        "percentage": "21.20"
+      },
+      "collect_trinket_set": {
+        "name": "세트 완성",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/a25caa334965a87032de83df2bdcea33453e9c76.jpg",
+        "hidden": 1,
+        "percentage": "11.00"
+      },
+      "build_a_district_building": {
+        "name": "돌더미에서 돌더미로",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/542999857dfd26d523da520ffa41a052d271e346.jpg",
+        "hidden": 1,
+        "percentage": "16.80"
+      },
+      "build_the_red_hook": {
+        "name": "붉은 촉수상",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/dedc8ea70d07057348481b4528a3e8ca0c464ee4.jpg",
+        "hidden": 1,
+        "percentage": "3.40"
+      },
+      "recruit_a_flagellant": {
+        "name": "육신이 원하노니",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/9ce5f681f2ed7544a1e4dc6c532b53515efc6c1f.jpg",
+        "hidden": 1,
+        "percentage": "31.80"
+      },
+      "collect_the_invitation": {
+        "name": "예상치 못한 원정대",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/64eb94923e7578fbb409cb4299470dec9eec52a8.jpg",
+        "hidden": 1,
+        "percentage": "11.90"
+      },
+      "lose_a_cursed_hero": {
+        "name": "해고",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/94106fb612117b203f94540ffbc022e22cb95e29.jpg",
+        "hidden": 1,
+        "percentage": "3.70"
+      },
+      "kill_an_ally_through_curse": {
+        "name": "그림자는 함께 흐려진다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/30d1e64471923e2230f88eb6d91f68e639bd3948.jpg",
+        "hidden": 1,
+        "percentage": "0.90"
+      },
+      "get_crimson_curse_via_contagion": {
+        "name": "기묘한 동반자",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/fa01370e2fe5980faf4f54ac1c85de896b7424ca.jpg",
+        "hidden": 1,
+        "percentage": "11.00"
+      },
+      "slay_the_fanatic": {
+        "name": "광신적 고발",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/a9f38e0d3f60c8abdf1902442ade5be009f0d608.jpg",
+        "hidden": 1,
+        "percentage": "4.80"
+      },
+      "rescue_a_prisoner": {
+        "name": "탈옥",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/a35ea73bf0eb1d05aafb9fb0cc4b68f23bdfdb52.jpg",
+        "hidden": 1,
+        "percentage": "9.80"
+      },
+      "entire_roster_has_curse": {
+        "name": "피의 숭배",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/dc352506fece3ef649cd9cae71020aa816c1eafe.jpg",
+        "hidden": 1,
+        "percentage": "0.50"
+      },
+      "plowshares_to_swords": {
+        "name": "쟁기에서 칼로",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/d3eaef28f79546c205f6505a51ffc386f9656ccf.jpg",
+        "hidden": 1,
+        "percentage": "1.90"
+      },
+      "lost_in_dust": {
+        "name": "먼지 속으로 사라진 눈물",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/1c968a615e390dbfa812a57b45173e795dd80dc9.jpg",
+        "hidden": 1,
+        "percentage": "8.40"
+      },
+      "taste_of_madness": {
+        "name": "광기의 맛",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/e4afd4d9faeff2b7b1f095612a9df7683be12a6e.jpg",
+        "hidden": 1,
+        "percentage": "22.10"
+      },
+      "merciful_act": {
+        "name": "안락사",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/77384e181462bfc6da98de2a65a4f6387a9b61ec.jpg",
+        "hidden": 1,
+        "percentage": "11.90"
+      },
+      "defeat_sleeper": {
+        "name": "무한 너머에",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/53768334c82213665be6923bb12881c2cf6bedce.jpg",
+        "hidden": 1,
+        "percentage": "5.00"
+      },
+      "shards_well_spent": {
+        "name": "파편 모아 태산",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/2ad7a8c4e32092ff996c81c74d7345db2f0c21d2.jpg",
+        "hidden": 1,
+        "percentage": "1.50"
+      },
+      "build_windmill": {
+        "name": "좋았던 시공의 기억",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/d0ab503fbb9ec8710986a4dfcc2f2b816f059d15.jpg",
+        "hidden": 1,
+        "percentage": "1.40"
+      },
+      "this_is_nothing": {
+        "name": "별거 아니군",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/48f85072e3c2e66c749dbc411174cb1f5a208b2a.jpg",
+        "hidden": 1,
+        "percentage": "3.80"
+      },
+      "hollow_reckoning": {
+        "name": "덧없는 계산",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/c2c5c7582952e4bb3630d2e95bf73074101549e2.jpg",
+        "hidden": 1,
+        "percentage": "2.00"
+      },
+      "ashes_to_ashes": {
+        "name": "재에서 재로",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/54b0f83218e300a644a87d5b5286fe8b02a880b5.jpg",
+        "hidden": 1,
+        "percentage": "1.20"
+      },
+      "mouth_of_madness": {
+        "name": "광기의 아귀에서",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/bc73a3423e60a56dbbe4ad5f203d1c0463169308.jpg",
+        "hidden": 1,
+        "percentage": "0.50"
+      },
+      "blinders_lifted": {
+        "name": "눈먼 자가 눈을 뜨다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/beb4d7f2534f2e7de1aa614a6660fe61eb42e129.jpg",
+        "hidden": 1,
+        "percentage": "10.40"
+      },
+      "rogues_gallery": {
+        "name": "악당들의 소굴",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/dde706da70b0077b96d8c63384ca27de09029605.jpg",
+        "hidden": 1,
+        "percentage": "1.00"
+      },
+      "defeat_thing_from_stars": {
+        "name": "아무 말도 없었다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/fb71fde0e9ec7988ae4b6954a4e90bd876bc6cd5.jpg",
+        "hidden": 1,
+        "percentage": "14.40"
+      },
+      "revenant_riposte": {
+        "name": "시간은 그저 평평한 순환인 것을",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/1e61bbdd9cd1f7964451f3ec2dd4b148e47eae2c.jpg",
+        "hidden": 1,
+        "percentage": "4.80"
+      },
+      "blue_skies_ahead": {
+        "name": "푸른 하늘로 붕 떠서",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/74d2819059d845f57d9459c9e2f635ad9721be9d.jpg",
+        "hidden": 1,
+        "percentage": "5.00"
+      },
+      "four_hero_dodge_miller": {
+        "name": "흉작",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/c52469c9870142006736e699fbb45f9981d45ef1.jpg",
+        "hidden": 1,
+        "percentage": "4.40"
+      },
+      "lining_pocket": {
+        "name": "보석상의 대목",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/2e6ab90bb64338e5c949e0da5bbda59261ab8064.jpg",
+        "hidden": 1,
+        "percentage": "2.20"
+      },
+      "rainbows_end": {
+        "name": "무지개의 끝자락",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/fc246d24abcb16fd19b87a18e27edf2750f6f67e.jpg",
+        "hidden": 1,
+        "percentage": "0.50"
+      },
+      "pipe_dream": {
+        "name": "연기같은 몽상",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/3f50b55932b43cceb077f19973d758f8ec070e78.jpg",
+        "hidden": 1,
+        "percentage": "0.60"
+      },
+      "arena_first_arena_played": {
+        "name": "신선한 고기",
+        "description": "도살자의 서커스에서 첫 경기를 치른다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/61e1db03bdd0987833c12dc7569f1c4c4705faea.jpg",
+        "hidden": 0,
+        "percentage": "11.70"
+      },
+      "arena_first_heartattack": {
+        "name": "심리전",
+        "description": "적 영웅에게 심장마비를 유발한다.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/2578c8c0941b85d327c637421797be742296bffb.jpg",
+        "hidden": 0,
+        "percentage": "3.10"
+      },
+      "arena_kill_all_heroes": {
+        "name": "도전자 몰살",
+        "description": "도살자의 서커스에서 각 영웅 유형을 한 명씩 처치한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/3f84807e3a9c8d3d3e6017a9d4e1f4ba429c8fea.jpg",
+        "hidden": 0,
+        "percentage": "0.60"
+      },
+      "arena_direct_challenge": {
+        "name": "시작이 반",
+        "description": "투기장에서 승리를 한 번 거둔다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/185bf3722e4c0744295179fdad7b0659735b784d.jpg",
+        "hidden": 0,
+        "percentage": "1.30"
+      },
+      "arena_daze_ten_enemies": {
+        "name": "눈 앞이 번쩍",
+        "description": "도살자의 서커스에서 적 10명에게 '멍해짐' 효과를 가한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/ed9cf624474cc9d03b495559c7723a22f0cd9628.jpg",
+        "hidden": 0,
+        "percentage": "1.80"
+      },
+      "arena_no_damage_win": {
+        "name": "언쟁",
+        "description": "적에게 스트레스만 가해서 경기에서 승리한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/8aa268e5bbbb7e7898e8fd0758b87dd1f1016fe4.jpg",
+        "hidden": 0,
+        "percentage": "0.40"
+      },
+      "arena_survive_multiple_dd_checks": {
+        "name": "악운",
+        "description": "한 경기에서 영웅 1명이 죽음의 문턱을 5번 디디고 살아남는다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/166b734a782f2836efb215d10c1d7e9373569bb0.jpg",
+        "hidden": 0,
+        "percentage": "0.60"
+      },
+      "arena_single_hero_kills_all": {
+        "name": "MVP",
+        "description": "한 경기에서 영웅 1명이 적 4명에게 죽음의 일격을 가한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/0f080f44a4e7a1030734f13d879428b5e3cf5a90.jpg",
+        "hidden": 0,
+        "percentage": "1.30"
+      },
+      "arena_round_one_kill": {
+        "name": "즉사",
+        "description": "경기의 첫 라운드에서 적 영웅 1명을 처치한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/760bd579082379a4128d7c9a24d996ea10822050.jpg",
+        "hidden": 0,
+        "percentage": "0.80"
+      },
+      "arena_survive_multiple_heartattack": {
+        "name": "강심장",
+        "description": "한 경기에서 영웅 1명이 심장마비를 4번 버티고 살아남는다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/03fbd52303eec44c14599c186143ca68695b39e1.jpg",
+        "hidden": 0,
+        "percentage": "0.60"
+      },
+      "arena_no_trinket_win": {
+        "name": "맨주먹으로",
+        "description": "아무 장신구도 사용하지 않고 경기를 1회 승리한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/a04247ff9782334bbd1240bd04f2a0bc28163a57.jpg",
+        "hidden": 0,
+        "percentage": "1.90"
+      },
+      "arena_win_100": {
+        "name": "모래를 적시는 피",
+        "description": "도살자의 서커스에서 100회 승리한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/f794198b0999cb47b2b691ae27292acb46574562.jpg",
+        "hidden": 0,
+        "percentage": "0.30"
+      },
+      "arena_heartattack_150": {
+        "name": "그대로 멈춰라",
+        "description": "도살자의 서커스에서 심장마비를 150번 가한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/4affdec3a3801284ced8ee94d0ea3a19d6e172a0.jpg",
+        "hidden": 0,
+        "percentage": "0.30"
+      },
+      "arena_kill_600": {
+        "name": "피의 강",
+        "description": "도살자의 서커스에서 적을 600명 처치한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/7004e8f1fd88503006337324ae5b92f55b0bd210.jpg",
+        "hidden": 0,
+        "percentage": "0.30"
+      },
+      "arena_reach_max_prestige": {
+        "name": "관객 사로잡기",
+        "description": "도살자의 서커스에서 최대 위신 등급에 도달한다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/69998298504278a7362014d1a1348b4444f6c556.jpg",
+        "hidden": 0,
+        "percentage": "1.10"
+      },
+      "arena_ten_perfect_victories": {
+        "name": "깔끔한 마무리",
+        "description": "영웅을 단 한 명도 잃지 않고 승리를 10회 거둔다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/262060/23d177ed94740afae659ec63879880c0766af9c2.jpg",
+        "hidden": 0,
+        "percentage": "0.80"
+      }
+    }
+  },
+  "268910": {
+    "achievement": {
+      "DefeatBoss": {
+        "name": "Taking Names",
+        "description": "Defeat a boss",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/7f66cff96c3f74ce806ed5d311a52a11bbbce43e.jpg",
+        "hidden": 0,
+        "percentage": "77.80"
+      },
+      "CompleteWorld1": {
+        "name": "A Walk in the Park",
+        "description": "Defeat every boss in Inkwell Isle I",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/48301536c7621210e557ece6ffa507b22e6106ab.jpg",
+        "hidden": 0,
+        "percentage": "54.10"
+      },
+      "CompleteWorld2": {
+        "name": "A Day at the Fair",
+        "description": "Defeat every boss in Inkwell Isle II",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/98e1a4ed96b1f9c90e7ceaa2809c71d6f2d98573.jpg",
+        "hidden": 0,
+        "percentage": "30.60"
+      },
+      "CompleteWorld3": {
+        "name": "A Trip Downtown",
+        "description": "Defeat every boss in Inkwell Isle III",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/78d4a0ccd6796e7dd8b26062b1de45a11dafcf52.jpg",
+        "hidden": 0,
+        "percentage": "20.60"
+      },
+      "CompleteDicePalace": {
+        "name": "Casino Night",
+        "description": "Complete the Casino",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/3fc46cd738f18f2b104795b4a45dedd8cc59a820.jpg",
+        "hidden": 0,
+        "percentage": "16.80"
+      },
+      "CompleteDevil": {
+        "name": "Swing You Sinner",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/2f8b26c6bd64e70a02987cc80953d846abed5fc5.jpg",
+        "hidden": 1,
+        "percentage": "15.70"
+      },
+      "BadEnding": {
+        "name": "Selling Out",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/685662cabfe43caaf28d8d267229ec62e80af4ed.jpg",
+        "hidden": 1,
+        "percentage": "10.20"
+      },
+      "SRank": {
+        "name": "Put On a Show",
+        "description": "Get an S-Rank",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/a7d7ff0b3435ff7924d946fb48efc19630692d77.jpg",
+        "hidden": 0,
+        "percentage": "7.20"
+      },
+      "ARankWorld1": {
+        "name": "Sheriff",
+        "description": "Obtain an A-Rank or higher on all bosses in Inkwell Isle I",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/c40360f73dcc4dc43053f620b37865b49b978173.jpg",
+        "hidden": 0,
+        "percentage": "7.50"
+      },
+      "ARankWorld2": {
+        "name": "Boss",
+        "description": "Obtain an A-Rank or higher on all bosses in Inkwell Isle II",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/60eb410d9c41c1b5fdbe09c2721290a4d33d866f.jpg",
+        "hidden": 0,
+        "percentage": "4.80"
+      },
+      "ARankWorld3": {
+        "name": "Mayor",
+        "description": "Obtain an A-Rank or higher on all bosses in Inkwell Isle III",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/e64209b6e54a0cb3126c15f7c95d4ab401ee2f79.jpg",
+        "hidden": 0,
+        "percentage": "3.80"
+      },
+      "ARankWorld4": {
+        "name": "King",
+        "description": "Obtain an A-Rank or higher on all bosses in Inkwell Hell",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/a3e4a4dba1db01b983434239da7dd51007ed9826.jpg",
+        "hidden": 0,
+        "percentage": "7.00"
+      },
+      "GoodEnding": {
+        "name": "Souls Saved",
+        "description": "Complete the game on Normal",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/92dbf47f9498e4a3acbd85a8937a004054e77a01.jpg",
+        "hidden": 0,
+        "percentage": "15.70"
+      },
+      "NewGamePlus": {
+        "name": "Beat The Devil At His Own Game",
+        "description": "Complete the game on Expert",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/507fa5f666a7835c00c4b7877a33522d3664850f.jpg",
+        "hidden": 0,
+        "percentage": "2.60"
+      },
+      "BoughtAllItems": {
+        "name": "Butter-and-Egg Man",
+        "description": "Buy everything in Porkrind's Shop",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/a74d388b0307b8d68969626cece7706834f1f837.jpg",
+        "hidden": 0,
+        "percentage": "9.10"
+      },
+      "FoundSecretPassage": {
+        "name": "Cutting Corners",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/5ea61dbc0fccaa88f89a6626e4521e1744b63526.jpg",
+        "hidden": 1,
+        "percentage": "54.80"
+      },
+      "ExWin": {
+        "name": "Ceramic Strike",
+        "description": "Defeat a boss with an Extra Special move",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/a3c6e98e1bc73b8e4a8bda151de532caf36a58ec.jpg",
+        "hidden": 0,
+        "percentage": "40.10"
+      },
+      "SuperWin": {
+        "name": "Porcelain Power",
+        "description": "Defeat a boss with a Super Art",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/bbb16d51235f8acd665389972de7299c34667d32.jpg",
+        "hidden": 0,
+        "percentage": "27.30"
+      },
+      "SmallPlaneOnlyWin": {
+        "name": "Bravo Zulu P-26",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/78909727bc829f4d700e5c2e95227eab7409cfc6.jpg",
+        "hidden": 1,
+        "percentage": "2.90"
+      },
+      "UnlockedAllSupers": {
+        "name": "Magician Lord",
+        "description": "Obtain all Super Arts",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/b6e8e325158aec050b3534bc7489286577686ae1.jpg",
+        "hidden": 0,
+        "percentage": "23.20"
+      },
+      "NoHitsTaken": {
+        "name": "Perfect Run",
+        "description": "Complete a level without getting hit",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/d7abbe0dc8ef9415877b022a5b71b57a7d96e9f8.jpg",
+        "hidden": 0,
+        "percentage": "46.20"
+      },
+      "FoundAllLevelMoney": {
+        "name": "Coffers Full",
+        "description": "Get every coin in all of the levels",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/fcc6cd08b814faf2fad7541afe22b97169c269f0.jpg",
+        "hidden": 0,
+        "percentage": "11.60"
+      },
+      "ParryChain": {
+        "name": "Bouncing Ball",
+        "description": "Parry five times before hitting the ground",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/586281026d280336f751d7fab15984118e39cc4d.jpg",
+        "hidden": 0,
+        "percentage": "20.40"
+      },
+      "ParryApprentice": {
+        "name": "Parry Persistance",
+        "description": "Complete 20 parries",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/f768e3f225fe867e1eea454991b8ce290ce5b641.jpg",
+        "hidden": 0,
+        "percentage": "75.40"
+      },
+      "ParryMaster": {
+        "name": "Parry Performance",
+        "description": "Complete 100 parries",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/99353d56499db9d81b754e067d0429149091a769.jpg",
+        "hidden": 0,
+        "percentage": "58.90"
+      },
+      "NoHitsTakenDicePalace": {
+        "name": "Rolling Sixes",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/5b6c22afaa3a2a22d22a0a7164b2327b6c1c1bd4.jpg",
+        "hidden": 1,
+        "percentage": "6.20"
+      },
+      "FoundAllMoney": {
+        "name": "High Roller",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/474f5bdc62295816da274588774b9ac34cd6baad.jpg",
+        "hidden": 1,
+        "percentage": "7.20"
+      },
+      "PacifistRun": {
+        "name": "Pacifist",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/880f4e17af80682e0afa3185fe51b543cea7ebca.jpg",
+        "hidden": 1,
+        "percentage": "3.90"
+      },
+      "CompleteWorldDLC": {
+        "name": "A Vacation in the Wilds",
+        "description": "Defeat every boss in Inkwell Isle IV",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/b5e49dd6496038188b698ec9eebe1b6582076f8b.jpg",
+        "hidden": 0,
+        "percentage": "5.60"
+      },
+      "ARankWorldDLC": {
+        "name": "Ranger",
+        "description": "Obtain an A-Rank or Higher on all bosses in Inkwell Isle IV",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/3320d3cf55570ce74cc3981cd7e6724640e890eb.jpg",
+        "hidden": 0,
+        "percentage": "1.60"
+      },
+      "DefeatBossAsChalice": {
+        "name": "Alive and Kicking",
+        "description": "Defeat a boss with Ms. Chalice",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/23d296982c0b88fc54689113e7f830a0c4bfecad.jpg",
+        "hidden": 0,
+        "percentage": "7.40"
+      },
+      "DefeatXBossesAsChalice": {
+        "name": "Decadent",
+        "description": "Defeat 10 bosses with Ms. Chalice",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/920bd9ba94c2016a2778b1c3f2de133b59536522.jpg",
+        "hidden": 0,
+        "percentage": "3.20"
+      },
+      "ChaliceSuperWin": {
+        "name": "The Golden Touch",
+        "description": "Defeat a boss with one of Ms. Chalice's Super Arts",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/9746599533e7a332ad7d6a0dce24ec582b6c7994.jpg",
+        "hidden": 0,
+        "percentage": "3.60"
+      },
+      "DefeatBossDLCWeapon": {
+        "name": "The Latest Sensation",
+        "description": "Defeat a boss with one of Porkrind's new weapons",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/f5bec5b360c521cf4be1b8189e0a390cd701008e.jpg",
+        "hidden": 0,
+        "percentage": "7.00"
+      },
+      "DefeatAllKOG": {
+        "name": "Checkmate",
+        "description": "Defeat all of the King of Games' Champions",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/b6914971b34730002b5cecfdee2435fff8973776.jpg",
+        "hidden": 0,
+        "percentage": "5.20"
+      },
+      "DefeatKOGGauntlet": {
+        "name": "A King's Admiration",
+        "description": "Defeat the King's Gauntlet",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/65453f68c573c81686edd5cffc1f3783dca37175.jpg",
+        "hidden": 0,
+        "percentage": "1.70"
+      },
+      "DefeatSaltbaker": {
+        "name": "Compliments to the Chef",
+        "description": "Complete your quest on Inkwell Isle IV",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/cf4b66b9feb4bffc2203dcec1ad05cba9af27cc3.jpg",
+        "hidden": 0,
+        "percentage": "5.20"
+      },
+      "SRankAnyDLC": {
+        "name": "Cooked to Perfection",
+        "description": "Get an S-Rank on a stage of Inkwell Isle IV",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/827f4bc7c3ec86103af98b1484313e0199136f13.jpg",
+        "hidden": 0,
+        "percentage": "1.30"
+      },
+      "DefeatBossNoMinions": {
+        "name": "The High Hat",
+        "description": "Defeat a boss on Inkwell Isle IV without killing any of its minions",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/8b8ab8dedc0bdebdb09e22850989883d88effa02.jpg",
+        "hidden": 0,
+        "percentage": "1.60"
+      },
+      "HP9": {
+        "name": "Hearty",
+        "description": "Have 9HP at one time",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/bafc7caf5b6c240e5515e560d46d5fffb406888f.jpg",
+        "hidden": 0,
+        "percentage": "2.00"
+      },
+      "DefeatDevilPhase2": {
+        "name": "A Horrible Night To Have a Curse",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/d86477cb79a5d623cb01a027b0305252e077ac06.jpg",
+        "hidden": 1,
+        "percentage": "4.40"
+      },
+      "Paladin": {
+        "name": "Paladin",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/268910/ada43f24c4429ab81024e2c00287d6d3a269618a.jpg",
+        "hidden": 1,
+        "percentage": "2.10"
+      }
+    }
+  },
   "269210": {
     "achievement": {
       "steam_100_kill": {
@@ -5709,6 +6799,157 @@
         "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/269210/cd9835498544b3fc271c123e51e24eaaf0d96874.jpg",
         "hidden": 0,
         "percentage": "0.50"
+      }
+    }
+  },
+  "278890": {
+    "achievement": {
+      "win_king": {
+        "name": "King",
+        "description": "Win with the King as your father.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/1f04cb27abbccc8a05b9820c501668194238efef.jpg",
+        "hidden": 0,
+        "percentage": "38.20"
+      },
+      "win_lancer": {
+        "name": "Lancer",
+        "description": "Win with a lancer as your father.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/7932be2ce35f7b35f5a97281abcf9142e23c368e.jpg",
+        "hidden": 0,
+        "percentage": "25.50"
+      },
+      "win_shepherd": {
+        "name": "Shepherd",
+        "description": "Win with a shepherd as your father.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/a7247607f567af92d50f8bb4b68a05353bf0dd32.jpg",
+        "hidden": 0,
+        "percentage": "16.90"
+      },
+      "win_paladin": {
+        "name": "Paladin",
+        "description": "Win with a paladin as your father.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/1f812e6cff198dcb0f6653eedbfeb2e977e45e40.jpg",
+        "hidden": 0,
+        "percentage": "30.30"
+      },
+      "win_bottler": {
+        "name": "Bottler",
+        "description": "Win with a bottler as your father.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/5e2bb8ae47b561c235511994b896600a7acb28d4.jpg",
+        "hidden": 0,
+        "percentage": "11.90"
+      },
+      "win_peasant": {
+        "name": "Peasant",
+        "description": "Win with a peasant as your father.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/8d0dd5333633bcfefbfa5bdbc957ca6db75eedc8.jpg",
+        "hidden": 0,
+        "percentage": "2.70"
+      },
+      "rank_1": {
+        "name": "Rank 1",
+        "description": "Win the game with the randomized option at 1 star difficulty.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/c9dfee150f8febce12460b625d104bc74ccb9d8f.jpg",
+        "hidden": 0,
+        "percentage": "46.90"
+      },
+      "rank_2": {
+        "name": "Rank 2",
+        "description": "Win the game with the randomized option at 2 star difficulty.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/472824a6379024cc1e3146959b3d40d9d91b6184.jpg",
+        "hidden": 0,
+        "percentage": "36.30"
+      },
+      "rank_3": {
+        "name": "Rank 3",
+        "description": "Win the game with the randomized option at 3 star difficulty.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/6559e5e823a4349051ec72a07dc0faf5e2f0f779.jpg",
+        "hidden": 0,
+        "percentage": "21.30"
+      },
+      "rank_4": {
+        "name": "Rank 4",
+        "description": "Win the game with the randomized option at 4 star difficulty.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/3dc8b72cd862fae778f8ebd490963b4fb6899cb2.jpg",
+        "hidden": 0,
+        "percentage": "11.90"
+      },
+      "rank_5": {
+        "name": "Rank 5",
+        "description": "Win the game with the randomized option at 5 star difficulty.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/8163a68b861ce618f77ebf58cfd0ec7398278def.jpg",
+        "hidden": 0,
+        "percentage": "5.30"
+      },
+      "bird_1": {
+        "name": "Hatch 10",
+        "description": "Hatch 10 birds from their eggs!",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/c44000d1a51280c06d85fe3d4a588c5488da7046.jpg",
+        "hidden": 0,
+        "percentage": "47.60"
+      },
+      "bird_2": {
+        "name": "Cockatiel",
+        "description": "Hatch a cockatiel from an egg.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/4cfd5270c56dd13a4b2b8a956fbdacd65a85339a.jpg",
+        "hidden": 0,
+        "percentage": "57.30"
+      },
+      "bird_3": {
+        "name": "Budgie",
+        "description": "Hatch a budgie from an egg.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/5f24ae16eb4b292d513eaaa3f745d0d29fe70ab8.jpg",
+        "hidden": 0,
+        "percentage": "28.80"
+      },
+      "bird_4": {
+        "name": "Galah",
+        "description": "Hatch a galah from an egg.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/b9855832fe534ec392405b71d7ade1adff74ded9.jpg",
+        "hidden": 0,
+        "percentage": "34.30"
+      },
+      "bird_5": {
+        "name": "Crow",
+        "description": "Hatch a crow from an egg.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/215fbf6db2d2f70e10cee74dd59a78494abd5588.jpg",
+        "hidden": 0,
+        "percentage": "21.10"
+      },
+      "bird_6": {
+        "name": "Bluebird",
+        "description": "Hatch a bluebird from an egg.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/0169e9cbdbffa8022a78c4fb4f3a1b73d3c158aa.jpg",
+        "hidden": 0,
+        "percentage": "15.60"
+      },
+      "bird_7": {
+        "name": "Rosella",
+        "description": "Hatch a rosella from an egg.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/e2ba60344096ea3dc304d307053713e39986a401.jpg",
+        "hidden": 0,
+        "percentage": "14.80"
+      },
+      "level_1": {
+        "name": "Traveler",
+        "description": "Get past the first level.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/da35b02c02829e9c84d8e11ee8ce4496e476a8ed.jpg",
+        "hidden": 0,
+        "percentage": "82.70"
+      },
+      "child": {
+        "name": "Child",
+        "description": "Find your son.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/1f6df18e771e1a3c8403babf3971508d523db0f2.jpg",
+        "hidden": 0,
+        "percentage": "54.20"
+      },
+      "helena": {
+        "name": "Helena",
+        "description": "Meet Helena!",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/278890/43ca22153894ecff58708b450c52d463df641d03.jpg",
+        "hidden": 0,
+        "percentage": "66.40"
       }
     }
   },
@@ -9387,6 +10628,368 @@
       }
     }
   },
+  "311690": {
+    "achievement": {
+      "COLLECT_FIVE_MASTERY_TOKENS": {
+        "name": "납신 납시오",
+        "description": "단 한번에 다섯 탄환의 주인을 수집하세요.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/d261b1122ad73b068978b1a401406c4fe08ca6d7.jpg",
+        "hidden": 0,
+        "percentage": "11.90"
+      },
+      "SPEND_META_CURRENCY": {
+        "name": "후원자",
+        "description": "전리품실에서 물품을 많이 구매하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/afd470fdb99d16dcdc2efb705b7673dd5802484f.jpg",
+        "hidden": 0,
+        "percentage": "30.10"
+      },
+      "COMPLETE_GAME_WITH_ENCHANTED_GUN": {
+        "name": "총 게임",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/54d36086989ff2f3a320f481162670b7930ffa17.jpg",
+        "hidden": 1,
+        "percentage": "6.70"
+      },
+      "BEAT_FLOOR_SIX": {
+        "name": "총굴 마스터",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/ef80cbe750dc9ecd37e238af04a5512c79b373b5.jpg",
+        "hidden": 1,
+        "percentage": "11.40"
+      },
+      "BUILD_BULLET": {
+        "name": "총기 제작자",
+        "description": "과거를 제거할 수 있는 총탄을 만드세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/4d09e6d767bdd13119f85dfca38492fed788f6b3.jpg",
+        "hidden": 0,
+        "percentage": "18.30"
+      },
+      "BEAT_PAST_ALL": {
+        "name": "역사가",
+        "description": "4개의 과거를 제거하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/21f6990aaa546bc08cf72cf1734bab7fa9f67405.jpg",
+        "hidden": 0,
+        "percentage": "14.10"
+      },
+      "BEAT_PAST_ROGUE": {
+        "name": "조력자",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/48fdfbf0fe39b04bc576ba4ee79ea31bc7585ba2.jpg",
+        "hidden": 1,
+        "percentage": "15.20"
+      },
+      "BEAT_PAST_CONVICT": {
+        "name": "이중 위험",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/fcde74bf33d000961ff5ac824917bb9bfd7faf17.jpg",
+        "hidden": 1,
+        "percentage": "15.20"
+      },
+      "BEAT_PAST_MARINE": {
+        "name": "소대장",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/e5ecaa89003589d3644c944a3e5506db959ca060.jpg",
+        "hidden": 1,
+        "percentage": "16.00"
+      },
+      "BEAT_PAST_GUIDE": {
+        "name": "가장 치명적인 게임",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/d8d67287e3b676c62befd3c37749002929937c86.jpg",
+        "hidden": 1,
+        "percentage": "16.00"
+      },
+      "BEAT_FLOOR_FIVE": {
+        "name": "학살자",
+        "description": "다섯 번째 방의 보스를 처치하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/399958e7da1d37b0dcc49f5c4dc438529b898a16.jpg",
+        "hidden": 0,
+        "percentage": "23.30"
+      },
+      "BEAT_FLOOR_ONE_MULTI": {
+        "name": "성채 파괴자",
+        "description": "첫 번째 방을 50번 클리어하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/b71289a8da4626740479e6b4d6ef6a8de85e19b1.jpg",
+        "hidden": 0,
+        "percentage": "22.10"
+      },
+      "BEAT_FLOOR_TWO_MULTI": {
+        "name": "던전 다이버",
+        "description": "두 번째 방을 40번 클리어하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/6a4824994afec59b980a94543551086868056249.jpg",
+        "hidden": 0,
+        "percentage": "15.60"
+      },
+      "BEAT_FLOOR_THREE_MULTI": {
+        "name": "지뢰 마스터",
+        "description": "세 번째 방을 30번 클리어하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/c503fa74b11b8fa1efd6016a59b664164b73e26b.jpg",
+        "hidden": 0,
+        "percentage": "13.30"
+      },
+      "BEAT_FLOOR_FOUR_MULTI": {
+        "name": "파고 또 파고",
+        "description": "네 번째 방을 20번 클리어하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/d9b72683b96dfdfe18c496e21d2508fb97a47535.jpg",
+        "hidden": 0,
+        "percentage": "11.70"
+      },
+      "BEAT_FLOOR_FIVE_MULTI": {
+        "name": "위조꾼",
+        "description": "다섯 번째 방을 10번 클리어하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/832636a148d6623d1ac0b5e5b7bf14058433f22e.jpg",
+        "hidden": 0,
+        "percentage": "12.10"
+      },
+      "HAVE_MANY_COINS": {
+        "name": "큰 손",
+        "description": "한번에 큰 돈을 휴대하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/7d1efd88f39899878b4e6e90311c966e50063708.jpg",
+        "hidden": 0,
+        "percentage": "21.40"
+      },
+      "MAP_MAIN_FLOORS": {
+        "name": "지도 제작자의 조수",
+        "description": "실종된 모험가를 위해 처음 다섯 방의 지도를 제작하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/914eae722958d456a53033a39daabcc41cf1b25b.jpg",
+        "hidden": 0,
+        "percentage": "12.80"
+      },
+      "REACH_SEWERS": {
+        "name": "기쁨의 회랑",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/c7ad5641861af3c4552ab01b03e043a004c3a5fd.jpg",
+        "hidden": 1,
+        "percentage": "36.20"
+      },
+      "REACH_CATHEDRAL": {
+        "name": "죽은 자를 위한 복수",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/398e5f612500dc25c2bc51ad2557e6fc1fb932b9.jpg",
+        "hidden": 1,
+        "percentage": "17.80"
+      },
+      "COMPLETE_GOLEM_ARM": {
+        "name": "재무장",
+        "description": "골렘의 교체용 팔을 배달하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/cc5d4ff174250d64864935cf81baccb142cf4cc4.jpg",
+        "hidden": 0,
+        "percentage": "14.40"
+      },
+      "COMPLETE_FRIFLE_MULTI": {
+        "name": "수상쩍은 이야기",
+        "description": "프라이플의 도전을 완료하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/cfc9f5617cb12ce575b38476ff80380a8b23c90b.jpg",
+        "hidden": 0,
+        "percentage": "4.40"
+      },
+      "ACE_WINCHESTER_MULTI": {
+        "name": "트릭샷",
+        "description": "윈체스터의 게임에서 3번 우승하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/05db7384bedca7933c0a24c63e062733fbfa86d3.jpg",
+        "hidden": 0,
+        "percentage": "8.10"
+      },
+      "COMPLETE_GUNSLING_MULTI": {
+        "name": "내기의 제왕",
+        "description": "건슬링 왕과의 내기에서 5번 이기세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/3a6bf881009f71fd81086058f36f823bd6ee9606.jpg",
+        "hidden": 0,
+        "percentage": "16.00"
+      },
+      "UNLOCK_BULLET": {
+        "name": "종결된 사건",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/ea97c5238431f888add00150d1b1f06487ae965e.jpg",
+        "hidden": 1,
+        "percentage": "11.90"
+      },
+      "UNLOCK_ROBOT": {
+        "name": "신호음",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/ba219ca81c3f288cf055f5831806215acdc91185.jpg",
+        "hidden": 1,
+        "percentage": "12.90"
+      },
+      "UNLOCK_FLOOR_TWO_SHORTCUT": {
+        "name": "아래로",
+        "description": "두 번째 방으로 가는 지름길을 여세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/536eca32b93b51de8003767a802eb1803263cee7.jpg",
+        "hidden": 0,
+        "percentage": "24.70"
+      },
+      "UNLOCK_FLOOR_THREE_SHORTCUT": {
+        "name": "더 아래로",
+        "description": "세 번째 방으로 가는 지름길을 여세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/df38831776ed678e6c9fc586b8269eb1a6397279.jpg",
+        "hidden": 0,
+        "percentage": "14.30"
+      },
+      "UNLOCK_FLOOR_FOUR_SHORTCUT": {
+        "name": "더욱 아래로",
+        "description": "네 번째 방으로 가는 지름길을 여세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/e49e25cdb7bc19f2e7a20f5c06a1872558ade7ec.jpg",
+        "hidden": 0,
+        "percentage": "10.90"
+      },
+      "UNLOCK_FLOOR_FIVE_SHORTCUT": {
+        "name": "마지막 정류장",
+        "description": "다섯 번째 방으로 가는 지름길을 여세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/a3d93d7274e7dd14893af458605392ae94fa79c2.jpg",
+        "hidden": 0,
+        "percentage": "9.30"
+      },
+      "BEAT_MANFREDS_RIVAL": {
+        "name": "맹약의 총",
+        "description": "마누엘에게 복수하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/e62fda5537ecb727897e674c70ec0116e2c7ff93.jpg",
+        "hidden": 0,
+        "percentage": "18.90"
+      },
+      "BEAT_TUTORIAL": {
+        "name": "총굴의 시종",
+        "description": "튜토리얼을 완료하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/702142e5e40f298ae00141ede1fd1c807967a54d.jpg",
+        "hidden": 0,
+        "percentage": "86.20"
+      },
+      "POPULATE_BREACH": {
+        "name": "위대한 전장",
+        "description": "틈을 만드세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/3299ad59a39c53c63cb951be8ec87fc036f59590.jpg",
+        "hidden": 0,
+        "percentage": "9.40"
+      },
+      "PREFIRE_ON_MIMIC": {
+        "name": "그냥 상자가 아니여",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/356aa655558bac7075fb9917c1ea88f0e1237b87.jpg",
+        "hidden": 1,
+        "percentage": "32.00"
+      },
+      "KILL_FROZEN_ENEMY_WITH_ROLL": {
+        "name": "위험한 사람",
+        "description": "구르기를 시전하여 얼어붙은 적을 제거하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/15173932bd92da8443fd60db090904fa570fe499.jpg",
+        "hidden": 0,
+        "percentage": "13.90"
+      },
+      "PUSH_TABLE_INTO_PIT": {
+        "name": "나는 범인을 알고 있다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/6584c7ad02e595b3cde781948e845c1342c43b77.jpg",
+        "hidden": 1,
+        "percentage": "27.90"
+      },
+      "STEAL_MULTI": {
+        "name": "숲 속의 지배자",
+        "description": "물건 10개를 훔치세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/3913b485f4dc9a67dce2ff81f69db3d4c40bd55d.jpg",
+        "hidden": 0,
+        "percentage": "5.90"
+      },
+      "KILL_BOSS_WITH_GLITTER": {
+        "name": "하루를 망치다",
+        "description": "보스를 빛으로 감싼 후에 처치하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/e1ab59ebc8753bd75232b132f081514cd3f17473.jpg",
+        "hidden": 0,
+        "percentage": "23.90"
+      },
+      "FALL_IN_END_TIMES": {
+        "name": "사자의 도약",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/c111c9be5591ee205144159e558cdf40d6b7cf66.jpg",
+        "hidden": 1,
+        "percentage": "18.70"
+      },
+      "KILL_WITH_CHANDELIER_MULTI": {
+        "name": "돈구덩이",
+        "description": "샹들리에를 떨어뜨려서 적 100마리를 처치하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/e3c10aec4bc7b1255d670a477df4f326b0e15f3e.jpg",
+        "hidden": 0,
+        "percentage": "6.30"
+      },
+      "KILL_IN_MINE_CART_MULTI": {
+        "name": "달려라 달려",
+        "description": "탄광 수레에 탑승한 채로 적 100마리를 처치하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/ab30d369b608afee26e68255afdd08bf17a6b8ff.jpg",
+        "hidden": 0,
+        "percentage": "3.60"
+      },
+      "KILL_WITH_PITS_MULTI": {
+        "name": "구덩이의 제왕",
+        "description": "적 100마리를 구덩이로 밀어 넣어서 처치하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/63a4c8fd55d214251744845a9c5c4cce1ba95673.jpg",
+        "hidden": 0,
+        "percentage": "21.50"
+      },
+      "DIE_IN_PAST": {
+        "name": "타임 패러독스",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/0a3d21f75bf9c64c1464385ba2eb64c7efa0efc4.jpg",
+        "hidden": 1,
+        "percentage": "12.20"
+      },
+      "BEAT_A_JAMMED_BOSS": {
+        "name": "제령술사",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/da82dcc4389fce5b86b3a35a1d3a7ef1fc286353.jpg",
+        "hidden": 1,
+        "percentage": "14.00"
+      },
+      "REACH_BLACK_MARKET": {
+        "name": "암호",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/85398bf3841874ba99550c562850eb55488867a7.jpg",
+        "hidden": 1,
+        "percentage": "13.00"
+      },
+      "HAVE_MAX_CURSE": {
+        "name": "궁지에 몰리다",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/0ea1dd7d904199e2606e98951d6064def6965e74.jpg",
+        "hidden": 1,
+        "percentage": "12.90"
+      },
+      "FLIP_TABLES_MULTI": {
+        "name": "분노 모드",
+        "description": "언제나 뒤집으세요. 총은 뒤집는 자들의 것이니까요.",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/74047d5f492b511c765baa82402a93af95777fb0.jpg",
+        "hidden": 0,
+        "percentage": "16.90"
+      },
+      "COMPLETE_GAME_WITH_BEAST_MODE": {
+        "name": "야수 마스터",
+        "description": "비스트 모드를 켠 채로 게임을 클리어하세요",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/8c8c0959839151918f28b2b4d1150e72839dd86b.jpg",
+        "hidden": 0,
+        "percentage": "9.40"
+      },
+      "BEAT_PAST_ROBOT": {
+        "name": "아스타 라 비스타",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/0805736e3ec13486759028a66d5452853d2948a1.jpg",
+        "hidden": 1,
+        "percentage": "9.80"
+      },
+      "BEAT_PAST_BULLET": {
+        "name": "총을 쥔 영웅",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/6e534853d4e95d7abfbc5a89e7d66d362c6b67cc.jpg",
+        "hidden": 1,
+        "percentage": "9.70"
+      },
+      "COMPLETE_GAME_WITH_CHALLENGE_MODE": {
+        "name": "도전자",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/fdc56be5b82a3bfa96e1d73b5a72b831d7860d32.jpg",
+        "hidden": 1,
+        "percentage": "4.80"
+      },
+      "BEAT_ADVANCED_DRAGUN": {
+        "name": "특수 살해자",
+        "description": "특수 보스",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/1f59a05a01a92671bd64f74e52af81a78ed4cf2e.jpg",
+        "hidden": 0,
+        "percentage": "6.30"
+      },
+      "BEAT_METAL_GEAR_RAT": {
+        "name": "지략적",
+        "description": "복수하기",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/4c6af52d9f92e53e274fa883ab6c78f69010eebe.jpg",
+        "hidden": 0,
+        "percentage": "8.80"
+      },
+      "COMPLETE_GAME_WITH_TURBO_MODE": {
+        "name": "썰매개",
+        "description": "토닉에게 도전을 완성하기",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/311690/7232b1e7fd25e6361b1ad1b708bbba9b694655aa.jpg",
+        "hidden": 0,
+        "percentage": "7.70"
+      }
+    }
+  },
   "322170": {
     "achievement": {
       "geometry.ach.level01a": {
@@ -11804,6 +13407,80 @@
         "hidden": 0,
         "percentage": "39.90",
         "unlocktime": 1621414997
+      }
+    }
+  },
+  "371550": {
+    "achievement": {
+      "Only the first level": {
+        "name": "First Level",
+        "description": "Beat level 1",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/04c74076dff876d08b2f67357d74a2d35a87c4b3.jpg",
+        "hidden": 0,
+        "percentage": "34.30"
+      },
+      "Second level conquered": {
+        "name": "Second Level",
+        "description": "Beat level 2",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/0e1b32cd0a08e559ba4449ca91f61f5f383f63a6.jpg",
+        "hidden": 0,
+        "percentage": "20.10"
+      },
+      "Third level finally done": {
+        "name": "Third Level",
+        "description": "Beat level 3",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/f9d310a85880046805931cc7ae803630f5d0c698.jpg",
+        "hidden": 0,
+        "percentage": "9.90"
+      },
+      "Forth level done": {
+        "name": "Forth Level",
+        "description": "Beat level 4",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/3243b50301781bc18e7b6233a41b333c020f8e3a.jpg",
+        "hidden": 0,
+        "percentage": "8.50"
+      },
+      "You are a good player": {
+        "name": "You are a good player",
+        "description": "Finish the game",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/0bedc281325d52a3f5d5982434f16cb1c80156d8.jpg",
+        "hidden": 0,
+        "percentage": "8.00"
+      },
+      "You are a great player": {
+        "name": "You are a great player ",
+        "description": "Finish NG",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/0f2718872786be0bf884da07337c05686851d1fb.jpg",
+        "hidden": 0,
+        "percentage": "4.50"
+      },
+      "You are an amazing player": {
+        "name": "You are an amazing player ",
+        "description": "Finish NG+",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/cefe79a8265e7a4175caa502b5edd87975706521.jpg",
+        "hidden": 0,
+        "percentage": "4.10"
+      },
+      "Not bad": {
+        "name": "Not bad",
+        "description": "Defeat 29 enemies in Endless Fighter mode ",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/455ab8616f1989987e705ea4ee4b151b12b27e50.jpg",
+        "hidden": 0,
+        "percentage": "6.20"
+      },
+      "Impressive": {
+        "name": "Impressive",
+        "description": "Defeat 57 enemies in Endless Fighter mode",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/436da839571a4201e0117908ebd9b37745318b9d.jpg",
+        "hidden": 0,
+        "percentage": "3.60"
+      },
+      "Impossible": {
+        "name": "Impossible",
+        "description": "Defeat 107 enemies in Endless Fighter Mode ",
+        "icon": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/371550/b53d535fe69de33a26dd6d956a0e0d6fc5c71144.jpg",
+        "hidden": 0,
+        "percentage": "3.40"
       }
     }
   },

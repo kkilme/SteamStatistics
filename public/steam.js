@@ -1,26 +1,33 @@
 const domainname = "http://localhost:3000";
-var playtimeDict = {
-  totalMinute:0,
-  hour: 0,
-  oneDayAvg: 0,
-};
-var gameDataDict = {
+var DataDict = {
   OwnedGamesCount:0,
   PlayedGamesCount: 0,
   neverPlayedGamesCount: 0,
   UnknownGameCount: 0,
   FreeGameCount:0,
   TotalInitialPrice: 0,
+  TotalPlayedPrice: 0,
+  TotalDiscountedPrice: 0,
   TotalAchievements: 0,
   HiddenAchievements:0,
   RareAchievements: 0,
   AllCompletedGames: [],
+  AchieveOver70:0,
+  AvgAchievePercent: 0,
+  totalMinute:0,
+  totalHour: 0,
+  oneDayAvg: 0,
+  ptover100: 0,
+  ptover50: 0,
+  ptover10: 0
 };
+var UserDataDict = {}
 var appDataDict = {};
 var achievementsArray = [];
 var genre_counts = {owned:{}, playtime:{}}
 const steamid = "76561198818238819";
-// loadPage();
+// const steamid = "76561198371255268";
+loadPage();
 
 function selectView(bttn){
   if(bttn.className == "button-view-selected") return;
@@ -40,6 +47,81 @@ function selectView(bttn){
   willpressedbutton.classList.add('button-view-selected')
 }
 
+async function loadPage() {
+  var steamId = steamid;
+  const data = await getSteamData(steamId);
+  const GameData = data.GameData.response.games;
+  UserDataDict = data.UserData.response.players[0];
+  console.log(UserDataDict);
+
+  for (const e of document.querySelectorAll('.username')) {
+    e.innerHTML = UserDataDict['personaname'];
+  }
+
+  generatePlayTimeData(GameData, UserDataDict);
+  await generateGameData(GameData);
+
+  setHtml();
+}
+
+function setHtml(){
+  document.getElementById('country').innerHTML = `국가: ${UserDataDict['loccountrycode']}`;
+  var state = UserDataDict['personastate'] == 0?
+   '<span style="color:red">Offline</span>' : '<span style="color:greenyellow">Online</span>'
+  document.getElementById('status').innerHTML = `상태: ${state}`;
+  document.getElementById('avatar-img').src = UserDataDict.avatarfull;
+  document.getElementById('acc-created-date').innerHTML = UserDataDict['DateCreated']
+  document.getElementById('acc-age').innerHTML = UserDataDict['AccountAge'] + 'y';
+  for (const e of document.getElementsByName('owned-games')) {
+    e.innerHTML = DataDict['OwnedGamesCount'].toLocaleString()+'개';
+  }
+  for (const e of document.getElementsByName('total-price')) {
+    e.innerHTML = '₩ '+((Math.floor(DataDict['TotalInitialPrice']/100)).toLocaleString());
+  }
+  for (const e of document.getElementsByName('total-playtime')) {
+    e.innerHTML = DataDict['totalHour'].toLocaleString()+'h';
+  }
+  for (const e of document.getElementsByName('total-achievements')) {
+    e.innerHTML = DataDict['TotalAchievements'].toLocaleString() + ' 개';
+  }
+
+  document.getElementById('one-day-avg-playtime').innerHTML = (DataDict['totalHour'] / UserDataDict['daysSinceCreated']).toFixed(2) +'h';
+  document.getElementById('one-game-avg-playtime').innerHTML = (DataDict['totalHour'] / DataDict['PlayedGamesCount']).toFixed(2) +'h';
+  document.getElementById('playtime-over-100h').innerHTML = DataDict['ptover100']+'개';
+  document.getElementById('playtime-over-50h').innerHTML = DataDict['ptover50']+'개';
+  document.getElementById('playtime-over-10h').innerHTML = DataDict['ptover10']+'개';
+
+  document.getElementById('played-games').innerHTML = DataDict['PlayedGamesCount']+'개'
+  document.getElementById('free-games').innerHTML = DataDict['FreeGameCount']+'개'
+  document.getElementById('total-final-price-owned').innerHTML = '₩ '+((Math.floor(DataDict['TotalDiscountedPrice']/100)).toLocaleString());
+  document.getElementById('total-initial-price-played').innerHTML = '₩ '+((Math.floor(DataDict['TotalPlayedPrice']/100)).toLocaleString());
+
+  setGenreTable();
+
+  document.getElementById('rare-achievements').innerHTML = DataDict['RareAchievements'] +'개'
+  document.getElementById('hidden-achievements').innerHTML = DataDict['HiddenAchievements'] +'개'
+  document.getElementById('games-achievement-100').innerHTML = DataDict['AllCompletedGames'].length +'개'
+  document.getElementById('games-achievement-70').innerHTML = DataDict['AchieveOver70'] +'개'
+  document.getElementById('avg-achievement-percent').innerHTML = DataDict['AvgAchievePercent'] +'%'
+}
+
+function setGenreTable(){
+  var tablehtml = ''
+  const dictarr = Object.keys(genre_counts.playtime).map(key => [key, genre_counts.playtime[key]]);
+  dictarr.sort((a, b) => b[1] - a[1]);
+
+  for(let i =0;i<10;i++){
+    var key =  dictarr[i][0];
+    tablehtml += `<tr>
+    <td>${key}</td>
+    <td>${genre_counts.owned[key]}개</td>
+    <td>${(genre_counts.playtime[key]/60).toFixed(1).toLocaleString()}h</td>
+    </tr>`
+  }
+
+  document.querySelector('.genre-table tbody').innerHTML = tablehtml;
+}
+
 async function getSteamData(steamId) {
   // steamId = document.getElementById("steamid").value;
   try {
@@ -52,40 +134,40 @@ async function getSteamData(steamId) {
   }
 }
 
-async function loadPage() {
-  var steamId = steamid;
-  const data = await getSteamData(steamId);
-  const GameData = data.GameData.response.games;
-  const UserData = data.UserData.response.players[0];
-  const LevelData = data.LevelData.response;
-  console.log(LevelData);
-  console.log(data);
-  generatePlayTimeData(GameData, UserData);
-  await generateGameData(GameData);
-
-  const appId = "374320";
-  // const testappdata = await (await fetch(`http://localhost:3000/appinfo?appid=${appId}`)).json();
-  // console.log(testappdata[appId]);
-  // console.log(testappdata);
-
-}
 
 function generatePlayTimeData(GameData, UserData) {
+  const createdate = new Date(UserData.timecreated * 1000);
+  const createyear = createdate.getFullYear();
+  const createmonth = createdate.getMonth() + 1;
+  const createday = createdate.getDate();
   const daysSinceCreated = Math.floor(
-    (Date.now() - UserData.timecreated * 1000) / (1000 * 60 * 60 * 24)
+    (Date.now() - createdate) / (1000 * 60 * 60 * 24)
   );
-  playtimeDict["totalMinute"] = GameData.reduce(
-    (total, game) => total + game.playtime_forever
+  UserDataDict['daysSinceCreated'] = daysSinceCreated;
+  UserDataDict['AccountAge'] = (daysSinceCreated/365).toFixed(1);
+  UserDataDict['DateCreated'] = `${createyear}-${createmonth}-${createday}`;
+  for (const g of GameData) {
+    DataDict["totalMinute"] += g.playtime_forever;
+    if(g.playtime_forever >= 100*60){
+      DataDict['ptover100']++;
+    } else if (g.playtime_forever >= 50*60){
+      DataDict['ptover50']++;
+    } else if(g.playtime_forever >= 10*60){
+      DataDict['ptover10']++;
+    }
+  }
+  // DataDict["totalMinute"] = GameData.reduce(
+  //   (total, game) =>  Number(total) + Number(game.playtime_forever)
+  // );
+  DataDict["totalHour"] = (DataDict["totalMinute"] / 60).toFixed(1);
+  DataDict["oneDayAvg"] = Math.floor(
+    DataDict["totalMinute"] / daysSinceCreated
   );
-  playtimeDict["hour"] = (playtimeDict["totalMinute"] / 60).toFixed(1);
-  playtimeDict["oneDayAvg"] = Math.floor(
-    playtimeDict["totalMinute"] / daysSinceCreated
-  );
-  console.log(playtimeDict);
+  console.log(DataDict);
 }
 
 async function generateGameData(GameData) {
-  gameDataDict["OwnedGamesCount"] = GameData.length;
+  DataDict["OwnedGamesCount"] = GameData.length;
 
   await getAppData(GameData);
   
@@ -93,16 +175,13 @@ async function generateGameData(GameData) {
   for (const appid in appDataDict) {
     if(!appDataDict[appid].success) continue;
     var genres = appDataDict[appid].genres;
-    // console.log(genres, appid);
-
-    // if (!Array.isArray(genres)) {
-    //   var temp = genres;genres = [];genres.push(temp);
-    // }
     for (const genre of genres) {
       const genreName = genre.description;
       genre_counts['owned'][genreName] = (genre_counts['owned'][genreName] || 0) + 1;
     }
   }
+
+  DataDict['FreeGameCount'] = genre_counts['owned']['Free to Play'];
 
   // count playtime per genre
   GameData.forEach((game) => {
@@ -115,21 +194,24 @@ async function generateGameData(GameData) {
     });
   });
 
-  console.log(genre_counts);
-
   var playedgames= [];
   GameData.forEach((game) => {
-    if (game.playtime_forever == "0") gameDataDict["neverPlayedGamesCount"]++;
-    else playedgames.push(game.appid);
+    if (game.playtime_forever != "0") {
+      DataDict["PlayedGamesCount"]++;
+      playedgames.push(game.appid);
+    }
   });
-  gameDataDict["PlayedGamesCount"] =
-    gameDataDict["OwnedGamesCount"] - gameDataDict["neverPlayedGamesCount"];
+  DataDict["neverPlayedGamesCount"] =
+    DataDict["OwnedGamesCount"] - DataDict["PlayedGamesCount"];
 
+  
+  for (const id of playedgames) {
+    if(!appDataDict[id].success) continue;
+    if(appDataDict[id].is_free) continue;
+    if(!appDataDict[id].price_overview) continue;
+    DataDict['TotalPlayedPrice'] += appDataDict[id].price_overview.initial;
+  }
   await getAchievementData(playedgames); // get data only from played games
-
-
-
-  console.log("GameDataDict" + gameDataDict);
 }
 
 async function getAppData(games) {
@@ -202,20 +284,18 @@ async function getAppData(games) {
     for (const it of arr) {
       if (!it.success) {
         console.log(`Failed to get appinfo: ${it}`);
-        gameDataDict["UnknownGameCount"]++;
+        DataDict["UnknownGameCount"]++;
         continue;
       }
-      if (it.is_free) {
-        console.log(`Free game: ${it.steam_appid}`);
-        gameDataDict["FreeGameCount"]++;
-      } else if (it.price_overview != undefined) {
-        gameDataDict["TotalInitialPrice"] += it.price_overview.initial;
+      if (!it.is_free && it.price_overview != undefined) {
+        DataDict["TotalInitialPrice"] += it.price_overview.initial;
+        DataDict['TotalDiscountedPrice']+=it.price_overview.final;
       }
       appDataDict[it.steam_appid] = it;
     }
   }
   console.log(appDataDict);
-  console.log(gameDataDict);
+  console.log(DataDict);
 }
 
 async function getAchievementData(games){
@@ -228,8 +308,9 @@ async function getAchievementData(games){
   }
   const appNumToQueryAtOnce = 50;
 
-  for (let i = 0, querystring = `${domainname}/achievementinfo?`; i < 30;i++) {
-    if ((i != 0 && i % appNumToQueryAtOnce == 0) || i == 29) {
+  //#region make querystrings for test
+  for (let i = 0, querystring = `${domainname}/achievementinfo?`; i < 10;i++) {
+    if ((i != 0 && i % appNumToQueryAtOnce == 0) || i == 9) {
       querystring += `appid=${gamewithachievement[i]}&steamid=${steamid}`;
       querystrings.push(querystring);
       querystring = `${domainname}/achievementinfo?`;
@@ -237,7 +318,9 @@ async function getAchievementData(games){
       querystring += `appid=${gamewithachievement[i]}&`;
     }
   }
+  //#endregion
 
+  // make querystrings for achievement data
   // for (let i = 0, querystring = `${domainname}/achievementinfo?`; i < gamewithachievement.length;i++) {
   //   if ((i != 0 && i % appNumToQueryAtOnce == 0) || i == gamewithachievement.length - 1) {
   //     querystring += `appid=${gamewithachievement[i]}&steamid=${steamid}`;
@@ -254,7 +337,9 @@ async function getAchievementData(games){
     rawdata.push(jsres);
   }
   console.log(rawdata);
-
+  if('error' in rawdata){
+    alert('Not public profile!');
+  }
   for (const arr of rawdata) {
     if (!Array.isArray(arr)) {
       var temp = arr;
@@ -262,22 +347,33 @@ async function getAchievementData(games){
       arr.push(temp);
     }
     for (const it of arr) {
-      const achievements = it[Object.keys(it)[0]].achievements;
-      appDataDict[Object.keys(it)[0]].achievednum = achievements.length;
-      if(achievements.length>13 && achievements.length == appDataDict[Object.keys(it)[0]].achievementnum){
-        gameDataDict["AllCompletedGames"].push(Object.keys(it)[0]);
+      const key = Object.keys(it)[0]
+      const achievements = it[key].achievements;
+      appDataDict[key].achievednum = achievements.length;
+      appDataDict[key].achievementpercent = ((appDataDict[key].achievednum / appDataDict[key].achievementnum)*100).toFixed(2);
+      if(achievements.length>5 && achievements.length == appDataDict[key].achievementnum){
+        DataDict["AllCompletedGames"].push(key);
+      } else if (achievements.length>5 && appDataDict[key].achievementpercent >= 70){
+        DataDict['AchieveOver70']++;
       }
       for (const ac of achievements) {
-        if(Number(ac.percentage) < 10.0) gameDataDict["RareAchievements"]++;
-        if(ac.hidden)  gameDataDict["HiddenAchievements"]++;
+        if(Number(ac.percentage) < 10.0) DataDict["RareAchievements"]++;
+        if(ac.hidden)  DataDict["HiddenAchievements"]++;
         var temp = ac;
-        ac.gamename = it[Object.keys(it)[0]].gamename;
+        ac.gamename = it[key].gamename;
         achievementsArray.push(temp);
       }
     }
   }
-  gameDataDict["TotalAchievements"] = achievementsArray.length;
+  DataDict["TotalAchievements"] = achievementsArray.length;
+
+  let percentsum = 0;
+  for (const id of gamewithachievement) {
+    if(appDataDict[id].achievementpercent == undefined) continue
+    percentsum += Number(appDataDict[id].achievementpercent);
+  }
+  DataDict['AvgAchievePercent'] = (percentsum/gamewithachievement.length).toFixed(2);
   achievementsArray.sort((a, b) => a.percentage - b.percentage); // 달성률에 따라 정렬
   console.log(achievementsArray);
-  console.log(gameDataDict);
+  console.log(DataDict);
 }
