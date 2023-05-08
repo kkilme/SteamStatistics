@@ -16,18 +16,13 @@ app.use((req, res, next) => {
 });
 
 app.get("/home", (req, res) => {
-  // res.sendFile(__dirname + '/steam.html');
   res.sendFile(path.join(__dirname, "public/index.html"));
-  // res.send("Hello world");
 });
 
 
 
 app.get("/", (req, res) => {
   res.redirect("/home");
-  // // res.sendFile(__dirname + '/steam.html');
-  // res.send("Hello world!");
-  // // res.send("Hello world");
 });
 
 app.get("/profile", (req,res)=>{
@@ -35,7 +30,7 @@ app.get("/profile", (req,res)=>{
 })
 
 
-// 스팀 API 호출
+// get basic info about user
 app.get("/steaminfo", async (req, res) => {
   const steamId = req.query.steamid;
   console.log("SteamId:" + steamId);
@@ -49,7 +44,15 @@ app.get("/steaminfo", async (req, res) => {
     const steamGamesResponse = await fetch(
       `http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=${apiKey}&steamid=${steamId}&format=json`
     );
-    const steamGamesData = await steamGamesResponse.json();
+
+    var steamGamesData = ''
+    try{steamGamesData = await steamGamesResponse.json();}
+    catch(err){
+      res.json({
+        error: 'invalid steamid'
+      })
+      return;
+    }
     
     // const recentPlayedResponse = await fetch(
     //   `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${apiKey}&steamid=${steamId}&count=5`
@@ -235,7 +238,10 @@ app.get("/achievementinfo", async (req, res) => {
       })
     );
     if(dataUpdated) writeJson("gameAchievementData.json", AchieveData);
-    if(profileisprivate) res.json({'error': 'not public profile'})
+    if(profileisprivate) {
+      res.json({error: 'private profile'})
+      return;
+    }
     res.json(resp)
     // res.json({"haha":"hello"});
   } catch (error) {
@@ -248,7 +254,12 @@ function parseAchieveData(percentjs, detailjs, appid){
   var parsedjs = {};
   var achieves = detailjs?.game?.availableGameStats?.achievements;
   var percents = {}
-  
+  console.log(appid);
+  if(appid == '450390'){
+    console.log(percentjs);
+    console.log(achieves);
+  }
+
   for (const acs of percentjs?.achievementpercentages?.achievements) {
     percents[acs.name] = acs.percent.toFixed(2);
   }

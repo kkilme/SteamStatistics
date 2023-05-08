@@ -23,10 +23,16 @@ var DataDict = {
 };
 var UserDataDict = {}
 var appDataDict = {};
+var GameDataDict = {}
 var achievementsArray = [];
 var genre_counts = {owned:{}, playtime:{}}
-const steamid = "76561198818238819";
+
+let achievement_fetch_failed = false;
+var steamid = "76561198818238819";
 // const steamid = "76561198371255268";
+// const steamid = '76561198296548782';
+// const steamid = '76561198350011504';
+// const steamid = '76561198417963889';
 loadPage();
 
 function selectView(bttn){
@@ -48,9 +54,20 @@ function selectView(bttn){
 }
 
 async function loadPage() {
-  var steamId = steamid;
-  const data = await getSteamData(steamId);
-  const GameData = data.GameData.response.games;
+  steamid = new URLSearchParams(window.location.search).get('steamid');
+  if (steamid == undefined || steamid == ''){
+    steamid = "76561198818238819";
+    // steamid = "76561198371255268";
+    // steamid = '76561198296548782';
+    // steamid = '76561198350011504';
+    // steamid = '76561198417963889';
+  }
+  const data = await getSteamData();
+  if('error' in data){
+    setErrorPage('invalid_id')
+    return;
+  }
+  GameDataDict = data.GameData.response.games;
   UserDataDict = data.UserData.response.players[0];
   console.log(UserDataDict);
 
@@ -58,13 +75,17 @@ async function loadPage() {
     e.innerHTML = UserDataDict['personaname'];
   }
 
-  generatePlayTimeData(GameData, UserDataDict);
-  await generateGameData(GameData);
+  generatePlayTimeData(GameDataDict, UserDataDict);
+  await generateGameData(GameDataDict);
+  if(achievement_fetch_failed){
+    setErrorPage('private_profile');
+  }
 
-  setHtml();
+  setAchievementHtml()
 }
 
-function setHtml(){
+
+function setBasicDataHtml(){
   document.getElementById('country').innerHTML = `국가: ${UserDataDict['loccountrycode']}`;
   var state = UserDataDict['personastate'] == 0?
    '<span style="color:red">Offline</span>' : '<span style="color:greenyellow">Online</span>'
@@ -81,9 +102,6 @@ function setHtml(){
   for (const e of document.getElementsByName('total-playtime')) {
     e.innerHTML = DataDict['totalHour'].toLocaleString()+'h';
   }
-  for (const e of document.getElementsByName('total-achievements')) {
-    e.innerHTML = DataDict['TotalAchievements'].toLocaleString() + ' 개';
-  }
 
   document.getElementById('one-day-avg-playtime').innerHTML = (DataDict['totalHour'] / UserDataDict['daysSinceCreated']).toFixed(2) +'h';
   document.getElementById('one-game-avg-playtime').innerHTML = (DataDict['totalHour'] / DataDict['PlayedGamesCount']).toFixed(2) +'h';
@@ -98,11 +116,48 @@ function setHtml(){
 
   setGenreTable();
 
+}
+
+function setAchievementHtml(){
+  for (const e of document.getElementsByName('total-achievements')) {
+    e.innerHTML = DataDict['TotalAchievements'].toLocaleString() + ' 개';
+  }
+
   document.getElementById('rare-achievements').innerHTML = DataDict['RareAchievements'] +'개'
   document.getElementById('hidden-achievements').innerHTML = DataDict['HiddenAchievements'] +'개'
   document.getElementById('games-achievement-100').innerHTML = DataDict['AllCompletedGames'].length +'개'
   document.getElementById('games-achievement-70').innerHTML = DataDict['AchieveOver70'] +'개'
   document.getElementById('avg-achievement-percent').innerHTML = DataDict['AvgAchievePercent'] +'%'
+
+  var st = ''
+  const allcomplete_sorted = GameDataDict.filter((element)=> DataDict['AllCompletedGames'].includes(element.appid.toString()));
+  allcomplete_sorted.sort((a, b) => b.playtime_forever - a.playtime_forever);
+  const allcomplete_id_sorted = allcomplete_sorted.map(element => element.appid);
+  for (const id of allcomplete_id_sorted) {
+    st += `
+    <div class="achievement-grid-item">
+      <div class="achievement-game-img-container">
+        <img
+          class="achievement-game-img"
+          src="${appDataDict[id].header_image}"
+        />
+      </div>
+      <div class="achievement-game-description-container">
+        <div class="achievement-game-name">${appDataDict[id].name}</div>
+        <div class="achievement-game-details-flex">
+          <div class="achievement-game-achievementnum-flex">
+            <span class="descname">도전과제 </span><span>${appDataDict[id].achievementnum}/${appDataDict[id].achievementnum}</span>
+          </div>
+          <div class="achievement-game-playtime-flex">
+            <span class="descname">플레이시간 </span><span>${((GameDataDict.find(item=>item.appid == id)?.playtime_forever) / 60).toFixed(1).toLocaleString()}h</span>
+          </div>
+        </div>
+      </div>
+    </div>
+      `
+  }
+  document.querySelector('.achievement-100-games-grid').innerHTML = st;
+
 }
 
 function setGenreTable(){
@@ -122,10 +177,34 @@ function setGenreTable(){
   document.querySelector('.genre-table tbody').innerHTML = tablehtml;
 }
 
-async function getSteamData(steamId) {
+function setErrorPage(errortype){
+  var body = document.querySelector('.main-center-info')
+  if(errortype == 'invalid_id'){
+    body.innerHTML = `<div class='error-container'>
+    <h3 class="error-name">
+      잘못된 Steam ID입니다.
+    </h3>
+    <p class="error-description">
+      Steam ID를 다시 한번 확인해보세요. Steam ID를 알아내는 방법은 이곳을 참고하세요.
+    </p>
+  </div>`
+  } else if (errortype=='private_profile'){
+    var errordiv = document.createElement('div');
+    errordiv.className = 'error-container'
+    errordiv.innerHTML = `<h3 class="error-name">
+    해당 프로필이 완전한 공개 상태가 아닙니다.
+  </h3>
+  <p class="error-description">
+    프로필이 완전한 공개상태가 아니여서 도전과제에 관한 정보를 불러올 수 없었습니다.<br> 프로필을 공개 설정하는 방법은 이곳을 참고하세요.
+  </p>`
+    body.insertBefore(errordiv, document.querySelector('.main-center-info .info-head'))
+  }
+}
+
+async function getSteamData() {
   // steamId = document.getElementById("steamid").value;
   try {
-    const response = await fetch(`${domainname}/steaminfo?steamid=${steamId}`);
+    const response = await fetch(`${domainname}/steaminfo?steamid=${steamid}`);
     const data = await response.json();
     console.log(data);
     return data;
@@ -211,6 +290,7 @@ async function generateGameData(GameData) {
     if(!appDataDict[id].price_overview) continue;
     DataDict['TotalPlayedPrice'] += appDataDict[id].price_overview.initial;
   }
+  setBasicDataHtml();
   await getAchievementData(playedgames); // get data only from played games
 }
 
@@ -302,27 +382,16 @@ async function getAchievementData(games){
   var querystrings = [];
   var gamewithachievement =[];
   for (const id of games) {
-    if("achievementnum" in appDataDict[id]){
+    if(!appDataDict[id].success) continue;
+    if("achievementnum" in appDataDict[id] && appDataDict[id].achievementnum >0 ){
       gamewithachievement.push(id);
     }
   }
   const appNumToQueryAtOnce = 50;
 
   //#region make querystrings for test
-  for (let i = 0, querystring = `${domainname}/achievementinfo?`; i < 10;i++) {
-    if ((i != 0 && i % appNumToQueryAtOnce == 0) || i == 9) {
-      querystring += `appid=${gamewithachievement[i]}&steamid=${steamid}`;
-      querystrings.push(querystring);
-      querystring = `${domainname}/achievementinfo?`;
-    } else {
-      querystring += `appid=${gamewithachievement[i]}&`;
-    }
-  }
-  //#endregion
-
-  // make querystrings for achievement data
-  // for (let i = 0, querystring = `${domainname}/achievementinfo?`; i < gamewithachievement.length;i++) {
-  //   if ((i != 0 && i % appNumToQueryAtOnce == 0) || i == gamewithachievement.length - 1) {
+  // for (let i = 0, querystring = `${domainname}/achievementinfo?`; i < 10;i++) {
+  //   if ((i != 0 && i % appNumToQueryAtOnce == 0) || i == 9) {
   //     querystring += `appid=${gamewithachievement[i]}&steamid=${steamid}`;
   //     querystrings.push(querystring);
   //     querystring = `${domainname}/achievementinfo?`;
@@ -330,6 +399,18 @@ async function getAchievementData(games){
   //     querystring += `appid=${gamewithachievement[i]}&`;
   //   }
   // }
+  //#endregion
+
+  // make querystrings for achievement data
+  for (let i = 0, querystring = `${domainname}/achievementinfo?`; i < gamewithachievement.length;i++) {
+    if ((i != 0 && i % appNumToQueryAtOnce == 0) || i == gamewithachievement.length - 1) {
+      querystring += `appid=${gamewithachievement[i]}&steamid=${steamid}`;
+      querystrings.push(querystring);
+      querystring = `${domainname}/achievementinfo?`;
+    } else {
+      querystring += `appid=${gamewithachievement[i]}&`;
+    }
+  }
   rawdata = []
   for (const qstring of querystrings) {
     const rawres = await fetch(qstring);
@@ -337,10 +418,11 @@ async function getAchievementData(games){
     rawdata.push(jsres);
   }
   console.log(rawdata);
-  if('error' in rawdata){
-    alert('Not public profile!');
+  if('error' in rawdata[0]){
+    achievement_fetch_failed = true
+    return;
   }
-  for (const arr of rawdata) {
+  for (var arr of rawdata) {
     if (!Array.isArray(arr)) {
       var temp = arr;
       arr = []

@@ -180,7 +180,7 @@ body {
 .user-profilecard-container{
   margin-top: 0;
   height: 500px;
-  width: 100%;
+  width: 800px;
   align-self: center;
   background-color: rgba(23, 26, 33, 0.659);
   border-radius: 30px;
@@ -257,14 +257,14 @@ body {
   display:flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
+  font-size: 1.2rem;
   flex-direction: column;
   white-space: nowrap;
 }
 
 .grid-data{
   color: aliceblue;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 /* .user-info-container .grid-item:nth-child(1){grid-area: item1;}
@@ -278,9 +278,10 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   height: auto;
+  width: auto;
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 2rem;
   align-items: flex-end;
   color: aliceblue;
   font-weight: 400;
@@ -288,7 +289,7 @@ body {
 
 .statistics-container{
   height: 300px;
-  width: 90%;
+  width: 700px;
   align-self: center;
   justify-content: center;
   background-color: rgba(23, 26, 33, 0.659);
@@ -319,6 +320,9 @@ body {
   color: rgb(253, 114, 160);
 }
 
+.color7{
+  color: rgb(253, 114, 246);
+}
 
 .playtime-statistics-grid{
   margin: 30px;
@@ -358,7 +362,7 @@ body {
 
 .genre-table{
   display: table;
-  width: 70%;
+  width: 600px;
   height: 90%;
   text-align: center;
   align-self: center;
@@ -472,14 +476,14 @@ body {
 }
 
 .achievement-100-games-grid{
-  margin: 10px;
-  width: 100%;
+  width: 800px;
   height: auto;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
   row-gap: 10px;
   column-gap: 10px;
+  align-self: center;
   /* border: 1px solid black; */
   /* grid-template-areas: 
   "item1 item2"
@@ -489,7 +493,7 @@ body {
 
 .achievement-100-container{
   height: auto;
-  width: 130%;
+  width: 100%;
   align-self: center;
   justify-content: center;
   background-color: rgba(23, 26, 33, 0.659);
@@ -498,33 +502,76 @@ body {
 }
 
 .achievement-100-games-grid .achievement-grid-item{
+  padding: 10px;
   display: flex;
+  width: auto;
   height: 100px;
   background-color: rgba(23, 26, 33, 0.659);
+  border-radius: 10px;
 }
 
 .achievement-100-games-grid .achievement-game-img-container{
-  width: 50%;
+  width: auto;
   height: auto;
-  display: block;
+  display: flex;
+  margin-right: 15px;
+  justify-content: center;
 }
 
+
 .achievement-100-games-grid .achievement-game-img{
-  display: inline;
-  border: 10px;
   height: 100%;
-  width: 100%;
+  width: auto;
 } 
 
 
-.achievement-100-container .achievement-game-description-container{
-  width: 50%;
+.achievement-game-description-container{
+  width: auto;
+  flex: 1;
   display: flex;
-  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   margin: 5px;
 }
 .achievement-100-games-grid .achievement-game-name{
-  position: absolute;
-  font-size: 20px;
+  text-align: center;
+  font-size: 30px;
   color: aliceblue;
+  width: 50%
+
+}
+
+.achievement-game-details-flex{
+  display: flex;
+  color: rgb(225, 255, 150);
+  justify-content: center;
+  flex:1;
+  font-size: 15px;
+}
+
+.achievement-game-details-flex .descname{
+  color: rgb(141, 141, 141);
+  font-size: 20px;
+}
+.achievement-game-details-flex .achievement-game-achievementnum-flex{
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px ;
+  text-align: center;
+}
+.achievement-game-details-flex .achievement-game-playtime-flex{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.error-container{
+  height: auto;
+  width: auto;
+  text-align: center;
+  color: aliceblue;
+}
+
+.error-container .error-name{
+  font-size: 35px;
 }

@@ -1,4 +1,346 @@
 {
+  "10": {
+    "steam_appid": 10,
+    "success": true,
+    "name": "Counter-Strike",
+    "is_free": false,
+    "metacritic": {
+      "score": 88,
+      "url": "https://www.metacritic.com/game/pc/counter-strike?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 135010,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/10/header.jpg?t=1666823513",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1050000,
+      "final": 1050000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 10,500"
+    }
+  },
+  "20": {
+    "steam_appid": 20,
+    "success": true,
+    "name": "Team Fortress Classic",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 5308,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/20/header.jpg?t=1579634708",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 550000,
+      "final": 550000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 5,500"
+    }
+  },
+  "30": {
+    "steam_appid": 30,
+    "success": true,
+    "name": "Day of Defeat",
+    "is_free": false,
+    "metacritic": {
+      "score": 79,
+      "url": "https://www.metacritic.com/game/pc/day-of-defeat?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 3591,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/30/header.jpg?t=1512413490",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 550000,
+      "final": 550000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 5,500"
+    }
+  },
+  "40": {
+    "steam_appid": 40,
+    "success": true,
+    "name": "Deathmatch Classic",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 1834,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/40/header.jpg?t=1568752159",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 550000,
+      "final": 550000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 5,500"
+    }
+  },
+  "50": {
+    "steam_appid": 50,
+    "success": true,
+    "name": "Half-Life: Opposing Force",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 14791,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/50/header.jpg?t=1579628243",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 550000,
+      "final": 550000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 5,500"
+    }
+  },
+  "60": {
+    "steam_appid": 60,
+    "success": true,
+    "name": "Ricochet",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 3514,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/60/header.jpg?t=1599518374",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 560000,
+      "final": 560000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 5,600"
+    }
+  },
+  "70": {
+    "steam_appid": 70,
+    "success": true,
+    "name": "Half-Life",
+    "is_free": false,
+    "metacritic": {
+      "score": 96,
+      "url": "https://www.metacritic.com/game/pc/half-life?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 71308,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/70/header.jpg?t=1683302000",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1050000,
+      "final": 1050000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 10,500"
+    }
+  },
+  "80": {
+    "steam_appid": 80,
+    "success": true,
+    "name": "Counter-Strike: Condition Zero",
+    "is_free": false,
+    "metacritic": {
+      "score": 65,
+      "url": "https://www.metacritic.com/game/pc/counter-strike-condition-zero?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 16509,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/80/header.jpg?t=1602535977",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1050000,
+      "final": 1050000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 10,500"
+    }
+  },
+  "100": {
+    "steam_appid": 80,
+    "success": true,
+    "name": "Counter-Strike: Condition Zero",
+    "is_free": false,
+    "metacritic": {
+      "score": 65,
+      "url": "https://www.metacritic.com/game/pc/counter-strike-condition-zero?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 16509,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/80/header.jpg?t=1602535977",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1050000,
+      "final": 1050000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 10,500"
+    }
+  },
+  "130": {
+    "steam_appid": 130,
+    "success": true,
+    "name": "Half-Life: Blue Shift",
+    "is_free": false,
+    "metacritic": {
+      "score": 71,
+      "url": "https://www.metacritic.com/game/pc/half-life-blue-shift?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 11065,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/130/header.jpg?t=1579629868",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 550000,
+      "final": 550000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 5,500"
+    }
+  },
+  "220": {
+    "steam_appid": 220,
+    "success": true,
+    "name": "Half-Life 2",
+    "is_free": false,
+    "metacritic": {
+      "score": 96,
+      "url": "https://www.metacritic.com/game/pc/half-life-2?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 126334,
+    "achievementnum": 33,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/220/header.jpg?t=1666823596",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
+    }
+  },
+  "240": {
+    "steam_appid": 240,
+    "success": true,
+    "name": "Counter-Strike: Source",
+    "is_free": false,
+    "metacritic": {
+      "score": 88,
+      "url": "https://www.metacritic.com/game/pc/counter-strike-source?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 102822,
+    "achievementnum": 147,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/240/header.jpg?t=1666823740",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
+    }
+  },
+  "280": {
+    "steam_appid": 280,
+    "success": true,
+    "name": "Half-Life: Source",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 11083,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/280/header.jpg?t=1579630049",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
+    }
+  },
+  "300": {
+    "steam_appid": 300,
+    "success": true,
+    "name": "Day of Defeat: Source",
+    "is_free": false,
+    "metacritic": {
+      "score": 80,
+      "url": "https://www.metacritic.com/game/pc/day-of-defeat-source?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 12813,
+    "achievementnum": 54,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/300/header.jpg?t=1675457675",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
+    }
+  },
+  "320": {
+    "steam_appid": 320,
+    "success": true,
+    "name": "Half-Life 2: Deathmatch",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 7734,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/320/header.jpg?t=1602536087",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 560000,
+      "final": 560000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 5,600"
+    }
+  },
+  "340": {
+    "steam_appid": 340,
+    "success": true,
+    "name": "Half-Life 2: Lost Coast",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 8824,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/340/header.jpg?t=1571757270"
+  },
+  "360": {
+    "steam_appid": 360,
+    "success": true,
+    "name": "Half-Life Deathmatch: Source",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 2992,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/360/header.jpg?t=1567240329",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
+    }
+  },
+  "380": {
+    "steam_appid": 380,
+    "success": true,
+    "name": "Half-Life 2: Episode One",
+    "is_free": false,
+    "metacritic": {
+      "score": 87,
+      "url": "https://www.metacritic.com/game/pc/half-life-2-episode-one?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 19889,
+    "achievementnum": 13,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/380/header.jpg?t=1666823809",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 890000,
+      "final": 890000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 8,900"
+    }
+  },
   "400": {
     "steam_appid": 400,
     "success": true,
@@ -32,6 +374,72 @@
       { "id": 42, "description": "Remote Play on Tablet" },
       { "id": 44, "description": "Remote Play Together" }
     ]
+  },
+  "420": {
+    "steam_appid": 420,
+    "success": true,
+    "name": "Half-Life 2: Episode Two",
+    "is_free": false,
+    "metacritic": {
+      "score": 90,
+      "url": "https://www.metacritic.com/game/pc/half-life-2-episode-two?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 26984,
+    "achievementnum": 23,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/420/header.jpg?t=1666824206",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 850000,
+      "final": 850000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 8,500"
+    }
+  },
+  "500": {
+    "steam_appid": 500,
+    "success": true,
+    "name": "Left 4 Dead",
+    "is_free": false,
+    "metacritic": {
+      "score": 89,
+      "url": "https://www.metacritic.com/game/pc/left-4-dead?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 39309,
+    "achievementnum": 73,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/500/header.jpg?t=1682697467",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
+    }
+  },
+  "550": {
+    "steam_appid": 550,
+    "success": true,
+    "name": "Left 4 Dead 2",
+    "is_free": false,
+    "metacritic": {
+      "score": 89,
+      "url": "https://www.metacritic.com/game/pc/left-4-dead-2?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 539271,
+    "achievementnum": 101,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/550/header.jpg?t=1675801903",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
+    }
   },
   "620": {
     "steam_appid": 620,
@@ -80,6 +488,39 @@
       { "id": 44, "description": "Remote Play Together" }
     ]
   },
+  "730": {
+    "steam_appid": 730,
+    "success": true,
+    "name": "Counter-Strike: Global Offensive",
+    "is_free": true,
+    "metacritic": {
+      "score": 83,
+      "url": "https://www.metacritic.com/game/pc/counter-strike-global-offensive?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "37", "description": "Free to Play" }
+    ],
+    "recommendations": 3776163,
+    "achievementnum": 167,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/730/header.jpg?t=1668125812"
+  },
+  "7670": {
+    "steam_appid": 7670,
+    "success": true,
+    "name": "BioShock™",
+    "is_free": false,
+    "metacritic": {
+      "score": 96,
+      "url": "https://www.metacritic.com/game/pc/bioshock?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 22318,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/7670/header.jpg?t=1568739889"
+  },
   "8500": {
     "steam_appid": 8500,
     "success": true,
@@ -98,6 +539,152 @@
     ],
     "recommendations": 7239,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/8500/header.jpg?t=1682440293"
+  },
+  "8850": {
+    "steam_appid": 8850,
+    "success": true,
+    "name": "BioShock® 2",
+    "is_free": false,
+    "metacritic": {
+      "score": 88,
+      "url": "https://www.metacritic.com/game/pc/bioshock-2?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 9966,
+    "achievementnum": 68,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/8850/header.jpg?t=1568765660"
+  },
+  "8870": {
+    "steam_appid": 8870,
+    "success": true,
+    "name": "BioShock Infinite",
+    "is_free": false,
+    "metacritic": {
+      "score": 94,
+      "url": "https://www.metacritic.com/game/pc/bioshock-infinite?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 97983,
+    "achievementnum": 80,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/8870/header.jpg?t=1602794480",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3200000,
+      "final": 3200000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 32,000"
+    }
+  },
+  "8930": {
+    "steam_appid": 8930,
+    "success": true,
+    "name": "Sid Meier's Civilization® V",
+    "is_free": false,
+    "metacritic": {
+      "score": 90,
+      "url": "https://www.metacritic.com/game/pc/sid-meiers-civilization-v?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "2", "description": "Strategy" }],
+    "recommendations": 116429,
+    "achievementnum": 286,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/8930/header.jpg?t=1579731804",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3200000,
+      "final": 3200000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 32,000"
+    }
+  },
+  "34330": {
+    "steam_appid": 34330,
+    "success": true,
+    "name": "Total War: SHOGUN 2",
+    "is_free": false,
+    "metacritic": {
+      "score": 90,
+      "url": "https://www.metacritic.com/game/pc/total-war-shogun-2?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "2", "description": "Strategy" }],
+    "recommendations": 28811,
+    "achievementnum": 106,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/201270/header.jpg?t=1603131194",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3000000,
+      "final": 3000000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 30,000"
+    }
+  },
+  "39000": {
+    "steam_appid": 39000,
+    "success": true,
+    "name": "Moonbase Alpha",
+    "is_free": true,
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 175,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/39000/header.jpg?t=1447352605"
+  },
+  "40800": {
+    "steam_appid": 40800,
+    "success": true,
+    "name": "Super Meat Boy",
+    "is_free": false,
+    "metacritic": {
+      "score": 87,
+      "url": "https://www.metacritic.com/game/pc/super-meat-boy?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "23", "description": "Indie" }],
+    "recommendations": 23312,
+    "achievementnum": 48,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/40800/header.jpg?t=1638306971",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1600000,
+      "final": 1600000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 16,000"
+    }
+  },
+  "43110": {
+    "steam_appid": 43110,
+    "success": true,
+    "name": "Metro 2033",
+    "is_free": false,
+    "metacritic": {
+      "score": 81,
+      "url": "https://www.metacritic.com/game/pc/metro-2033?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 5544,
+    "achievementnum": 48,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/43110/header.jpg?t=1616437108"
+  },
+  "44350": {
+    "steam_appid": 44350,
+    "success": true,
+    "name": "GRID 2",
+    "is_free": false,
+    "metacritic": {
+      "score": 80,
+      "url": "https://www.metacritic.com/game/pc/grid-2?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "9", "description": "Racing" },
+      { "id": "18", "description": "Sports" }
+    ],
+    "recommendations": 7992,
+    "achievementnum": 60,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/44350/header.jpg?t=1571948291"
   },
   "57300": {
     "steam_appid": 57300,
@@ -152,6 +739,28 @@
       "final_formatted": "₩ 10,500"
     }
   },
+  "108600": {
+    "steam_appid": 108600,
+    "success": true,
+    "name": "Project Zomboid",
+    "is_free": false,
+    "genres": [
+      { "id": "23", "description": "Indie" },
+      { "id": "3", "description": "RPG" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "70", "description": "Early Access" }
+    ],
+    "recommendations": 149603,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/108600/header.jpg?t=1679306018",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2150000,
+      "final": 2150000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 21,500"
+    }
+  },
   "113020": {
     "steam_appid": 113020,
     "success": true,
@@ -178,6 +787,55 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 16,000"
+    }
+  },
+  "113200": {
+    "steam_appid": 113200,
+    "success": true,
+    "name": "The Binding of Isaac",
+    "is_free": false,
+    "metacritic": {
+      "score": 84,
+      "url": "https://www.metacritic.com/game/pc/the-binding-of-isaac?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "23", "description": "Indie" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 42506,
+    "achievementnum": 99,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/113200/header.jpg?t=1643480517",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 550000,
+      "final": 550000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 5,500"
+    }
+  },
+  "201810": {
+    "steam_appid": 201810,
+    "success": true,
+    "name": "Wolfenstein: The New Order",
+    "is_free": false,
+    "metacritic": {
+      "score": 81,
+      "url": "https://www.metacritic.com/game/pc/wolfenstein-the-new-order?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 35366,
+    "achievementnum": 50,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/201810/header.jpg?t=1630605243",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2308000,
+      "final": 2308000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 23,080"
     }
   },
   "203160": {
@@ -251,6 +909,20 @@
       "final_formatted": "₩ 16,000"
     }
   },
+  "211500": {
+    "steam_appid": 211500,
+    "success": true,
+    "name": "RaceRoom Racing Experience",
+    "is_free": true,
+    "genres": [
+      { "id": "37", "description": "Free to Play" },
+      { "id": "9", "description": "Racing" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "18", "description": "Sports" }
+    ],
+    "recommendations": 1808,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/211500/header.jpg?t=1667204294"
+  },
   "211820": {
     "steam_appid": 211820,
     "success": true,
@@ -301,6 +973,31 @@
       "final_formatted": "₩ 10,500"
     }
   },
+  "218620": {
+    "steam_appid": 218620,
+    "success": true,
+    "name": "PAYDAY 2",
+    "is_free": false,
+    "metacritic": {
+      "score": 79,
+      "url": "https://www.metacritic.com/game/pc/payday-2?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 401533,
+    "achievementnum": 1314,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/218620/header.jpg?t=1682667583",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1050000,
+      "final": 1050000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 10,500"
+    }
+  },
   "220200": {
     "steam_appid": 220200,
     "success": true,
@@ -323,6 +1020,50 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 43,000"
+    }
+  },
+  "222880": {
+    "steam_appid": 222880,
+    "success": true,
+    "name": "Insurgency",
+    "is_free": false,
+    "metacritic": {
+      "score": 74,
+      "url": "https://www.metacritic.com/game/pc/insurgency?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "23", "description": "Indie" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 86206,
+    "achievementnum": 100,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/222880/header.jpg?t=1610560212",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1550000,
+      "final": 1550000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 15,500"
+    }
+  },
+  "223850": {
+    "steam_appid": 223850,
+    "success": true,
+    "name": "3DMark",
+    "is_free": false,
+    "genres": [{ "id": "57", "description": "Utilities" }],
+    "recommendations": 11412,
+    "achievementnum": 26,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/223850/header.jpg?t=1680181407",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3750000,
+      "final": 3750000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 37,500"
     }
   },
   "224260": {
@@ -435,6 +1176,51 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 15,500"
+    }
+  },
+  "236390": {
+    "steam_appid": 236390,
+    "success": true,
+    "name": "War Thunder",
+    "is_free": true,
+    "metacritic": {
+      "score": 81,
+      "url": "https://www.metacritic.com/game/pc/war-thunder?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "37", "description": "Free to Play" },
+      { "id": "29", "description": "Massively Multiplayer" },
+      { "id": "28", "description": "Simulation" }
+    ],
+    "recommendations": 1752,
+    "achievementnum": 53,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/236390/header.jpg?t=1681461045"
+  },
+  "238320": {
+    "steam_appid": 238320,
+    "success": true,
+    "name": "Outlast",
+    "is_free": false,
+    "metacritic": {
+      "score": 80,
+      "url": "https://www.metacritic.com/game/pc/outlast?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 71384,
+    "achievementnum": 14,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/238320/header.jpg?t=1666817106",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2150000,
+      "final": 2150000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 21,500"
     }
   },
   "239140": {
@@ -566,6 +1352,31 @@
       "final_formatted": "₩ 16,500"
     }
   },
+  "247140": {
+    "steam_appid": 247140,
+    "success": true,
+    "name": "Soundodger+",
+    "is_free": false,
+    "metacritic": {
+      "score": 78,
+      "url": "https://www.metacritic.com/game/pc/soundodger+?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 659,
+    "achievementnum": 19,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/247140/header.jpg?t=1600922266",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 850000,
+      "final": 850000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 8,500"
+    }
+  },
   "261570": {
     "steam_appid": 261570,
     "success": true,
@@ -679,6 +1490,23 @@
       "final_formatted": "₩ 7,500"
     }
   },
+  "271590": {
+    "steam_appid": 271590,
+    "success": true,
+    "name": "Grand Theft Auto V",
+    "is_free": false,
+    "metacritic": {
+      "score": 96,
+      "url": "https://www.metacritic.com/game/pc/grand-theft-auto-v?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" }
+    ],
+    "recommendations": 1405667,
+    "achievementnum": 77,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/271590/header.jpg?t=1678296348"
+  },
   "278890": {
     "steam_appid": 278890,
     "success": true,
@@ -747,6 +1575,7 @@
       "final_formatted": "₩ 7,800"
     }
   },
+  "282900": { "success": false },
   "285900": {
     "steam_appid": 285900,
     "success": true,
@@ -934,6 +1763,22 @@
       "final_formatted": "₩ 16,500"
     }
   },
+  "304930": {
+    "steam_appid": 304930,
+    "success": true,
+    "name": "Unturned",
+    "is_free": true,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "4", "description": "Casual" },
+      { "id": "37", "description": "Free to Play" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 7690,
+    "achievementnum": 67,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/304930/header.jpg?t=1673402489"
+  },
   "305620": {
     "steam_appid": 305620,
     "success": true,
@@ -956,6 +1801,21 @@
       "initial_formatted": "₩ 36,000",
       "final_formatted": "₩ 18,000"
     }
+  },
+  "308600": {
+    "steam_appid": 308600,
+    "success": true,
+    "name": "Gene Shift Auto",
+    "is_free": true,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "4", "description": "Casual" },
+      { "id": "37", "description": "Free to Play" },
+      { "id": "70", "description": "Early Access" }
+    ],
+    "recommendations": 114,
+    "achievementnum": 40,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/308600/header.jpg?t=1683438780"
   },
   "311690": {
     "steam_appid": 311690,
@@ -982,6 +1842,19 @@
       "initial_formatted": "₩ 16,500",
       "final_formatted": "₩ 6,600"
     }
+  },
+  "319630": {
+    "steam_appid": 319630,
+    "success": true,
+    "name": "Life is Strange - Episode 1",
+    "is_free": true,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" }
+    ],
+    "recommendations": 113656,
+    "achievementnum": 60,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/319630/header.jpg?t=1662395426"
   },
   "320040": {
     "steam_appid": 320040,
@@ -1083,6 +1956,31 @@
       "final_formatted": "₩ 25,000"
     }
   },
+  "323190": {
+    "steam_appid": 323190,
+    "success": true,
+    "name": "Frostpunk",
+    "is_free": false,
+    "metacritic": {
+      "score": 84,
+      "url": "https://www.metacritic.com/game/pc/frostpunk?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "28", "description": "Simulation" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 74968,
+    "achievementnum": 115,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/323190/header.jpg?t=1680613636",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3200000,
+      "final": 3200000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 32,000"
+    }
+  },
   "323220": {
     "steam_appid": 323220,
     "success": true,
@@ -1129,6 +2027,48 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 20,000"
+    }
+  },
+  "331790": {
+    "steam_appid": 331790,
+    "success": true,
+    "name": "Data Hacker: Reboot",
+    "is_free": false,
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "23", "description": "Indie" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "achievementnum": 40,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/331790/header.jpg?t=1447364772",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 110000,
+      "final": 110000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 1,100"
+    }
+  },
+  "333600": {
+    "steam_appid": 333600,
+    "success": true,
+    "name": "NEKOPARA Vol. 1",
+    "is_free": false,
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 22232,
+    "achievementnum": 14,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/333600/header.jpg?t=1656892670",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
     }
   },
   "334940": {
@@ -1464,6 +2404,70 @@
     "achievementnum": 55,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/384180/header.jpg?t=1681959619"
   },
+  "384300": {
+    "steam_appid": 384300,
+    "success": true,
+    "name": "CPUCores :: Maximize Your FPS",
+    "is_free": false,
+    "genres": [
+      { "id": "53", "description": "Design & Illustration" },
+      { "id": "57", "description": "Utilities" }
+    ],
+    "recommendations": 10734,
+    "achievementnum": 15,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/384300/header.jpg?t=1632319493",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1600000,
+      "final": 1600000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 16,000"
+    }
+  },
+  "385800": {
+    "steam_appid": 385800,
+    "success": true,
+    "name": "NEKOPARA Vol. 0",
+    "is_free": false,
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 14078,
+    "achievementnum": 13,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/385800/header.jpg?t=1656892287",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 340000,
+      "final": 340000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 3,400"
+    }
+  },
+  "386940": {
+    "steam_appid": 386940,
+    "success": true,
+    "name": "Ultimate Chicken Horse",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 26133,
+    "achievementnum": 31,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/386940/header.jpg?t=1678212048",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1650000,
+      "final": 1650000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 16,500"
+    }
+  },
   "387290": {
     "steam_appid": 387290,
     "success": true,
@@ -1484,6 +2488,31 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 19,900"
+    }
+  },
+  "389730": {
+    "steam_appid": 389730,
+    "success": true,
+    "name": "TEKKEN 7",
+    "is_free": false,
+    "metacritic": {
+      "score": 82,
+      "url": "https://www.metacritic.com/game/pc/tekken-7?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "18", "description": "Sports" }
+    ],
+    "recommendations": 57935,
+    "achievementnum": 42,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/389730/header.jpg?t=1676876387",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 8980000,
+      "final": 1347000,
+      "discount_percent": 85,
+      "initial_formatted": "₩ 89,800",
+      "final_formatted": "₩ 13,470"
     }
   },
   "390710": {
@@ -1548,6 +2577,26 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 43,000"
+    }
+  },
+  "395760": {
+    "steam_appid": 395760,
+    "success": true,
+    "name": "Decent Icons",
+    "is_free": false,
+    "genres": [
+      { "id": "53", "description": "Design & Illustration" },
+      { "id": "57", "description": "Utilities" }
+    ],
+    "recommendations": 220,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/395760/header.jpg?t=1676961168",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 330000,
+      "final": 330000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 3,300"
     }
   },
   "400910": {
@@ -1615,6 +2664,28 @@
       "final_formatted": "₩ 21,000"
     }
   },
+  "405900": {
+    "steam_appid": 405900,
+    "success": true,
+    "name": "Disgaea PC",
+    "is_free": false,
+    "metacritic": {
+      "score": 74,
+      "url": "https://www.metacritic.com/game/pc/disgaea-pc?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "3", "description": "RPG" }],
+    "recommendations": 3721,
+    "achievementnum": 30,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/405900/header.jpg?t=1668469704",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2100000,
+      "final": 420000,
+      "discount_percent": 80,
+      "initial_formatted": "₩ 21,000",
+      "final_formatted": "₩ 4,200"
+    }
+  },
   "407530": {
     "steam_appid": 407530,
     "success": true,
@@ -1644,6 +2715,52 @@
     "recommendations": 2297,
     "achievementnum": 40,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/408410/header.jpg?t=1589285000",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2100000,
+      "final": 2100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 21,000"
+    }
+  },
+  "409710": {
+    "steam_appid": 409710,
+    "success": true,
+    "name": "BioShock™ Remastered",
+    "is_free": false,
+    "metacritic": {
+      "score": 80,
+      "url": "https://www.metacritic.com/game/pc/bioshock-the-collection?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 37945,
+    "achievementnum": 65,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/409710/header.jpg?t=1598321131",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2100000,
+      "final": 2100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 21,000"
+    }
+  },
+  "409720": {
+    "steam_appid": 409720,
+    "success": true,
+    "name": "BioShock™ 2 Remastered",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 16708,
+    "achievementnum": 53,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/409720/header.jpg?t=1603360893",
     "price_overview": {
       "currency": "KRW",
       "initial": 2100000,
@@ -1702,6 +2819,76 @@
       "final_formatted": "₩ 39,000"
     }
   },
+  "412830": {
+    "steam_appid": 412830,
+    "success": true,
+    "name": "STEINS;GATE",
+    "is_free": false,
+    "metacritic": {
+      "score": 87,
+      "url": "https://www.metacritic.com/game/pc/steinsgate?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "25", "description": "Adventure" }],
+    "recommendations": 13519,
+    "achievementnum": 42,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/412830/header.jpg?t=1669620653",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3100000,
+      "final": 1240000,
+      "discount_percent": 60,
+      "initial_formatted": "₩ 31,000",
+      "final_formatted": "₩ 12,400"
+    }
+  },
+  "413150": {
+    "steam_appid": 413150,
+    "success": true,
+    "name": "Stardew Valley",
+    "is_free": false,
+    "metacritic": {
+      "score": 89,
+      "url": "https://www.metacritic.com/game/pc/stardew-valley?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "23", "description": "Indie" },
+      { "id": "3", "description": "RPG" },
+      { "id": "28", "description": "Simulation" }
+    ],
+    "recommendations": 475883,
+    "achievementnum": 40,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg?t=1666917466",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1600000,
+      "final": 1600000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 16,000"
+    }
+  },
+  "413420": {
+    "steam_appid": 413420,
+    "success": true,
+    "name": "Danganronpa 2: Goodbye Despair",
+    "is_free": false,
+    "metacritic": {
+      "score": 83,
+      "url": "https://www.metacritic.com/game/pc/danganronpa-2-goodbye-despair?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "25", "description": "Adventure" }],
+    "recommendations": 20883,
+    "achievementnum": 47,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/413420/header.jpg?t=1645515459",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2100000,
+      "final": 840000,
+      "discount_percent": 60,
+      "initial_formatted": "₩ 21,000",
+      "final_formatted": "₩ 8,400"
+    }
+  },
   "418270": {
     "steam_appid": 418270,
     "success": true,
@@ -1749,6 +2936,48 @@
       "final_formatted": "₩ 20,500"
     }
   },
+  "420110": {
+    "steam_appid": 420110,
+    "success": true,
+    "name": "NEKOPARA Vol. 2",
+    "is_free": false,
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 10590,
+    "achievementnum": 20,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/420110/header.jpg?t=1656892360",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
+    }
+  },
+  "420850": {
+    "steam_appid": 420850,
+    "success": true,
+    "name": "Cosmic Leap",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 107,
+    "achievementnum": 18,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/420850/header.jpg?t=1502922588",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 110000,
+      "final": 110000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 1,100"
+    }
+  },
   "424840": {
     "steam_appid": 424840,
     "success": true,
@@ -1772,6 +3001,19 @@
     }
   },
   "427460": { "success": false },
+  "429470": {
+    "steam_appid": 429470,
+    "success": true,
+    "name": "Space Pilgrim Episode I: Alpha Centauri",
+    "is_free": true,
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 736,
+    "achievementnum": 7,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/429470/header.jpg?t=1680431893"
+  },
   "431750": {
     "steam_appid": 431750,
     "success": true,
@@ -1845,6 +3087,81 @@
       "initial_formatted": "",
       "final_formatted": "₩ 21,000"
     }
+  },
+  "434250": {
+    "steam_appid": 434250,
+    "success": true,
+    "name": "Masked Shooters 2",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 603,
+    "achievementnum": 12,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/434250/header.jpg?t=1639256837",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 110000,
+      "final": 55000,
+      "discount_percent": 50,
+      "initial_formatted": "₩ 1,100",
+      "final_formatted": "₩ 550"
+    }
+  },
+  "436820": {
+    "steam_appid": 436820,
+    "success": true,
+    "name": "Waltz of the Wizard (Legacy demo)",
+    "is_free": false,
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "23", "description": "Indie" },
+      { "id": "28", "description": "Simulation" }
+    ],
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/436820/header.jpg?t=1675178626"
+  },
+  "437920": {
+    "steam_appid": 437920,
+    "success": true,
+    "name": "Tricky Towers",
+    "is_free": false,
+    "metacritic": {
+      "score": 80,
+      "url": "https://www.metacritic.com/game/pc/tricky-towers?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 9881,
+    "achievementnum": 29,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/437920/header.jpg?t=1667418184",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1650000,
+      "final": 1650000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 16,500"
+    }
+  },
+  "438100": {
+    "steam_appid": 438100,
+    "success": true,
+    "name": "VRChat",
+    "is_free": true,
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "4", "description": "Casual" },
+      { "id": "37", "description": "Free to Play" },
+      { "id": "29", "description": "Massively Multiplayer" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "18", "description": "Sports" },
+      { "id": "70", "description": "Early Access" }
+    ],
+    "recommendations": 150,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/438100/header.jpg?t=1662741577"
   },
   "442070": {
     "steam_appid": 442070,
@@ -1948,6 +3265,50 @@
       "final_formatted": "₩ 26,000"
     }
   },
+  "450390": {
+    "steam_appid": 450390,
+    "success": true,
+    "name": "The Lab",
+    "is_free": true,
+    "genres": [{ "id": "37", "description": "Free to Play" }],
+    "recommendations": 270,
+    "achievementnum": 0,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/450390/header.jpg?t=1677266902"
+  },
+  "451880": {
+    "steam_appid": 451880,
+    "success": true,
+    "name": "Catch a Falling Star",
+    "is_free": false,
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 216,
+    "achievementnum": 45,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/451880/header.jpg?t=1459857168",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 110000,
+      "final": 110000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 1,100"
+    }
+  },
+  "453480": {
+    "steam_appid": 453480,
+    "success": true,
+    "name": "Shadowverse CCG",
+    "is_free": true,
+    "genres": [
+      { "id": "37", "description": "Free to Play" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 354,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/453480/header.jpg?t=1679888967"
+  },
+  "460120": { "success": false },
   "461840": {
     "steam_appid": 461840,
     "success": true,
@@ -2122,6 +3483,55 @@
     "achievementnum": 38,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/489520/header_alt_assets_9.jpg?t=1682105998"
   },
+  "493340": {
+    "steam_appid": 493340,
+    "success": true,
+    "name": "Planet Coaster",
+    "is_free": false,
+    "metacritic": {
+      "score": 84,
+      "url": "https://www.metacritic.com/game/pc/planet-coaster?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "4", "description": "Casual" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 48642,
+    "achievementnum": 32,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/493340/header.jpg?t=1668529576",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 4875000,
+      "final": 4875000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 48,750"
+    }
+  },
+  "493520": {
+    "steam_appid": 493520,
+    "success": true,
+    "name": "GTFO",
+    "is_free": false,
+    "metacritic": {
+      "score": 78,
+      "url": "https://www.metacritic.com/game/pc/gtfo?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 33918,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/493520/header.jpg?t=1683028489",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 4999000,
+      "final": 3499000,
+      "discount_percent": 30,
+      "initial_formatted": "₩ 49,990",
+      "final_formatted": "₩ 34,990"
+    }
+  },
   "493540": {
     "steam_appid": 493540,
     "success": true,
@@ -2149,6 +3559,7 @@
       "final_formatted": "₩ 4,000"
     }
   },
+  "496810": { "success": false },
   "499440": {
     "steam_appid": 499440,
     "success": true,
@@ -2239,6 +3650,28 @@
     "recommendations": 21563,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/504370/header.jpg?t=1667471790"
   },
+  "508440": {
+    "steam_appid": 508440,
+    "success": true,
+    "name": "Totally Accurate Battle Simulator",
+    "is_free": false,
+    "genres": [
+      { "id": "23", "description": "Indie" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 98776,
+    "achievementnum": 64,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/508440/header.jpg?t=1671063434",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2050000,
+      "final": 2050000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 20,500"
+    }
+  },
   "516110": {
     "steam_appid": 516110,
     "success": true,
@@ -2263,6 +3696,24 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 15,500"
+    }
+  },
+  "520440": {
+    "steam_appid": 520440,
+    "success": true,
+    "name": "GUILTY GEAR Xrd REV 2",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 6421,
+    "achievementnum": 42,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/520440/header.jpg?t=1667365271",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3200000,
+      "final": 3200000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 32,000"
     }
   },
   "520720": {
@@ -2331,6 +3782,31 @@
       "discount_percent": 90,
       "initial_formatted": "₩ 16,000",
       "final_formatted": "₩ 1,600"
+    }
+  },
+  "524220": {
+    "steam_appid": 524220,
+    "success": true,
+    "name": "NieR:Automata™",
+    "is_free": false,
+    "metacritic": {
+      "score": 84,
+      "url": "https://www.metacritic.com/game/pc/nier-automata?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 83809,
+    "achievementnum": 47,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/524220/header.jpg?t=1682534695",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 4480000,
+      "final": 2240000,
+      "discount_percent": 50,
+      "initial_formatted": "₩ 44,800",
+      "final_formatted": "₩ 22,400"
     }
   },
   "526870": {
@@ -2498,6 +3974,53 @@
       "final_formatted": "₩ 16,500"
     }
   },
+  "546560": {
+    "steam_appid": 546560,
+    "success": true,
+    "name": "Half-Life: Alyx",
+    "is_free": false,
+    "metacritic": {
+      "score": 93,
+      "url": "https://www.metacritic.com/game/pc/half-life-alyx?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" }
+    ],
+    "recommendations": 69285,
+    "achievementnum": 42,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/546560/header.jpg?t=1673391297",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 6300000,
+      "final": 6300000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 63,000"
+    }
+  },
+  "548430": {
+    "steam_appid": 548430,
+    "success": true,
+    "name": "Deep Rock Galactic",
+    "is_free": false,
+    "metacritic": {
+      "score": 85,
+      "url": "https://www.metacritic.com/game/pc/deep-rock-galactic?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 164987,
+    "achievementnum": 69,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/548430/header.jpg?t=1681822890",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3100000,
+      "final": 3100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 31,000"
+    }
+  },
   "552500": {
     "steam_appid": 552500,
     "success": true,
@@ -2541,6 +4064,97 @@
     "recommendations": 1788,
     "achievementnum": 45,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/552990/header_alt_assets_2.jpg?t=1683273953"
+  },
+  "553640": {
+    "steam_appid": 553640,
+    "success": true,
+    "name": "ICEY",
+    "is_free": false,
+    "metacritic": {
+      "score": 84,
+      "url": "https://www.metacritic.com/game/pc/icey?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 22086,
+    "achievementnum": 34,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/553640/header.jpg?t=1667809644",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1300000,
+      "final": 1300000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 13,000"
+    }
+  },
+  "567280": {
+    "steam_appid": 567280,
+    "success": true,
+    "name": "Cube Runner",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 594,
+    "achievementnum": 41,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/567280/header.jpg?t=1588756674",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1315000,
+      "final": 1315000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 13,150"
+    }
+  },
+  "567640": { "success": false },
+  "568220": {
+    "steam_appid": 568220,
+    "success": true,
+    "name": "Lobotomy Corporation | Monster Management Simulation",
+    "is_free": false,
+    "genres": [
+      { "id": "23", "description": "Indie" },
+      { "id": "28", "description": "Simulation" }
+    ],
+    "recommendations": 23114,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/568220/header.jpg?t=1636694188",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2600000,
+      "final": 2600000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 26,000"
+    }
+  },
+  "569480": {
+    "steam_appid": 569480,
+    "success": true,
+    "name": "Kingdoms and Castles",
+    "is_free": false,
+    "genres": [
+      { "id": "23", "description": "Indie" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 23306,
+    "achievementnum": 12,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/569480/header.jpg?t=1671318001",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1550000,
+      "final": 1550000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 15,500"
+    }
   },
   "572890": {
     "steam_appid": 572890,
@@ -2593,6 +4207,21 @@
       "initial_formatted": "",
       "final_formatted": "₩ 17,500"
     }
+  },
+  "575550": {
+    "steam_appid": 575550,
+    "success": true,
+    "name": "Hell Girls",
+    "is_free": false,
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "23", "description": "Indie" },
+      { "id": "3", "description": "RPG" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 3483,
+    "achievementnum": 92,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/575550/header.jpg?t=1645800964"
   },
   "578080": {
     "steam_appid": 578080,
@@ -2689,6 +4318,31 @@
     "achievementnum": 26,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/582500/header.jpg?t=1652179803"
   },
+  "589360": {
+    "steam_appid": 589360,
+    "success": true,
+    "name": "Ni no Kuni™ II: Revenant Kingdom",
+    "is_free": false,
+    "metacritic": {
+      "score": 81,
+      "url": "https://www.metacritic.com/game/pc/ni-no-kuni-ii-revenant-kingdom?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 7099,
+    "achievementnum": 63,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/589360/header.jpg?t=1666168049",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 6480000,
+      "final": 6480000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 64,800"
+    }
+  },
   "597230": {
     "steam_appid": 597230,
     "success": true,
@@ -2709,6 +4363,39 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 1,100"
+    }
+  },
+  "601510": {
+    "steam_appid": 601510,
+    "success": true,
+    "name": "Yu-Gi-Oh! Duel Links",
+    "is_free": true,
+    "genres": [
+      { "id": "37", "description": "Free to Play" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "achievementnum": 20,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/601510/header.jpg?t=1671581208"
+  },
+  "602520": {
+    "steam_appid": 602520,
+    "success": true,
+    "name": "NEKOPARA Vol. 3",
+    "is_free": false,
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 10797,
+    "achievementnum": 27,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/602520/header.jpg?t=1656892343",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
     }
   },
   "607050": {
@@ -2734,6 +4421,36 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 20,500"
+    }
+  },
+  "607260": {
+    "steam_appid": 607260,
+    "success": true,
+    "name": "McOsu",
+    "is_free": true,
+    "genres": [{ "id": "23", "description": "Indie" }],
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/607260/header.jpg?t=1672831169"
+  },
+  "620980": {
+    "steam_appid": 620980,
+    "success": true,
+    "name": "Beat Saber",
+    "is_free": false,
+    "metacritic": {
+      "score": 93,
+      "url": "https://www.metacritic.com/game/pc/beat-saber?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "23", "description": "Indie" }],
+    "recommendations": 62463,
+    "achievementnum": 26,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/620980/header.jpg?t=1680556938",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3100000,
+      "final": 3100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 31,000"
     }
   },
   "622890": {
@@ -2778,6 +4495,24 @@
       "final_formatted": "₩ 3,300"
     }
   },
+  "632350": {
+    "steam_appid": 632350,
+    "success": true,
+    "name": "Cyberdimension Neptunia: 4 Goddesses Online",
+    "is_free": false,
+    "genres": [{ "id": "3", "description": "RPG" }],
+    "recommendations": 3820,
+    "achievementnum": 50,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/632350/header.jpg?t=1652289429",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3100000,
+      "final": 3100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 31,000"
+    }
+  },
   "632360": {
     "steam_appid": 632360,
     "success": true,
@@ -2803,6 +4538,19 @@
       "final_formatted": "₩ 26,000"
     }
   },
+  "635730": {
+    "steam_appid": 635730,
+    "success": true,
+    "name": "Dragonia",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 5258,
+    "achievementnum": 46,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/635730/header.jpg?t=1645801684"
+  },
   "636070": {
     "steam_appid": 636070,
     "success": true,
@@ -2825,6 +4573,7 @@
       "final_formatted": "₩ 8,500"
     }
   },
+  "644560": { "success": false },
   "645630": {
     "steam_appid": 645630,
     "success": true,
@@ -2894,6 +4643,24 @@
     }
   },
   "654310": { "success": false },
+  "657200": {
+    "steam_appid": 657200,
+    "success": true,
+    "name": "Hand Simulator",
+    "is_free": false,
+    "genres": [{ "id": "28", "description": "Simulation" }],
+    "recommendations": 27890,
+    "achievementnum": 69,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/657200/header.jpg?t=1664350346",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 230000,
+      "final": 230000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 2,300"
+    }
+  },
   "677160": {
     "steam_appid": 677160,
     "success": true,
@@ -2918,6 +4685,31 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 11,000"
+    }
+  },
+  "678960": {
+    "steam_appid": 678960,
+    "success": true,
+    "name": "CODE VEIN",
+    "is_free": false,
+    "metacritic": {
+      "score": 72,
+      "url": "https://www.metacritic.com/game/pc/code-vein?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 35943,
+    "achievementnum": 43,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/678960/header.jpg?t=1676860712",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 6480000,
+      "final": 6480000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 64,800"
     }
   },
   "682780": {
@@ -3014,6 +4806,39 @@
     "recommendations": 175,
     "achievementnum": 100,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/714010/header.jpg?t=1682614130"
+  },
+  "716260": {
+    "steam_appid": 716260,
+    "success": true,
+    "name": "Guns'n'Stories: Preface VR",
+    "is_free": true,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "37", "description": "Free to Play" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/716260/header.jpg?t=1582817334"
+  },
+  "716710": {
+    "steam_appid": 716710,
+    "success": true,
+    "name": "東方憑依華　～ Antinomy of Common Flowers.",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 1667,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/716710/header.jpg?t=1667192166",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2600000,
+      "final": 2600000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 26,000"
+    }
   },
   "718650": {
     "steam_appid": 718650,
@@ -3151,6 +4976,26 @@
       "discount_percent": 60,
       "initial_formatted": "₩ 20,500",
       "final_formatted": "₩ 8,200"
+    }
+  },
+  "745880": {
+    "steam_appid": 745880,
+    "success": true,
+    "name": "Touhou Tenkuushou ~ Hidden Star in Four Seasons.",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 4222,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/745880/header.jpg?t=1668044347",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1550000,
+      "final": 1550000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 15,500"
     }
   },
   "748300": {
@@ -3319,6 +5164,53 @@
       "final_formatted": "₩ 26,000"
     }
   },
+  "805550": {
+    "steam_appid": 805550,
+    "success": true,
+    "name": "Assetto Corsa Competizione",
+    "is_free": false,
+    "metacritic": {
+      "score": 77,
+      "url": "https://www.metacritic.com/game/pc/assetto-corsa-competizione?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "9", "description": "Racing" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "18", "description": "Sports" }
+    ],
+    "recommendations": 17239,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/805550/header.jpg?t=1681912645",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 4800000,
+      "final": 4800000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 48,000"
+    }
+  },
+  "812140": {
+    "steam_appid": 812140,
+    "success": true,
+    "name": "Assassin's Creed® Odyssey",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 122724,
+    "achievementnum": 93,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/812140/header.jpg?t=1670596226",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 6500000,
+      "final": 6500000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 65,000"
+    }
+  },
   "813630": {
     "steam_appid": 813630,
     "success": true,
@@ -3369,6 +5261,19 @@
       "initial_formatted": "",
       "final_formatted": "₩ 59,800"
     }
+  },
+  "823130": {
+    "steam_appid": 823130,
+    "success": true,
+    "name": "Totally Accurate Battlegrounds",
+    "is_free": true,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "37", "description": "Free to Play" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 15681,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/823130/header.jpg?t=1620818743"
   },
   "834450": {
     "steam_appid": 834450,
@@ -3485,6 +5390,28 @@
       "final_formatted": "₩ 20,900"
     }
   },
+  "851100": {
+    "steam_appid": 851100,
+    "success": true,
+    "name": "Touhou Luna Nights",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 11197,
+    "achievementnum": 22,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/851100/header.jpg?t=1671415244",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1850000,
+      "final": 1850000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 18,500"
+    }
+  },
   "858760": {
     "steam_appid": 858760,
     "success": true,
@@ -3527,6 +5454,20 @@
       "initial_formatted": "₩ 42,800",
       "final_formatted": "₩ 17,120"
     }
+  },
+  "863550": {
+    "steam_appid": 863550,
+    "success": true,
+    "name": "HITMAN™ 2",
+    "is_free": false,
+    "metacritic": {
+      "score": 82,
+      "url": "https://www.metacritic.com/game/pc/hitman-2?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 30976,
+    "achievementnum": 146,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/863550/header.jpg?t=1674755762"
   },
   "865360": {
     "steam_appid": 865360,
@@ -3734,6 +5675,26 @@
       "final_formatted": "₩ 15,500"
     }
   },
+  "911400": {
+    "steam_appid": 911400,
+    "success": true,
+    "name": "Assassin's Creed® III Remastered",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" }
+    ],
+    "recommendations": 6920,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/911400/header.jpg?t=1682004364",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 4400000,
+      "final": 4400000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 44,000"
+    }
+  },
   "916100": {
     "steam_appid": 916100,
     "success": true,
@@ -3774,6 +5735,28 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 68,800"
+    }
+  },
+  "933110": {
+    "steam_appid": 933110,
+    "success": true,
+    "name": "Age of Empires III: Definitive Edition",
+    "is_free": false,
+    "metacritic": {
+      "score": 75,
+      "url": "https://www.metacritic.com/game/pc/age-of-empires-iii-definitive-edition?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "2", "description": "Strategy" }],
+    "recommendations": 28855,
+    "achievementnum": 88,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/933110/header.jpg?t=1666118410",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1990000,
+      "final": 1990000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 19,900"
     }
   },
   "938560": {
@@ -3859,6 +5842,24 @@
       "final_formatted": "₩ 49,800"
     }
   },
+  "976730": {
+    "steam_appid": 976730,
+    "success": true,
+    "name": "Halo: The Master Chief Collection",
+    "is_free": false,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 185925,
+    "achievementnum": 700,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/976730/header.jpg?t=1670458602",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3990000,
+      "final": 3990000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 39,900"
+    }
+  },
   "977400": {
     "steam_appid": 977400,
     "success": true,
@@ -3928,6 +5929,27 @@
       "final_formatted": "₩ 68,800"
     }
   },
+  "995460": {
+    "steam_appid": 995460,
+    "success": true,
+    "name": "Miracle Snack Shop",
+    "is_free": false,
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" },
+      { "id": "28", "description": "Simulation" }
+    ],
+    "recommendations": 2087,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/995460/header.jpg?t=1672038130",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1050000,
+      "final": 1050000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 10,500"
+    }
+  },
   "996580": {
     "steam_appid": 996580,
     "success": true,
@@ -3993,6 +6015,28 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 32,000"
+    }
+  },
+  "1006710": {
+    "steam_appid": 1006710,
+    "success": true,
+    "name": "Decent Icons 2",
+    "is_free": false,
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" },
+      { "id": "53", "description": "Design & Illustration" },
+      { "id": "55", "description": "Photo Editing" },
+      { "id": "57", "description": "Utilities" }
+    ],
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1006710/header.jpg?t=1676889968",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 330000,
+      "final": 330000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 3,300"
     }
   },
   "1016120": {
@@ -4299,6 +6343,28 @@
       "final_formatted": "₩ 21,500"
     }
   },
+  "1091500": {
+    "steam_appid": 1091500,
+    "success": true,
+    "name": "Cyberpunk 2077",
+    "is_free": false,
+    "metacritic": {
+      "score": 86,
+      "url": "https://www.metacritic.com/game/pc/cyberpunk-2077?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "3", "description": "RPG" }],
+    "recommendations": 542389,
+    "achievementnum": 44,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1091500/header.jpg?t=1680026109",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 6600000,
+      "final": 6600000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 66,000"
+    }
+  },
   "1092790": {
     "steam_appid": 1092790,
     "success": true,
@@ -4341,6 +6407,27 @@
     "achievementnum": 34,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1097150/header.jpg?t=1669112301"
   },
+  "1101450": {
+    "steam_appid": 1101450,
+    "success": true,
+    "name": "Miss Neko",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "4", "description": "Casual" }
+    ],
+    "recommendations": 3192,
+    "achievementnum": 104,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1101450/header.jpg?t=1673263236",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 110000,
+      "final": 55000,
+      "discount_percent": 50,
+      "initial_formatted": "₩ 1,100",
+      "final_formatted": "₩ 550"
+    }
+  },
   "1103730": {
     "steam_appid": 1103730,
     "success": true,
@@ -4367,6 +6454,50 @@
       "final_formatted": "₩ 20,500"
     }
   },
+  "1113000": {
+    "steam_appid": 1113000,
+    "success": true,
+    "name": "Persona 4 Golden",
+    "is_free": false,
+    "metacritic": {
+      "score": 87,
+      "url": "https://www.metacritic.com/game/pc/persona-4-golden?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "3", "description": "RPG" }],
+    "recommendations": 54436,
+    "achievementnum": 50,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1113000/header.jpg?t=1679398793",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1980000,
+      "final": 1485000,
+      "discount_percent": 25,
+      "initial_formatted": "₩ 19,800",
+      "final_formatted": "₩ 14,850"
+    }
+  },
+  "1113560": {
+    "steam_appid": 1113560,
+    "success": true,
+    "name": "NieR Replicant™ ver.1.22474487139...",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 15499,
+    "achievementnum": 47,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1113560/header.jpg?t=1673963725",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 6980000,
+      "final": 2792000,
+      "discount_percent": 60,
+      "initial_formatted": "₩ 69,800",
+      "final_formatted": "₩ 27,920"
+    }
+  },
   "1115050": {
     "steam_appid": 1115050,
     "success": true,
@@ -4389,6 +6520,55 @@
       "final_formatted": "₩ 15,500"
     }
   },
+  "1127500": {
+    "steam_appid": 1127500,
+    "success": true,
+    "name": "Mini Motorways",
+    "is_free": false,
+    "metacritic": {
+      "score": 87,
+      "url": "https://www.metacritic.com/game/pc/mini-motorways?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 15365,
+    "achievementnum": 115,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1127500/header.jpg?t=1667780984",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1050000,
+      "final": 1050000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 10,500"
+    }
+  },
+  "1139900": {
+    "steam_appid": 1139900,
+    "success": true,
+    "name": "Ghostrunner",
+    "is_free": false,
+    "metacritic": {
+      "score": 81,
+      "url": "https://www.metacritic.com/game/pc/ghostrunner?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 36159,
+    "achievementnum": 45,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1139900/header.jpg?t=1678144822",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3500000,
+      "final": 3500000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 35,000"
+    }
+  },
   "1142080": {
     "steam_appid": 1142080,
     "success": true,
@@ -4408,6 +6588,29 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 10,500"
+    }
+  },
+  "1144200": {
+    "steam_appid": 1144200,
+    "success": true,
+    "name": "Ready or Not",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "23", "description": "Indie" },
+      { "id": "70", "description": "Early Access" }
+    ],
+    "recommendations": 84418,
+    "achievementnum": 1,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1144200/header.jpg?t=1683229008",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 4300000,
+      "final": 4300000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 43,000"
     }
   },
   "1144770": {
@@ -4459,6 +6662,51 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 27,000"
+    }
+  },
+  "1146630": {
+    "steam_appid": 1146630,
+    "success": true,
+    "name": "Yokai's Secret",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 6234,
+    "achievementnum": 49,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1146630/header.jpg?t=1673263199",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 230000,
+      "final": 115000,
+      "discount_percent": 50,
+      "initial_formatted": "₩ 2,300",
+      "final_formatted": "₩ 1,150"
+    }
+  },
+  "1153430": {
+    "steam_appid": 1153430,
+    "success": true,
+    "name": "Love wish",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 1512,
+    "achievementnum": 75,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1153430/header.jpg?t=1673262886",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 110000,
+      "final": 55000,
+      "discount_percent": 50,
+      "initial_formatted": "₩ 1,100",
+      "final_formatted": "₩ 550"
     }
   },
   "1154810": {
@@ -4523,6 +6771,28 @@
     "achievementnum": 12,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1172470/header.jpg?t=1682923560"
   },
+  "1174690": {
+    "steam_appid": 1174690,
+    "success": true,
+    "name": "love wish 2",
+    "is_free": false,
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 1409,
+    "achievementnum": 95,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1174690/header.jpg?t=1673263163",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 220000,
+      "final": 110000,
+      "discount_percent": 50,
+      "initial_formatted": "₩ 2,200",
+      "final_formatted": "₩ 1,100"
+    }
+  },
+  "1190460": { "success": false },
   "1191900": {
     "steam_appid": 1191900,
     "success": true,
@@ -4569,6 +6839,28 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 20,500"
+    }
+  },
+  "1217390": {
+    "steam_appid": 1217390,
+    "success": true,
+    "name": "Some Some Convenience Store",
+    "is_free": false,
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 2729,
+    "achievementnum": 25,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1217390/header.jpg?t=1672038063",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1500000,
+      "final": 1500000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 15,000"
     }
   },
   "1222700": {
@@ -4642,6 +6934,37 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 64,800"
+    }
+  },
+  "1249200": {
+    "steam_appid": 1249200,
+    "success": true,
+    "name": "Ghostrunner Demo",
+    "is_free": true,
+    "metacritic": { "score": 81 },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1249200/header.jpg?t=1603907185"
+  },
+  "1250410": {
+    "steam_appid": 1250410,
+    "success": true,
+    "name": "Microsoft Flight Simulator 40th Anniversary Edition",
+    "is_free": false,
+    "metacritic": {
+      "score": 91,
+      "url": "https://www.metacritic.com/game/pc/microsoft-flight-simulator?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "28", "description": "Simulation" }],
+    "recommendations": 44827,
+    "achievementnum": 43,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1250410/header.jpg?t=1668186331",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 5990000,
+      "final": 5990000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 59,900"
     }
   },
   "1254120": {
@@ -4766,6 +7089,26 @@
     "achievementnum": 10,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1289310/header.jpg?t=1620755466"
   },
+  "1301210": {
+    "steam_appid": 1301210,
+    "success": true,
+    "name": "Knockout City™",
+    "is_free": true,
+    "metacritic": {
+      "score": 80,
+      "url": "https://www.metacritic.com/game/pc/knockout-city?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "37", "description": "Free to Play" },
+      { "id": "23", "description": "Indie" },
+      { "id": "18", "description": "Sports" }
+    ],
+    "recommendations": 4982,
+    "achievementnum": 50,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1301210/header.jpg?t=1677685142"
+  },
   "1325200": {
     "steam_appid": 1325200,
     "success": true,
@@ -4791,6 +7134,42 @@
       "final_formatted": "₩ 32,880"
     }
   },
+  "1325860": {
+    "steam_appid": 1325860,
+    "success": true,
+    "name": "VTube Studio",
+    "is_free": true,
+    "genres": [
+      { "id": "23", "description": "Indie" },
+      { "id": "51", "description": "Animation & Modeling" },
+      { "id": "58", "description": "Video Production" }
+    ],
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1325860/header.jpg?t=1682724343"
+  },
+  "1326470": {
+    "steam_appid": 1326470,
+    "success": true,
+    "name": "Sons Of The Forest",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "23", "description": "Indie" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "70", "description": "Early Access" }
+    ],
+    "recommendations": 113405,
+    "achievementnum": 28,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1326470/header.jpg?t=1679677298",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3200000,
+      "final": 3200000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 32,000"
+    }
+  },
   "1341290": {
     "steam_appid": 1341290,
     "success": true,
@@ -4811,6 +7190,33 @@
       "discount_percent": 25,
       "initial_formatted": "₩ 19,500",
       "final_formatted": "₩ 14,620"
+    }
+  },
+  "1345820": {
+    "steam_appid": 1345820,
+    "success": true,
+    "name": "Ragnarock",
+    "is_free": false,
+    "metacritic": {
+      "score": 87,
+      "url": "https://www.metacritic.com/game/pc/ragnarock?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" },
+      { "id": "9", "description": "Racing" },
+      { "id": "18", "description": "Sports" }
+    ],
+    "recommendations": 2236,
+    "achievementnum": 11,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1345820/header.jpg?t=1682583372",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2600000,
+      "final": 2600000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 26,000"
     }
   },
   "1368910": {
@@ -4863,6 +7269,28 @@
       "final_formatted": "₩ 8,140"
     }
   },
+  "1406990": {
+    "steam_appid": 1406990,
+    "success": true,
+    "name": "NEKOPARA Vol. 4",
+    "is_free": false,
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 7354,
+    "achievementnum": 19,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1406990/header.jpg?t=1656892323",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1100000,
+      "final": 1100000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 11,000"
+    }
+  },
   "1426210": {
     "steam_appid": 1426210,
     "success": true,
@@ -4886,6 +7314,28 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 44,000"
+    }
+  },
+  "1431570": {
+    "steam_appid": 1431570,
+    "success": true,
+    "name": "GLASS",
+    "is_free": false,
+    "genres": [
+      { "id": "25", "description": "Adventure" },
+      { "id": "4", "description": "Casual" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 1146,
+    "achievementnum": 107,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1431570/header.jpg?t=1672301646",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 220000,
+      "final": 220000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 2,200"
     }
   },
   "1433860": {
@@ -4981,6 +7431,37 @@
       "final_formatted": "₩ 39,000"
     }
   },
+  "1449850": {
+    "steam_appid": 1449850,
+    "success": true,
+    "name": "Yu-Gi-Oh! Master Duel",
+    "is_free": true,
+    "genres": [
+      { "id": "37", "description": "Free to Play" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "achievementnum": 11,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1449850/header.jpg?t=1683514011"
+  },
+  "1451940": {
+    "steam_appid": 1451940,
+    "success": true,
+    "name": "NEEDY STREAMER OVERLOAD",
+    "is_free": false,
+    "genres": [{ "id": "28", "description": "Simulation" }],
+    "recommendations": 21249,
+    "achievementnum": 33,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1451940/header.jpg?t=1656071815",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 1650000,
+      "final": 990000,
+      "discount_percent": 40,
+      "initial_formatted": "₩ 16,500",
+      "final_formatted": "₩ 9,900"
+    }
+  },
   "1477590": {
     "steam_appid": 1477590,
     "success": true,
@@ -5000,6 +7481,27 @@
       "discount_percent": 30,
       "initial_formatted": "₩ 44,800",
       "final_formatted": "₩ 31,360"
+    }
+  },
+  "1509510": {
+    "steam_appid": 1509510,
+    "success": true,
+    "name": "Settlement Survival",
+    "is_free": false,
+    "genres": [
+      { "id": "28", "description": "Simulation" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "recommendations": 5417,
+    "achievementnum": 51,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1509510/header.jpg?t=1669961496",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2050000,
+      "final": 2050000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 20,500"
     }
   },
   "1522820": {
@@ -5023,6 +7525,70 @@
       "discount_percent": 0,
       "initial_formatted": "",
       "final_formatted": "₩ 31,000"
+    }
+  },
+  "1533390": {
+    "steam_appid": 1533390,
+    "success": true,
+    "name": "Gorilla Tag",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "4", "description": "Casual" }
+    ],
+    "recommendations": 3172,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1533390/header.jpg?t=1673750290",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 2150000,
+      "final": 2150000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 21,500"
+    }
+  },
+  "1551360": {
+    "steam_appid": 1551360,
+    "success": true,
+    "name": "Forza Horizon 5",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "9", "description": "Racing" },
+      { "id": "28", "description": "Simulation" },
+      { "id": "18", "description": "Sports" }
+    ],
+    "recommendations": 106969,
+    "achievementnum": 124,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1551360/header.jpg?t=1683059745",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 5990000,
+      "final": 5990000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 59,900"
+    }
+  },
+  "1557740": {
+    "steam_appid": 1557740,
+    "success": true,
+    "name": "ROUNDS",
+    "is_free": false,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "23", "description": "Indie" }
+    ],
+    "recommendations": 14456,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1557740/header.jpg?t=1645874383",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 650000,
+      "final": 650000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 6,500"
     }
   },
   "1568590": {
@@ -5229,6 +7795,28 @@
       "final_formatted": "₩ 24,900"
     }
   },
+  "1817230": {
+    "steam_appid": 1817230,
+    "success": true,
+    "name": "Hi-Fi RUSH",
+    "is_free": false,
+    "metacritic": {
+      "score": 89,
+      "url": "https://www.metacritic.com/game/pc/hi-fi-rush?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [{ "id": "1", "description": "Action" }],
+    "recommendations": 13605,
+    "achievementnum": 61,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1817230/header.jpg?t=1681239556",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 3420000,
+      "final": 3420000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 34,200"
+    }
+  },
   "1825750": {
     "steam_appid": 1825750,
     "success": true,
@@ -5241,6 +7829,51 @@
       { "id": "3", "description": "RPG" }
     ],
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1825750/header.jpg?t=1681854232"
+  },
+  "1836450": {
+    "steam_appid": 1836450,
+    "success": true,
+    "name": "Monster Hunter Rise: Sunbreak Demo",
+    "is_free": true,
+    "genres": [{ "id": "1", "description": "Action" }],
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1836450/header.jpg?t=1676591546"
+  },
+  "1850570": {
+    "steam_appid": 1850570,
+    "success": true,
+    "name": "DEATH STRANDING DIRECTOR'S CUT",
+    "is_free": false,
+    "metacritic": {
+      "score": 85,
+      "url": "https://www.metacritic.com/game/pc/death-stranding-directors-cut?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" }
+    ],
+    "recommendations": 13048,
+    "achievementnum": 63,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1850570/header.jpg?t=1683196693",
+    "price_overview": {
+      "currency": "KRW",
+      "initial": 4500000,
+      "final": 4500000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "₩ 45,000"
+    }
+  },
+  "1869590": {
+    "steam_appid": 1869590,
+    "success": true,
+    "name": "Omega Strikers",
+    "is_free": true,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "37", "description": "Free to Play" },
+      { "id": "2", "description": "Strategy" }
+    ],
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1869590/header.jpg?t=1682608090"
   },
   "1948280": {
     "steam_appid": 1948280,
