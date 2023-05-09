@@ -69,9 +69,10 @@ body {
 }
 
 .main-container {
-  height: calc(100vh - 50px);
+  height: auto;
   display: block;
   align-content: center;
+  margin-bottom: 50px;
 }
 
 .main-container .main-center {
@@ -85,14 +86,15 @@ body {
 .main-container .main-logo-box {
   justify-content: center;
   display: flex;
-  width: 100%;
+  width: auto;
+  text-size-adjust: auto;
   height: 35%;
   align-items: flex-end;
   padding-bottom: 10%;
 }
 
 .main-container .main-logo {
-  font-size: 100px;
+  font-size: 5vw;
   color: aliceblue;
   font-weight: 600;
 }
@@ -260,6 +262,10 @@ body {
   font-size: 1.2rem;
   flex-direction: column;
   white-space: nowrap;
+}
+.grid-item span{
+  font-size: 12px;
+  color: rgba(240, 248, 255, 0.532);
 }
 
 .grid-data{
@@ -501,7 +507,7 @@ body {
   display: flex;
 }
 
-.achievement-100-games-grid .achievement-grid-item{
+.type2-grid-item{
   padding: 10px;
   display: flex;
   width: auto;
@@ -510,7 +516,7 @@ body {
   border-radius: 10px;
 }
 
-.achievement-100-games-grid .achievement-game-img-container{
+.achievement-game-img-container{
   width: auto;
   height: auto;
   display: flex;
@@ -519,7 +525,7 @@ body {
 }
 
 
-.achievement-100-games-grid .achievement-game-img{
+.achievement-game-img{
   height: 100%;
   width: auto;
 } 
@@ -533,9 +539,9 @@ body {
   align-items: center;
   margin: 5px;
 }
-.achievement-100-games-grid .achievement-game-name{
+.achievement-game-name{
   text-align: center;
-  font-size: 30px;
+  font-size: 27px;
   color: aliceblue;
   width: 50%
 
@@ -574,4 +580,33 @@ body {
 
 .error-container .error-name{
   font-size: 35px;
+}
+
+.no-100-game-container{
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: aliceblue;
+}
+
+.most-played-games-grid{
+  width: 800px;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  align-self: center;
+}
+
+.help-header{
+  font-size: 30px;
+  color: aliceblue;
+  text-align: center;
+}
+
+.help-paragraph-container{
+  color:aliceblue;
+  font-size: 15px;
 }

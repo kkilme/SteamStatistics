@@ -10,11 +10,11 @@
   <body>
     <div class="nav-container">
       <div class="main-logo">
-        <a class="logo"> Steam<span>Statistics</span> </a>
+        <a class="logo" href="http://localhost:3000/home"> Steam<span>Statistics</span> </a>
       </div>
       <nav class="mainnav">
         <div class="mainnav-box-selected">
-          <a class="mainnav-item"> Home </a>
+          <a class="mainnav-item" href="http://localhost:3000/home"> Home </a>
         </div>
         <div class="mainnav-box">
           <a class="mainnav-item"> Help </a>
@@ -52,6 +52,7 @@
     <script>
       function search(){
         let steamid = document.getElementById('steamid').value;
+        if(steamid == '') return;
         console.log(steamid);
         window.location.href = "http://localhost:3000/profile?steamid="+steamid;
       }

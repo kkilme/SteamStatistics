@@ -951,6 +951,21 @@
       "final_formatted": "₩ 16,000"
     }
   },
+  "212500": {
+    "steam_appid": 212500,
+    "success": true,
+    "name": "The Lord of the Rings Online™",
+    "is_free": true,
+    "genres": [
+      { "id": "1", "description": "Action" },
+      { "id": "25", "description": "Adventure" },
+      { "id": "37", "description": "Free to Play" },
+      { "id": "29", "description": "Massively Multiplayer" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 167,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/212500/header.jpg?t=1656446044"
+  },
   "216090": {
     "steam_appid": 216090,
     "success": true,
@@ -5073,6 +5088,24 @@
     "achievementnum": 35,
     "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/760160/header.jpg?t=1680688641"
   },
+  "761890": {
+    "steam_appid": 761890,
+    "success": true,
+    "name": "Albion Online",
+    "is_free": true,
+    "metacritic": {
+      "score": 72,
+      "url": "https://www.metacritic.com/game/pc/albion-online?ftag=MCD-06-10aaa1f"
+    },
+    "genres": [
+      { "id": "37", "description": "Free to Play" },
+      { "id": "29", "description": "Massively Multiplayer" },
+      { "id": "3", "description": "RPG" }
+    ],
+    "recommendations": 1796,
+    "achievementnum": 148,
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/761890/header.jpg?t=1683539410"
+  },
   "774171": {
     "steam_appid": 774171,
     "success": true,
@@ -6111,6 +6144,20 @@
       "initial_formatted": "",
       "final_formatted": "₩ 24,000"
     }
+  },
+  "1022450": {
+    "steam_appid": 1022450,
+    "success": true,
+    "name": "War Selection",
+    "is_free": true,
+    "genres": [
+      { "id": "37", "description": "Free to Play" },
+      { "id": "23", "description": "Indie" },
+      { "id": "29", "description": "Massively Multiplayer" },
+      { "id": "2", "description": "Strategy" },
+      { "id": "70", "description": "Early Access" }
+    ],
+    "header_image": "https://cdn.akamai.steamstatic.com/steam/apps/1022450/header.jpg?t=1681943679"
   },
   "1026420": {
     "steam_appid": 1026420,

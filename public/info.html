@@ -88,9 +88,9 @@
           </div>
         </div>
 
-        <div class="statistics-body">
+        <div class="statistics-body-selected">
           <div class="info-middle">
-            <a class="color2">플레이 시간</a> &nbsp관련 통계
+            <a class="color2">플레이 시간</a> &nbsp통계
           </div>
           <div class="statistics-container">
             <div class="playtime-statistics-grid">
@@ -121,7 +121,7 @@
             </div>
           </div>
           <div class="info-middle">
-            <a class="color3">보유 게임</a> &nbsp관련 통계
+            <a class="color3">보유 게임</a> &nbsp통계
           </div>
           <div class="statistics-container">
             <div class="ownedgames-statistics-grid">
@@ -167,9 +167,7 @@
             </thead>
             <tbody>
               <tr>
-                <td>플레이한 게임이 없어요...</td>
-                <td>0</td>
-                <td>0</td>
+                <td colspan="3">플레이한 게임이 없어요...</td>
               </tr>
             </tbody>
           </table>
@@ -177,14 +175,18 @@
           <div class="info-middle">
             <a class="color7">가장 많이 플레이한</a> &nbsp게임 (Top 15)
           </div>
+
+          <div class="most-played-games-grid">
+            
+          </div>
         </div>
 
-        <div class="statistics-body-selected">
+        <div class="statistics-body">
           <div class="info-middle"><a class="color5">도전과제</a>&nbsp통계</div>
           <div class="statistics-container">
             <div class="achievement-statistics-grid">
               <div class="grid-item">
-                <a class="color5">달성한 총 도전과제</a>
+                <a class="color5">달성한 도전과제 수</a>
                 <p class="grid-data" name="total-achievements">계산 중...</p>
               </div>
               <div class="grid-item">
@@ -196,7 +198,7 @@
                 <p class="grid-data" id="hidden-achievements">계산 중...</p>
               </div>
               <div class="grid-item">
-                <a class="color5">도전과제 100% 달성</a>
+                <a class="color5">도전과제 100% 달성</a><span>*도전과제가 6개 이상인 게임만 카운트</span>
                 <p class="grid-data" id="games-achievement-100">계산 중...</p>
               </div>
               <div class="grid-item">
@@ -214,7 +216,7 @@
           </div>
 
           <div class="achievement-100-games-grid">
-           
+            
           </div>
         </div>
       </div>

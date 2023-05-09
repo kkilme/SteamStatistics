@@ -1,0 +1,142 @@
+----------------------------------------------------------------------------------------------------------
+UserData: http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamId}
+{
+    "steamid": "76561198818238819",
+    "communityvisibilitystate": 3,
+    "profilestate": 1,
+    "personaname": "kkirmi1",
+    "commentpermission": 1,
+    "profileurl": "https://steamcommunity.com/profiles/76561198818238819/",
+    "avatar": "https://avatars.akamai.steamstatic.com/763421bd6ac58ee67ebd87b34526d3bf35b555d6.jpg",
+    "avatarmedium": "https://avatars.akamai.steamstatic.com/763421bd6ac58ee67ebd87b34526d3bf35b555d6_medium.jpg",
+    "avatarfull": "https://avatars.akamai.steamstatic.com/763421bd6ac58ee67ebd87b34526d3bf35b555d6_full.jpg",
+    "avatarhash": "763421bd6ac58ee67ebd87b34526d3bf35b555d6",
+    "lastlogoff": 1681197276,
+    "personastate": 1,
+    "realname": "서진",
+    "primaryclanid": "103582791429521408",
+    "timecreated": 1519572602,
+    "personastateflags": 0,
+    "loccountrycode": "KR"
+}
+----------------------------------------------------------------------------------------------------------
+GameData: http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=${apiKey}&steamid=${steamId}&format=json
+{
+    "game_count": 226,
+    "games": [
+        {
+            "appid": 400,
+            "playtime_forever": 209,
+            "playtime_windows_forever": 209,
+            "playtime_mac_forever": 0,
+            "playtime_linux_forever": 0,
+            "rtime_last_played": 1584634027
+        },
+        {
+            "appid": 620,
+            "playtime_forever": 1747,
+            "playtime_windows_forever": 1747,
+            "playtime_mac_forever": 0,
+            "playtime_linux_forever": 0,
+            "rtime_last_played": 1653305274
+        }
+    ]
+}
+----------------------------------------------------------------------------------------------------------
+Achievement: http://api.steampowered.com/ISteamUserStats/GetPlayerAchievements/v0001/?appid=${appId}&key=${apiKey}&steamid=${steamId}
+{
+  playerstats: {
+    steamID: '76561198818238819',
+    gameName: 'DARK SOULS™ III',
+    achievements: [
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object], [Object],
+      [Object], [Object], [Object]
+    ],
+    success: true
+  }
+}
+*Object
+{apiname: 'ACH00', achieved: 0, unlocktime: 0}
+{apiname: 'ACH01', achieved: 0, unlocktime: 0}
+{apiname: 'ACH02', achieved: 1, unlocktime: 1640607959}
+----------------------------------------------------------------------------------------------------------
+Appdetail: http://store.steampowered.com/api/appdetails?appids=${gameId}
+{
+  '374320': {
+    success: true,
+    data: {
+      type: 'game',
+      name: 'DARK SOULS™ III',
+      steam_appid: 374320,
+      required_age: 0,
+      is_free: false,
+      controller_support: 'full',
+      dlc: [Array],
+      detailed_description: '<img src="https://cdn.akamai.steamstatic.com/steam/apps/374320/extras/DarkSoulsIII_GIF1.gif?t=1671097812" /><br>Get the DARK SOULS<img src="https://cdn.akamai.steamstatic.com/steam/apps/374320/extras/DarkSoulsIII_GIF2.gif?t=1671097812" />',
+      about_the_game: '<img src="https://cdn.akamai.steamstatic.com/steam/apps/374320/extras/DarkSoulsIII_GIF1.gif?t=1671097812" /><br>Get the DARK SOULS™ III Season Pass now and challenge yourself with all the available content!<br><br>Winner of gamescom award 2015 &quot;Best RPG&quot; and 
+over 35 E3 2015 Awards and Nominations.<br><br>DARK SOULS™ III continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. <br><br>As fires fade and the world falls into ruin, journey into a universe filled with more colossal enemies and environments. Players will be immersed into a world of epic atmosphere and darkness through faster gameplay and amplified combat intensity. Fans and newcomers alike will get lost in the game hallmark rewarding gameplay and immersive graphics. <br>Now only embers remain… Prepare yourself once more and Embrace The Darkness!<br><img src="https://cdn.akamai.steamstatic.com/steam/apps/374320/extras/DarkSoulsIII_GIF2.gif?t=1671097812" />',
+      short_description: 'Dark Souls continues to push the boundaries with the latest, ambitious chapter in the critically-acclaimed and genre-defining series. Prepare yourself and Embrace The Darkness!',
+      supported_languages: 'English<strong>*</strong>, French, Italian, German, Spanish - Spain, Polish, Russian, Portuguese - Brazil, Simplified 
+Chinese, Traditional Chinese, Japanese, Korean<br><strong>*</strong>languages with full audio support',
+      reviews: `“Dark Souls 3's incredible world and awe-inspiring weapon arts make it the fiercest installment yet.”<br>9.5/10 – <a href="http://www.ign.com/articles/2016/04/04/dark-souls-3-review" target="_blank" rel=""  >IGN</a><br><br>“Sprawling level design, thrilling combat, and masterful indirect storytelling make Dark Souls 3 the best Dark Souls yet.”<br>94% – <a href="http://www.pcgamer.com/dark-souls-3-review/" target="_blank" rel=""  >PC Gamer</a><br><br>“Dark Souls III successfully replicates the winning formula of the Souls series, a wondrous combination of majestic boss battles, incredible layered environments full of secrets, and precise combat that can make other action RPGs difficult to play once you’ve 
+mastered the art.”<br>9.25/10 – <a href="https://steamcommunity.com/linkfilter/?url=http://www.gameinformer.com/games/dark_souls_iii/b/playstation4/archive/2016/04/04/familiar-but-fascinating-fantasy.aspx" target="_blank" rel=" noopener"  >Game Informer</a><br>`,
+      header_image: 'https://cdn.akamai.steamstatic.com/steam/apps/374320/header.jpg?t=1671097812',
+      website: null,
+      pc_requirements: [Object],
+      mac_requirements: [],
+      linux_requirements: [],
+      legal_notice: 'DARK SOULS® III & ©BANDAI NAMCO Entertainment Inc. / ©2011-2016 FromSoftware, Inc.',
+      developers: [Array],
+      publishers: [Array],
+      price_overview: {currency: 'KRW', initial: 4980000, final: 4980000, discount_percent: 0, initial_formatted: '', final_formatted: "₩ 49,800"},
+      packages: [Array],
+      package_groups: [Array],
+      platforms: [Object],
+      metacritic: [Object],
+      categories: [Array],
+      genres: [Array],
+      screenshots: [Array],
+      movies: [Array],
+      recommendations: [Object],
+      achievements: [Object],
+      release_date: [Object],
+      support_info: [Object],
+      background: 'https://cdn.akamai.steamstatic.com/steam/apps/374320/page_bg_generated_v6b.jpg?t=1671097812',
+      background_raw: 'https://cdn.akamai.steamstatic.com/steam/apps/374320/page.bg.jpg?t=1671097812',
+      content_descriptors: [Object]
+    }
+  }
+}
+-------------------------------------------------------------
+https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?key=CDB6562AD13D438878CDCF95AECC2879&appid=374320&l=koreana
+
+{"game":{"gameName":"Solstice","gameVersion":"12","availableGameStats":
+{"achievements":
+[{"name":"ACH00","defaultvalue":0,"displayName":"다크 소울","hidden":0,"description":"모든 실적을 획득했다",
+"icon":"https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/374320/1fcdb90f670bc6b072b66a753102cf59ec7acaff.jpg",
+"icongray":"https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/374320/95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg"},
+
+{"name":"ACH01","defaultvalue":0,"displayName":"태초의 불을 계승하는 자","hidden":1,
+"icon":"https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/374320/e46db10c11872c0d33afd3a897641e8c025f2ece.jpg",
+"icongray":"https://steamcdn-a.akamaihd.net/steamcommunity/public/images/apps/374320/95b9965cf8d17e9f3fd545095263132fcc6d1ec9.jpg"},
+]}}}
+
+-----------------------------------------------------------------------------------
+
+https://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v2/?gameid=374320
+
+{"achievementpercentages":{"achievements":
+[{"name":"ACH41","percent":93.5999984741210938},
+{"name":"ACH42","percent":84.9000015258789063},
+{"name":"ACH27","percent":84.3000030517578125},
+{"name":"ACH28","percent":65.8000030517578125}]
+}}

@@ -32,27 +32,44 @@ app.get("/profile", (req,res)=>{
 
 // get basic info about user
 app.get("/steaminfo", async (req, res) => {
-  const steamId = req.query.steamid;
+  var steamId = req.query.steamid;
   console.log("SteamId:" + steamId);
   const apiKey = "CDB6562AD13D438878CDCF95AECC2879";
   try {
-    const steamUserResponse = await fetch(
+    var steamUserResponse = await fetch(
       `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamId}`
     );
-    const steamUserData = await steamUserResponse.json();
+    var steamUserData = await steamUserResponse.json();
 
+    // invalid steamid
+    if(steamUserData.response.players.length == 0){
+
+      // is steamid custom?
+      const steamCustomURLResponse = await fetch(
+        `https://api.steampowered.com/ISteamUser/ResolveVanityURL/v0001/?key=${apiKey}&vanityurl=${steamId}`
+      );
+      const steamCustomURLData = await steamCustomURLResponse.json();
+
+      // yes -> get steamid and replace it
+      if('steamid' in steamCustomURLData.response){
+        steamId = steamCustomURLData.response.steamid;
+        steamUserResponse = await fetch(
+          `http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=${apiKey}&steamids=${steamId}`
+        );
+        steamUserData = await steamUserResponse.json();
+      } else { // no -> send error message
+        res.json({
+          error: 'invalid steamid'
+        })
+        return;
+      }
+    }
     const steamGamesResponse = await fetch(
       `http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=${apiKey}&steamid=${steamId}&format=json`
     );
 
-    var steamGamesData = ''
-    try{steamGamesData = await steamGamesResponse.json();}
-    catch(err){
-      res.json({
-        error: 'invalid steamid'
-      })
-      return;
-    }
+    var steamGamesData = await steamGamesResponse.json();
+    
     
     // const recentPlayedResponse = await fetch(
     //   `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${apiKey}&steamid=${steamId}&count=5`
