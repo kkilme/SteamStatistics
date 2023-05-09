@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Steam Statistics</title>
-    <link rel="stylesheet" type="text/css" href="steam.css" />
+    <link rel="stylesheet" type="text/css" href="../steam.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
@@ -10,25 +10,62 @@
   <body>
     <div class="nav-container">
       <div class="main-logo">
-        <a class="logo" href="http://localhost:3000/home"> Steam<span>Statistics</span> </a>
+        <a class="logo" href="http://localhost:3000"> Steam<span>Statistics</span> </a>
       </div>
       <nav class="mainnav">
         <div class="mainnav-box">
-          <a class="mainnav-item" href="http://localhost:3000/home"> Home </a>
+          <a class="mainnav-item" href="http://localhost:3000"> Home </a>
         </div>
         <div class="mainnav-box-selected">
-          <a class="mainnav-item"> Help </a>
+          <a class="mainnav-item" href="http://localhost:3000/help"> Help </a>
         </div>
       </nav>
     </div>
     <div class="main-container">
-      <div class="main-center">
+      <div class="info-head" style="font-size: 45px;">
+        Steam<span style='color:rgb(102, 192, 244)'>Statistics</span> &nbsp이용을 위한 도움말
+      </div>
+      <div class="main-center-help">
         <h1 class="help-header">
-          1. Steam ID 알아내기
+          1. 스팀 유저의 Steam ID 알아내기
         </h1>
         <div class="help-paragraph-container">
+          <img class="help-img" src="./help_steamid_1.PNG">
           <p class="help-paragraph">
-            이렇게 저렇게
+            1. 스팀 클라이언트에서 내 프로필 페이지로 이동합니다. 또는 검색하고싶은 유저의 프로필 페이지로 이동합니다.
+          </p>
+          <img class="help-img" src="./help_steamid_2.PNG">
+          <p class="help-paragraph">
+            2. 페이지를 우클릭하여 URL을 복사합니다.
+          </p>
+          <img class="help-img" src="./help_steamid_3.PNG">
+          <p class="help-paragraph">
+            3. 복사한 URL을 확인합니다. <br>
+            steamcommunity.com/profiles/xxx 형식일 경우, x부분이 Steam ID입니다.
+            <br>steamcommunity.com/id/xxx 형식일 경우, x가 Steam ID는 아니지만, <br>이를 그대로 검색해도 웹사이트가 적절히 Steamid로 변환하여 유저를 검색합니다.
+          </p>
+        </div>
+      </div>
+      <div class="main-center-help">
+        <h1 class="help-header">
+          2. 자신의 프로필을 완전한 공개로 설정하기
+        </h1>
+        <div class="help-paragraph-container">
+          <img class="help-img" src="./help_steamid_1.PNG">
+          <p class="help-paragraph">
+            1. 스팀 클라이언트에서 내 프로필 페이지로 이동합니다.
+          </p>
+          <img class="help-img" src="./help_public_1.PNG">
+          <p class="help-paragraph">
+            2. 프로필 수정을 클릭합니다.
+          </p>
+          <img class="help-img" src="./help_public_2.PNG">
+          <p class="help-paragraph">
+            3. '공개 설정'을 선택합니다. <br>
+          </p>
+          <img class="help-img" src="./help_public_3.PNG">
+          <p class="help-paragraph">
+            4. '프로필' 및 '게임 세부 정보'를 공개로 설정합니다.
           </p>
         </div>
       </div>

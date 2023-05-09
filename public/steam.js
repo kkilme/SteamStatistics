@@ -29,10 +29,6 @@ var genre_counts = {owned:{}, playtime:{}}
 
 let achievement_fetch_failed = false;
 var steamid = "76561198818238819";
-// const steamid = "76561198371255268";
-// const steamid = '76561198296548782';
-// const steamid = '76561198350011504';
-// const steamid = '76561198417963889';
 loadPage();
 
 // load page
@@ -47,7 +43,8 @@ async function loadPage() {
   }
   const data = await getSteamData();
   if('error' in data){
-    setErrorPage('invalid_id')
+    if (data.error == 'invalid steamid') setErrorPage('invalid_id')
+    else if (data.error == 'private_profile') setErrorPage('private_profile')
     return;
   }
 
@@ -64,7 +61,7 @@ async function loadPage() {
   generatePlayTimeData(GameDataDict, UserDataDict);
   await generateGameData(GameDataDict);
   if(achievement_fetch_failed){
-    setErrorPage('private_profile');
+    setErrorPage('half_private_profile');
   }
 
   // console print
@@ -202,8 +199,9 @@ function setMostPlayedTable(){
   var GameDataDict_sortedByPlaytime = GameDataDict;
   var st = ''
   GameDataDict_sortedByPlaytime.sort((a, b) => b.playtime_forever - a.playtime_forever);
-  for(let i = 0; i<Math.min(15, GameDataDict_sortedByPlaytime.length); i++){
+  for(let i = 0; i<Math.min(17, GameDataDict_sortedByPlaytime.length); i++){
     const id = GameDataDict_sortedByPlaytime[i].appid;
+    if(id == '1046480' || id=='1973710') continue;
     var achieved = appDataDict[id]?.achievednum;
     var totalachieve = appDataDict[id]?.achievementnum;
     var achivenumst = ''
@@ -212,6 +210,7 @@ function setMostPlayedTable(){
     } else {
       achivenumst = '없음';
     }
+    
     if(!appDataDict[id].success){
       st += `
       <div class="type2-grid-item">
@@ -276,16 +275,27 @@ function setErrorPage(errortype){
     </p>
   </div>`
   } // not public profile 
-  else if (errortype=='private_profile'){
+  else if (errortype=='half_private_profile'){
     var errordiv = document.createElement('div');
     errordiv.className = 'error-container'
     errordiv.innerHTML = `<h3 class="error-name">
     해당 스팀 프로필은 완전한 공개 상태가 아닙니다.
   </h3>
   <p class="error-description">
-    스팀 프로필이 완전한 공개상태가 아니여서 <span class="color6">도전과제에 관한 정보</span>를 불러올 수 없었습니다.<br> 프로필을 공개로 설정하는 방법은 이곳을 참고하세요.
+    스팀 프로필이 완전한 공개상태가 아니여서 <span class="color6">도전과제에 관한 정보</span>를 불러올 수 없었습니다.<br> 프로필을 공개로 설정하는 방법은 <span style="color: aqua; cursor: pointer;" onclick="location.href='http://localhost:3000/help'">이곳</span>을 참고하세요.
   </p>`
     body.insertBefore(errordiv, document.querySelector('.main-center-info .info-head'))
+  }
+  else if (errortype=='private_profile'){
+    body.innerHTML = `
+    <div class='error-container'>
+    <h3 class="error-name">
+    해당 스팀 프로필은 비공개 상태이거나 보유한 게임이 없습니다.
+  </h3>
+  <p class="error-description">
+    스팀 프로필이 <span class="color6">비공개상태</span>이거나 보유한 게임이 없어서 데이터를 생성할 수 없었습니다.<br> 프로필을 공개로 설정하는 방법은 이곳을 참고하세요.
+  </p>
+  </div>`
   }
 }
 

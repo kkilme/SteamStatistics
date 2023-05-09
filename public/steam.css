@@ -607,6 +607,21 @@ body {
 }
 
 .help-paragraph-container{
-  color:aliceblue;
+  color:rgba(240, 255, 244, 0.89);
   font-size: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: auto;
+  text-align: center;
+}
+
+.main-container .main-center-help {
+  display: flex;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+  flex-direction: column;
+  background-color: rgba(23, 26, 33, 0.7);
+  border-radius: 15px;
 }

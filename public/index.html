@@ -10,14 +10,14 @@
   <body>
     <div class="nav-container">
       <div class="main-logo">
-        <a class="logo" href="http://localhost:3000/home"> Steam<span>Statistics</span> </a>
+        <a class="logo" href="http://localhost:3000"> Steam<span>Statistics</span> </a>
       </div>
       <nav class="mainnav">
         <div class="mainnav-box-selected">
-          <a class="mainnav-item" href="http://localhost:3000/home"> Home </a>
+          <a class="mainnav-item" href="http://localhost:3000"> Home </a>
         </div>
         <div class="mainnav-box">
-          <a class="mainnav-item"> Help </a>
+          <a class="mainnav-item" href="http://localhost:3000/help"> Help </a>
         </div>
       </nav>
     </div>
@@ -42,9 +42,9 @@
         </div>
         <div class="tip-container">
           <a class="tip">
-            Tip1: 자신의 SteamID를 알아내는 방법은 이곳을 참고하세요.
+            Tip1: 자신의 SteamID를 알아내는 방법은 <span style="color: aqua; cursor: pointer;" onclick="location.href='http://localhost:3000/help'">이곳</span>을 참고하세요.
             <br /><br />
-            Tip2: 예시 결과를 보려면 '76561198818238819'를 검색해보세요.
+            Tip2: 예시 결과를 보려면 <span style="color: aqua; cursor: pointer;" onclick="location.href='http://localhost:3000/profile?steamid=76561198818238819'">'76561198818238819'</span>를 검색해보세요.
           </a>
         </div>
       </div>
