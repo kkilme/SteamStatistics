@@ -9,24 +9,22 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.static(__dirname + "/public"));
-
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   next();
 });
 
-app.get("/home", (req, res) => {
-  res.sendFile(path.join(__dirname, "public/index.html"));
-});
-
-
 
 app.get("/", (req, res) => {
-  res.redirect("/home");
+  res.sendFile(path.join(__dirname, "public/index.html"));
 });
 
 app.get("/profile", (req,res)=>{
   res.sendFile(path.join(__dirname, "public/info.html"));
+})
+
+app.get("/help", (req,res)=>{
+  res.sendFile(path.join(__dirname, "public/help.html"));
 })
 
 
@@ -69,8 +67,13 @@ app.get("/steaminfo", async (req, res) => {
     );
 
     var steamGamesData = await steamGamesResponse.json();
-    
-    
+    if(Object.keys(steamGamesData.response).length == 0){
+      console.log('0')
+      res.json({
+        error: 'private_profile'
+      })
+      return;
+    }
     // const recentPlayedResponse = await fetch(
     //   `https://api.steampowered.com/IPlayerService/GetRecentlyPlayedGames/v0001/?key=${apiKey}&steamid=${steamId}&count=5`
     // );
@@ -256,7 +259,7 @@ app.get("/achievementinfo", async (req, res) => {
     );
     if(dataUpdated) writeJson("gameAchievementData.json", AchieveData);
     if(profileisprivate) {
-      res.json({error: 'private profile'})
+      res.json({error: 'half_private_profile'})
       return;
     }
     res.json(resp)
