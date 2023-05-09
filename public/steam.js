@@ -271,7 +271,7 @@ function setErrorPage(errortype){
       잘못된 Steam ID입니다.
     </h3>
     <p class="error-description">
-      Steam ID를 다시 한번 확인해보세요. Steam ID를 알아내는 방법은 이곳을 참고하세요.
+      Steam ID를 다시 한번 확인해보세요. Steam ID를 알아내는 방법은  <span style="color: aqua; cursor: pointer;" onclick="location.href='http://localhost:3000/help'">이곳</span>을 참고하세요.
     </p>
   </div>`
   } // not public profile 
@@ -293,7 +293,7 @@ function setErrorPage(errortype){
     해당 스팀 프로필은 비공개 상태이거나 보유한 게임이 없습니다.
   </h3>
   <p class="error-description">
-    스팀 프로필이 <span class="color6">비공개상태</span>이거나 보유한 게임이 없어서 데이터를 생성할 수 없었습니다.<br> 프로필을 공개로 설정하는 방법은 이곳을 참고하세요.
+    스팀 프로필이 <span class="color6">비공개상태</span>이거나 보유한 게임이 없어서 데이터를 생성할 수 없었습니다.<br> 프로필을 공개로 설정하는 방법은  <span style="color: aqua; cursor: pointer;" onclick="location.href='http://localhost:3000/help'">이곳</span>을 참고하세요.
   </p>
   </div>`
   }

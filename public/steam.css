@@ -75,7 +75,13 @@ body {
   margin-bottom: 50px;
 }
 
-.main-container .main-center {
+.main-container-no-margin {
+  height: auto;
+  display: block;
+  align-content: center;
+}
+
+.main-center {
   height: calc(100vh - 50px);
   display: flex;
   padding-left: 20%;
@@ -83,7 +89,7 @@ body {
   flex-direction: column;
 }
 
-.main-container .main-logo-box {
+.main-logo-box {
   justify-content: center;
   display: flex;
   width: auto;
@@ -93,24 +99,24 @@ body {
   padding-bottom: 10%;
 }
 
-.main-container .main-logo {
+.main-logo {
   font-size: 5vw;
   color: aliceblue;
   font-weight: 600;
 }
 
-.main-container .main-logo span {
+.main-logo span {
   color: rgb(102, 192, 244);
 }
 
-.main-container .searchbox-container {
+.searchbox-container {
   height: 10%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
 }
 
-.main-container .searchbox {
+.searchbox {
   background-color: rgb(194, 194, 194);
   height: 30px;
   width: 500px;
@@ -121,7 +127,7 @@ body {
   justify-content: center;
 }
 
-.main-container .search-txt {
+.search-txt {
   padding-left: 10px;
   background: none;
   border: none;
@@ -132,7 +138,7 @@ body {
   width: 450px;
 }
 
-.main-container .search-btn {
+.search-btn {
   color: rgb(194, 194, 194);
   padding: 1.5px;
   padding-bottom: 3.5px;
@@ -143,20 +149,20 @@ body {
   border: none;
 }
 
-.main-container .search-icon {
+.search-icon {
   width: inherit;
   height: inherit;
   opacity: 0.3;
   cursor: pointer;
 }
 
-.main-container .tip-container {
+.tip-container {
   height: 20%;
   display: flex;
   justify-content: center;
 }
 
-.main-container .tip {
+.tip {
   color: rgba(240, 248, 255, 0.378);
 }
 /***************/
@@ -621,6 +627,7 @@ body {
   margin-left: 25%;
   margin-right: 25%;
   margin-top: 20px;
+  width: 1000px;
   flex-direction: column;
   background-color: rgba(23, 26, 33, 0.7);
   border-radius: 15px;
