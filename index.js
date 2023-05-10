@@ -9,6 +9,8 @@ const app = express();
 const PORT = 3000;
 
 app.use(express.static(__dirname + "/public"));
+
+// for CORS policy
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
   next();
@@ -62,11 +64,14 @@ app.get("/steaminfo", async (req, res) => {
         return;
       }
     }
+
+    // get user's owned game data
     const steamGamesResponse = await fetch(
       `http://api.steampowered.com/IPlayerService/GetOwnedGames/v0001/?key=${apiKey}&steamid=${steamId}&format=json`
     );
 
     var steamGamesData = await steamGamesResponse.json();
+    // no gamedata -> private profile or 0 games
     if(Object.keys(steamGamesData.response).length == 0){
       console.log('0')
       res.json({
@@ -89,54 +94,13 @@ app.get("/steaminfo", async (req, res) => {
   }
 });
 
-// const texts = await Promise.all(urls.map(async url => {
-//   const resp = await fetch(url);
-//   return resp.text();
-// }));
-
-// Promise.all(urls.map(url =>
-//   fetch(url).then(resp => resp.text())
-// )).then(texts => {
-
-// })
-
-function readJson(filename) {
-  var dt = fs.readFileSync(path.join(__dirname, filename), "utf-8");
-  return JSON.parse(dt);
-}
-
-function writeJson(filename, data) {
-  let obj = JSON.stringify(data);
-  fs.writeFileSync(path.join(__dirname, filename), obj, "utf-8");
-}
-
-function parseAppData(js, appid) {
-  var parsedjs = {};
-  if (js[appid].success) {
-    var dt = js[appid].data;
-    parsedjs = {
-      steam_appid: dt.steam_appid,
-      success: true,
-      name: dt.name,
-      is_free: dt.is_free,
-      metacritic: dt.metacritic,
-      genres: dt.genres,
-      recommendations: dt.recommendations?.total,
-      achievementnum: dt.achievements?.total,
-      header_image: dt.header_image,
-      price_overview: dt.price_overview,
-    };
-  } else {
-    parsedjs = {
-      success: false,
-    };
-  }
-  return parsedjs;
-}
-
+// get data of specific game
 app.get("/appinfo", async (req, res) => {
   var appid = req.query.appid;
+  
+  // read cache json file
   let appdata = readJson("appdata.json");
+
   try {
     var dataUpdated = false;
     if (!Array.isArray(appid)) {
@@ -152,6 +116,7 @@ app.get("/appinfo", async (req, res) => {
           console.log(`hit ${id}`);
           return appdata[id];
         }
+        //cache miss
         console.log(`miss ${id}`);
         const resps = await fetch(
           `http://store.steampowered.com/api/appdetails?appids=${id}&cc=KR`
@@ -171,11 +136,13 @@ app.get("/appinfo", async (req, res) => {
           dataUpdated = true;
           return appdata[id];
         }
+        // parse data only we need
         appdata[id] = parseAppData(respsjs, id);
         dataUpdated = true;
         return appdata[id];
       })
     );
+    // if data is updated, re-write json
     if(dataUpdated) writeJson("appdata.json", appdata);
     res.json(resp);
   } catch (error) {
@@ -184,10 +151,12 @@ app.get("/appinfo", async (req, res) => {
   }
 });
 
+// get achievement data
 app.get("/achievementinfo", async (req, res) => {
   var appid = req.query.appid;
   const steamid = req.query.steamid;
   const apiKey = "CDB6562AD13D438878CDCF95AECC2879";
+  // read cache json file
   let AchieveData = readJson("gameAchievementData.json");
   if (!Array.isArray(appid)){
     var temp = appid;
@@ -205,6 +174,7 @@ app.get("/achievementinfo", async (req, res) => {
           console.log(`achievedata hit ${id}`);
           data = AchieveData[id];
         } else {
+          // cache miss
           console.log(`achievedata miss ${id}`);
           const achieveDetailresps = await fetch(
             `https://api.steampowered.com/ISteamUserStats/GetSchemaForGame/v2/?key=${apiKey}&appid=${id}&l=koreana`
@@ -263,22 +233,52 @@ app.get("/achievementinfo", async (req, res) => {
       return;
     }
     res.json(resp)
-    // res.json({"haha":"hello"});
   } catch (error) {
     console.log(error);
     res.status(500).send("Server Error");
   }
 });
 
+function readJson(filename) {
+  var dt = fs.readFileSync(path.join(__dirname, filename), "utf-8");
+  return JSON.parse(dt);
+}
+
+function writeJson(filename, data) {
+  let obj = JSON.stringify(data);
+  fs.writeFileSync(path.join(__dirname, filename), obj, "utf-8");
+}
+
+// make appdata json with data only we need
+function parseAppData(js, appid) {
+  var parsedjs = {};
+  if (js[appid].success) {
+    var dt = js[appid].data;
+    parsedjs = {
+      steam_appid: dt.steam_appid,
+      success: true,
+      name: dt.name,
+      is_free: dt.is_free,
+      metacritic: dt.metacritic,
+      genres: dt.genres,
+      recommendations: dt.recommendations?.total,
+      achievementnum: dt.achievements?.total,
+      header_image: dt.header_image,
+      price_overview: dt.price_overview,
+    };
+  } else {
+    parsedjs = {
+      success: false,
+    };
+  }
+  return parsedjs;
+}
+
+// make achievement json with data only we need
 function parseAchieveData(percentjs, detailjs, appid){
   var parsedjs = {};
   var achieves = detailjs?.game?.availableGameStats?.achievements;
   var percents = {}
-  console.log(appid);
-  if(appid == '450390'){
-    console.log(percentjs);
-    console.log(achieves);
-  }
 
   for (const acs of percentjs?.achievementpercentages?.achievements) {
     percents[acs.name] = acs.percent.toFixed(2);
@@ -300,6 +300,7 @@ function parseAchieveData(percentjs, detailjs, appid){
   return parsedjs;
 }
 
+// make final achievement data response json for client
 function makeAchieveResponseData(resp, data, playerdata, id){
   var fixeddata = {}
   resp[id].gamename = playerdata.playerstats.gameName;

@@ -31,7 +31,7 @@
   - Steam이 공식적으로 제공하는 [Web API](https://partner.steamgames.com/doc/webapi)를 이용하여 스팀 유저의 데이터를 가져옴.
   
 - **Express** 를 이용한 웹서버 사용
-  - COPR policy로 인해 클라이언트에서 직접적으로 API 요청시 거부되어 웹서버 사용은 필수
+  - CORS policy로 인해 클라이언트에서 직접적으로 API 요청시 거부되어 웹서버 사용은 필수
   - 웹 개발은 처음이기 때문에, 수업시간에 다뤄 조금이나마 더 익숙한 Express로 구현
   
 - **Json** 파일을 이용하여 데이터 저장 (서버의 캐쉬로 활용)
@@ -284,7 +284,8 @@ index.js에서 사용한 Steam API들이다. **주요 API들의 응답 형식은
           );
         ...
         }
-      }
+      })
+    )
     if(dataUpdated) writeJson("gameAchievementData.json", AchieveData);
 }
 ```
