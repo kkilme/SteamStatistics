@@ -1,4 +1,4 @@
-# <center>Steam <font color="rgb(102, 192, 244)">Statistcs<center></font>
+# <center>Steam <font color="rgb(102, 192, 244)">Statistics</font></center>
 ## **<center>Steam 유저의 다양한 게임 통계를 볼 수 있는 웹사이트</center>**
 
 
@@ -266,7 +266,7 @@ index.js에서 사용한 Steam API들이다. **주요 API들의 응답 형식은
 위와 같이 Promise.all을 사용하면, appid라는 배열에 있는 모든 값에 대해 동시에 fetch를 진행하여, 모든 fetch가 완료되면 resp이라는 값이 완성되게 된다. 병렬적으로 fetch가 진행되므로 시간은 사실상 한 게임의 데이터를 받아오는 시간과 비슷하게 소요된다.
 
  ### 2. json파일을 캐쉬로 활용
- 비동기 fetch로 소요 시간을 단축했지만, 여전히 API를 수백 번 요청하는 것은 달라지지 않았다. 이는 바람직하지 못하다고 생각했기 때문에, 거의 변하지 않는 데이터인 게임 정보나 게임의 도전과제 정보는 json파일에 저장하는 방식을 생각했다.
+ 비동기 fetch로 소요 시간을 단축했지만, 여전히 API를 수백 번 요청하는 것은 달라지지 않았고 이는 바람직하지 못하다고 생각했다. 특히, 특정 게임의 정보를 받아오는 `http://store.steampowered.com/api/appdetails?appids=${id}&cc=KR` API는 스팀 공식 문서에는 없는 특이한 API인데, 이 API를 단시간에 너무 많이 요청할 시 응답으로 403 Forbidden이 왔기 때문에, API 호출 횟수를 줄이는 것은 필수적이였다. 그래서 거의 변하지 않는 데이터인 게임 정보나 게임의 도전과제 정보는 json파일에 저장하기로 하였다
 ```javascript
  app.get("/achievementinfo", async (req, res) => {
   var appid = req.query.appid;
@@ -288,4 +288,4 @@ index.js에서 사용한 Steam API들이다. **주요 API들의 응답 형식은
     if(dataUpdated) writeJson("gameAchievementData.json", AchieveData);
 }
 ```
-appdata.json과 gameAchievementData.json엔 게임 데이터, 게임의 도전과제 데이터가 저장되어 있다. 물론 이 데이터들이 영원히 변하지 않는 것은 아니다. 게임이 업데이트 되면 이 데이터들도 값이 변할 수 있다. 이를 해결하기 위해선 각 캐쉬 엔트리별로 수명을 두어서 수명이 다하면 다시 값을 업데이트하는 방법이 있겠지만, 이것까지는 구현하지 않았다.
+appdata.json과 gameAchievementData.json엔 게임 데이터, 게임의 도전과제 데이터가 저장되어 있다. 물론 이 데이터들이 영원히 변하지 않는 것은 아니다. 게임이 업데이트 되면 이 데이터들은 충분히 변할 수 있다. 이를 해결하기 위해선 각 캐쉬 엔트리별로 수명을 두어서 수명이 다하면 다시 값을 업데이트하는 방법이 있겠지만, 현재 이것까지는 구현하지 않았다.
