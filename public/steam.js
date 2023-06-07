@@ -201,7 +201,6 @@ function setMostPlayedTable(){
   GameDataDict_sortedByPlaytime.sort((a, b) => b.playtime_forever - a.playtime_forever);
   for(let i = 0; i<Math.min(17, GameDataDict_sortedByPlaytime.length); i++){
     const id = GameDataDict_sortedByPlaytime[i].appid;
-    if(id == '1046480' || id=='1973710') continue;
     var achieved = appDataDict[id]?.achievednum;
     var totalachieve = appDataDict[id]?.achievementnum;
     var achivenumst = ''
