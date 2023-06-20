@@ -199,7 +199,7 @@ function setMostPlayedTable(){
   var GameDataDict_sortedByPlaytime = GameDataDict;
   var st = ''
   GameDataDict_sortedByPlaytime.sort((a, b) => b.playtime_forever - a.playtime_forever);
-  for(let i = 0; i<Math.min(17, GameDataDict_sortedByPlaytime.length); i++){
+  for(let i = 0; i<Math.min(15, GameDataDict_sortedByPlaytime.length); i++){
     const id = GameDataDict_sortedByPlaytime[i].appid;
     var achieved = appDataDict[id]?.achievednum;
     var totalachieve = appDataDict[id]?.achievementnum;
@@ -474,6 +474,7 @@ async function getAppData(games) {
     const rawres = await fetch(qstring);
     const jsres = await rawres.json();
     rawdata.push(jsres);
+    setTimeout(() => {}, 1000);
   }
   console.log('appdata_rawdata');
   console.log(rawdata);

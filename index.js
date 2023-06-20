@@ -97,7 +97,8 @@ app.get("/steaminfo", async (req, res) => {
 // get data of specific game
 app.get("/appinfo", async (req, res) => {
   var appid = req.query.appid;
-  
+  const now = new Date().getTime();
+  const newttl = now + 3600 * 24 * 3 // appdata cache lives for 3 days
   // read cache json file
   let appdata = readJson("appdata.json");
 
@@ -111,7 +112,7 @@ app.get("/appinfo", async (req, res) => {
     // fetch appinfo of all games asynchronously
     const resp = await Promise.all(
       appid.map(async (id) => {
-        if (id in appdata && appdata[id] != null) {
+        if (id in appdata && appdata[id] != null && appdata[id]['TTL'] < now) {
           // cache hit
           console.log(`hit ${id}`);
           return appdata[id];
@@ -137,7 +138,7 @@ app.get("/appinfo", async (req, res) => {
           return appdata[id];
         }
         // parse data only we need
-        appdata[id] = parseAppData(respsjs, id);
+        appdata[id] = parseAppData(respsjs, id, newttl);
         dataUpdated = true;
         return appdata[id];
       })
@@ -156,6 +157,8 @@ app.get("/achievementinfo", async (req, res) => {
   var appid = req.query.appid;
   const steamid = req.query.steamid;
   const apiKey = "CDB6562AD13D438878CDCF95AECC2879";
+  const now = new Date().getTime();
+  const newttl = now + 3600 * 24 * 30 // achievedata cache lives for 30 days
   // read cache json file
   let AchieveData = readJson("gameAchievementData.json");
   if (!Array.isArray(appid)){
@@ -169,7 +172,7 @@ app.get("/achievementinfo", async (req, res) => {
     const resp = await Promise.all(
       appid.map(async (id) => {
         var data = {};
-        if (id in AchieveData && AchieveData[id] != null) {
+        if (id in AchieveData && AchieveData[id] != null && AchieveData[id]['TTL'] < now) {
           // cache hit
           console.log(`achievedata hit ${id}`);
           data = AchieveData[id];
@@ -198,7 +201,7 @@ app.get("/achievementinfo", async (req, res) => {
             dataUpdated = true;
           }
           else {
-            AchieveData[id] = parseAchieveData(percentjs, detailjs, id);
+            AchieveData[id] = parseAchieveData(percentjs, detailjs, id, newttl);
           }
           dataUpdated = true;
           data = AchieveData[id];
@@ -240,8 +243,13 @@ app.get("/achievementinfo", async (req, res) => {
 });
 
 function readJson(filename) {
-  var dt = fs.readFileSync(path.join(__dirname, filename), "utf-8");
-  return JSON.parse(dt);
+  try {
+    var dt = fs.readFileSync(path.join(__dirname, filename), "utf-8");
+    return JSON.parse(dt);
+  } catch (err) {
+    console.error("No such file:", filename);
+    return {}; // retrun {} if there is no file
+  }
 }
 
 function writeJson(filename, data) {
@@ -250,7 +258,7 @@ function writeJson(filename, data) {
 }
 
 // make appdata json with data only we need
-function parseAppData(js, appid) {
+function parseAppData(js, appid, ttl) {
   var parsedjs = {};
   if (js[appid].success) {
     var dt = js[appid].data;
@@ -265,6 +273,7 @@ function parseAppData(js, appid) {
       achievementnum: dt.achievements?.total,
       header_image: dt.header_image,
       price_overview: dt.price_overview,
+      TTL: ttl
     };
   } else {
     parsedjs = {
@@ -275,10 +284,11 @@ function parseAppData(js, appid) {
 }
 
 // make achievement json with data only we need
-function parseAchieveData(percentjs, detailjs, appid){
+function parseAchieveData(percentjs, detailjs, appid, ttl){
   var parsedjs = {};
   var achieves = detailjs?.game?.availableGameStats?.achievements;
   var percents = {}
+  parsedjs['TTL'] = ttl
 
   for (const acs of percentjs?.achievementpercentages?.achievements) {
     percents[acs.name] = acs.percent.toFixed(2);
@@ -294,7 +304,7 @@ function parseAchieveData(percentjs, detailjs, appid){
       "description": a.description,
       "icon": a.icon,
       "hidden": a.hidden,
-      "percentage": percents[a.name]
+      "percentage": percents[a.name],
     }
   }
   return parsedjs;
