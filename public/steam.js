@@ -371,6 +371,7 @@ async function generateGameData(GameData) {
   for (const appid in appDataDict) {
     if(!appDataDict[appid].success) continue;
     var genres = appDataDict[appid].genres;
+    if(genres == undefined) continue;
     for (const genre of genres) {
       const genreName = genre.description;
       genre_counts['owned'][genreName] = (genre_counts['owned'][genreName] || 0) + 1;
@@ -383,11 +384,14 @@ async function generateGameData(GameData) {
   GameData.forEach((game) => {
     if(!appDataDict[game.appid].success) return;
     let gameGenres = appDataDict[game.appid].genres;
-    gameGenres.forEach((genre) => {
+    if(gameGenres != undefined){
+      gameGenres.forEach((genre) => {
         let genreName = genre.description;
         let playtime = game.playtime_forever;
         genre_counts['playtime'][genreName] = (genre_counts['playtime'][genreName] || 0) + playtime;
-    });
+      });
+    }
+    
   });
 
   // count played games
@@ -400,7 +404,7 @@ async function generateGameData(GameData) {
   });
   DataDict["neverPlayedGamesCount"] =
     DataDict["OwnedGamesCount"] - DataDict["PlayedGamesCount"];
-
+  
   // calc total price
   for (const id of playedgames) {
     if(!appDataDict[id].success) continue;
@@ -487,12 +491,14 @@ async function getAppData(games) {
       arr.push(temp);
     }
     for (const it of arr) {
-      if (!it.success) {
+      console.log(it);
+      console.log(arr);
+      if (!it?.success) {
         console.log(`Failed to get appinfo: ${it}`);
         DataDict["UnknownGameCount"]++;
         continue;
       }
-      if (!it.is_free && it.price_overview != undefined) {
+      if (!it?.is_free && it?.price_overview != undefined) {
         DataDict["TotalInitialPrice"] += it.price_overview.initial;
         DataDict['TotalDiscountedPrice']+=it.price_overview.final;
       }
